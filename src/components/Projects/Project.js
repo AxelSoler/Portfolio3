@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 
 const Project = (props) => {
   const { project } = props;
   return (
     <div id={project.name} className="project">
-      <image className="picture" src={project.image} alt={project.name} />
+      <Image className="picture" src={project.image} alt={project.name} />
       <h3 className="projectName">{project.name}</h3>
       <p className="cardDescription">{project.description}</p>
       <ul className="ulTech">

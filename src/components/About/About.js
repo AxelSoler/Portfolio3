@@ -10,6 +10,7 @@ import Githubimg from '../../img/symbols/github.svg';
 import Gitlabimg from '../../img/symbols/gitlab.svg';
 import Terminalimg from '../../img/symbols/terminal.svg';
 import profilePicture from "@/img/profile/profilepic.jpg";
+import Image from 'next/image';
 import './About.css';
 
 const About = () => (
@@ -21,47 +22,47 @@ const About = () => (
         <div className="marqueeblock">
           <ul className="ulmarquee">
             <li>
-              <image className="skill" src={HTMLimg} alt="skill logo" />
+              <Image className="skill" src={HTMLimg} alt="skill logo" />
               HTML
             </li>
             <li>
-              <image className="skill" src={CSSimg} alt="skill logo" />
+              <Image className="skill" src={CSSimg} alt="skill logo" />
               CSS
             </li>
             <li>
-              <image className="skill" src={JavaScriptimg} alt="skill logo" />
+              <Image className="skill" src={JavaScriptimg} alt="skill logo" />
               JavaScript
             </li>
             <li>
-              <image className="skill" src={reactimg} alt="skill logo" />
+              <Image className="skill" src={reactimg} alt="skill logo" />
               React
             </li>
             <li>
-              <image className="skill" src={Rubyimg} alt="skill logo" />
+              <Image className="skill" src={Rubyimg} alt="skill logo" />
               Ruby
             </li>
             <li>
-              <image className="skill railsimg" src={Railsimg} alt="skill logo" />
+              <Image className="skill railsimg" src={Railsimg} alt="skill logo" />
               Rails
             </li>
             <li>
-              <image className="skill" src={Postgresimg} alt="skill logo" />
+              <Image className="skill" src={Postgresimg} alt="skill logo" />
               Postgres
             </li>
             <li>
-              <image className="skill" src={RSpecimg} alt="skill logo" />
+              <Image className="skill" src={RSpecimg} alt="skill logo" />
               RSpec
             </li>
             <li>
-              <image className="skill" src={Githubimg} alt="skill logo" />
+              <Image className="skill" src={Githubimg} alt="skill logo" />
               Github
             </li>
             <li>
-              <image className="skill" src={Gitlabimg} alt="skill logo" />
+              <Image className="skill" src={Gitlabimg} alt="skill logo" />
               Gitlab
             </li>
             <li>
-              <image className="skill" src={Terminalimg} alt="skill logo" />
+              <Image className="skill" src={Terminalimg} alt="skill logo" />
               Terminal
             </li>
           </ul>
@@ -71,63 +72,63 @@ const About = () => (
         <div className="marqueeblock marqueeblock2">
           <ul className="ulmarquee">
             <li>
-              <image className="skill" src={HTMLimg} alt="skill logo" />
+              <Image className="skill" src={HTMLimg} alt="skill logo" />
               HTML
             </li>
             <li>
-              <image className="skill" src={CSSimg} alt="skill logo" />
+              <Image className="skill" src={CSSimg} alt="skill logo" />
               CSS
             </li>
             <li>
-              <image className="skill" src={JavaScriptimg} alt="skill logo" />
+              <Image className="skill" src={JavaScriptimg} alt="skill logo" />
               JavaScript
             </li>
             <li>
-              <image className="skill" src={reactimg} alt="skill logo" />
+              <Image className="skill" src={reactimg} alt="skill logo" />
               React
             </li>
             <li>
-              <image className="skill" src={Rubyimg} alt="skill logo" />
+              <Image className="skill" src={Rubyimg} alt="skill logo" />
               Ruby
             </li>
             <li>
-              <image className="skill railsimg" src={Railsimg} alt="skill logo" />
+              <Image className="skill railsimg" src={Railsimg} alt="skill logo" />
               Rails
             </li>
             <li>
-              <image className="skill" src={Postgresimg} alt="skill logo" />
+              <Image className="skill" src={Postgresimg} alt="skill logo" />
               Postgres
             </li>
             <li>
-              <image className="skill" src={RSpecimg} alt="skill logo" />
+              <Image className="skill" src={RSpecimg} alt="skill logo" />
               RSpec
             </li>
             <li>
-              <image className="skill" src={Githubimg} alt="skill logo" />
+              <Image className="skill" src={Githubimg} alt="skill logo" />
               Github
             </li>
             <li>
-              <image className="skill" src={Gitlabimg} alt="skill logo" />
+              <Image className="skill" src={Gitlabimg} alt="skill logo" />
               Gitlab
             </li>
             <li>
-              <image className="skill" src={Terminalimg} alt="skill logo" />
+              <Image className="skill" src={Terminalimg} alt="skill logo" />
               Terminal
             </li>
           </ul>
         </div>
       </div>
-      <image className="profilePicture" src={profilePicture} alt="Axel Soler" id="about" />
+      <Image className="profilePicture" src={profilePicture} alt="Axel Soler" id="about" />
       <p className="description">I am passionate about programming and video games. Learning and working with teammates and friends around the world in a fully remote environment.</p>
       <p className="SkillsDescription">
-        <image className="skill" src={JavaScriptimg} alt="JavaScript logo" />
+        <Image className="skill" src={JavaScriptimg} alt="JavaScript logo" />
         JavaScript =&gt; React
-        <image className="skill" src={reactimg} alt="React logo" />
+        <Image className="skill" src={reactimg} alt="React logo" />
       </p>
       <p className="SkillsDescription">
-        <image className="skill" src={Rubyimg} alt="skill logo" />
+        <Image className="skill" src={Rubyimg} alt="skill logo" />
         Ruby =&gt; Rails
-        <image className="skill railsimg" src={Railsimg} alt="skill logo" />
+        <Image className="skill railsimg" src={Railsimg} alt="skill logo" />
       </p>
       <p className="description">Patient, Teamwork, Compromise, growth mindset, and friendly.</p>
       <p className="description">English and Spanish (Argentina).</p>

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
 // import { ImCross } from 'react-icons/im';
@@ -87,7 +88,7 @@ const Projects = () => {
         <h2>PROJECTS LIST</h2>
         {projects.map((project) => (
           <li key={project.name} className="projectItem">
-            <image className="imageItem" src={project.image} alt="project" />
+            <Image className="imageItem" src={project.image} alt="project" />
             <div className="itemContainer">
               <div className="itemTitle">
                 <h3>{project.name}</h3>

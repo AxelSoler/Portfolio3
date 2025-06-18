@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 // import { IoIosArrowForward } from 'react-icons/io';
 import profilePicture from '../../img/profile/profilepic.jpg';
 import './Navbar.css';
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navMobileMenu">
-        <image className="navProfilePicture" src={profilePicture} alt="Axel Soler" />
+        <Image className="navProfilePicture" src={profilePicture} alt="Axel Soler" />
         <a
           className="pageLink"
           id="aboutLink"
