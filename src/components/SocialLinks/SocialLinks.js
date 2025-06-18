@@ -1,6 +1,6 @@
 import './SocialLinks.css';
-// import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
-// import { FaAngellist } from 'react-icons/fa';
+import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { FaAngellist } from 'react-icons/fa';
 
 const SocialLinks = () => (
   <div className="socialMedia">
@@ -12,7 +12,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Github"
         >
-          {/* <BsGithub color="#004aad" size="28px" /> */}
+          <BsGithub color="#004aad" size="28px" />
         </a>
       </li>
       <li className="social">
@@ -22,7 +22,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          {/* <BsLinkedin color="#004aad" size="28px" /> */}
+          <BsLinkedin color="#004aad" size="28px" />
         </a>
       </li>
       <li className="social">
@@ -32,7 +32,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Angellist"
         >
-          {/* <FaAngellist color="#004aad" size="28px" /> */}
+          <FaAngellist color="#004aad" size="28px" />
         </a>
       </li>
       <li className="social">
@@ -42,7 +42,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Twitter"
         >
-          {/* <BsTwitter color="#004aad" size="28px" /> */}
+          <BsTwitter color="#004aad" size="28px" />
         </a>
       </li>
     </ul>

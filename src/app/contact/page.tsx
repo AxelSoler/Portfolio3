@@ -1,4 +1,4 @@
-// import { FiExternalLink } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 import './Contact.css';
 
 const ContactForm = () => {
@@ -53,7 +53,7 @@ const ContactForm = () => {
           id="formspree"
         >
           Formspree
-          {/* <FiExternalLink size="20px" color="#ff2441" /> */}
+          <FiExternalLink size="20px" color="#ff2441" />
         </a>
       </p>
     </form>

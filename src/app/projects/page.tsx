@@ -2,7 +2,7 @@
 import Image from 'next/image';
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
-// import { ImCross } from 'react-icons/im';
+import { ImCross } from 'react-icons/im';
 import projects from './AllProjects';
 // import Project from './Project';
 import './Projects.css';
@@ -83,7 +83,7 @@ const Projects = () => {
           className="removeProjectsBtn"
           type="button"
         >
-          {/* <ImCross size="20px" color="#fff" /> */}
+          <ImCross size="20px" color="#fff" />
         </button>
         <h2>PROJECTS LIST</h2>
         {projects.map((project) => (

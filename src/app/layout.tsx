@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-white bg-white dark:bg-[#0a0a0a] transition-colors duration-500 ease-in-out`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-white bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 shadow-md dark:bg-gradient-to-r dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Navbar />
