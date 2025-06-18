@@ -1,36 +1,3 @@
-.myName {
-  color: #fff;
-  text-shadow: 4px 4px blue;
-  font-size: 36px;
-  font-family: 'Courier New', Courier, monospace;
-  margin-top: 48px;
-}
-
-.Developer {
-  color: #fff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-shadow: 4px 4px blue;
-}
-
-.about {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 24px;
-  z-index: 5;
-}
-
-.aboutDescription {
-  width: 85%;
-  color: #fff;
-  padding: 24px 0;
-  font-family: roboto, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .description {
   font-size: 20px;
   margin: 1% 0;
@@ -38,7 +5,7 @@
 
 .marquee {
   width: 85%;
-  margin: 0 auto;
+  margin: 16px auto;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
@@ -57,14 +24,6 @@
 
 .ulmarquee {
   display: flex;
-}
-
-.profilePicture {
-  border-radius: 90px;
-  border: 4px solid #4294ff;
-  width: 180px;
-  margin-top: 80px;
-  margin-bottom: 12px;
 }
 
 .SkillsDescription {
@@ -109,35 +68,8 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .myName {
-    text-shadow: 6px 6px blue;
-    font-size: 64px;
-  }
-
-  .Developer {
-    text-shadow: 6px 6px blue;
-    font-size: 48px;
-  }
-
-  .about {
-    margin-bottom: 128px;
-  }
-
-  .aboutDescription {
-    width: 50%;
-    padding: 48px 0;
-  }
-
-  .profilePicture {
-    border-radius: 130px;
-    border: 4px solid #4294ff;
-    width: 260px;
-    margin-top: 100px;
-    margin-bottom: 12px;
-  }
-
   .description {
-    font-size: 28px;
+    font-size: 24px;
     width: 100%;
   }
 
