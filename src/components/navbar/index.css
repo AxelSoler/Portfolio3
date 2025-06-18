@@ -117,6 +117,9 @@
   .navPcMenu {
     display: flex;
     width: 100%;
+    padding: 12px 36px;
+    font-weight: 700;
+    border-bottom: #fff solid 1px;
   }
 
   .navPcMenu a {

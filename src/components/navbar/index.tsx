@@ -59,11 +59,15 @@ const Navbar = () => {
         <span className="bar" />
         <span className="bar" />
       </button>
-      <ul className="navPcMenu">
+      <div className="navPcMenu">
+        <div className="mr-auto">
+          <p className="text-xl">Axel Soler</p>
+          <p>Full Stack Developer</p>
+        </div>
         <Link href="/">ABOUT</Link>
         <Link href="/projects">PROJECTS</Link>
         <Link href="/contact">CONTACT</Link>
-      </ul>
+      </div>
     </nav>
   );
 };
