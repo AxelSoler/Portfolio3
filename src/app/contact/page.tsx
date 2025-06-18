@@ -40,7 +40,7 @@ const ContactForm = () => {
       <button
         id="submitButton"
         type="submit"
-        disabled={state.submitting}
+        // disabled={state.submitting}
       >
         Send Message
       </button>

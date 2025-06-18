@@ -108,31 +108,21 @@
 
 @media only screen and (min-width: 769px) {
   .navbar {
-    padding-right: 3%;
-    width: fit-content;
-    margin-left: auto;
-    height: 100vh;
+    position: inherit;
   }
-
   .hamburger {
     display: none;
   }
 
   .navPcMenu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    width: 100%;
   }
 
   .navPcMenu a {
     font-size: 18px;
     color: #fff;
-    margin: 6px 12px 0 auto;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    width: fit-content;
-    padding: 24px 8px;
+    padding: 8px;
     border: 4px solid black;
     box-shadow: 10px 0 5px black;
     border-radius: 8px;
@@ -142,13 +132,5 @@
     background: -moz-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
-
-  .navPcMenu a:focus {
-    background-color: #004aad;
-  }
-
-  .navPcMenu a:hover {
-    background-color: #004aad;
   }
 }
