@@ -6,6 +6,7 @@ import Image from "next/image";
 import profilePicture from "../../img/profile/profilepic.jpg";
 import "./index.css";
 import { useState } from "react";
+import ThemeToggle from "../ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
         <span className="bar" />
         <span className="bar" />
       </button>
-      <div className="navPcMenu">
+      <div className="navPcMenu border-b border-black dark:border-white">
         <div className="mr-auto">
           <p className="text-xl">Axel Soler</p>
           <p>Full Stack Developer</p>
@@ -67,6 +68,7 @@ const Navbar = () => {
         <Link href="/">ABOUT</Link>
         <Link href="/projects">PROJECTS</Link>
         <Link href="/contact">CONTACT</Link>
+        <ThemeToggle />
       </div>
     </nav>
   );

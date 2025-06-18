@@ -14,7 +14,7 @@ import "./About.css";
 
 const About = () => (
   <section
-    className="text-center flex flex-col items-center text-white"
+    className="text-center flex flex-col items-center"
     id="about"
   >
     <h1 className="text-3xl">AXEL SOLER</h1>
