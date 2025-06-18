@@ -4,19 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 // import { IoIosArrowForward } from 'react-icons/io';
 import profilePicture from "../../img/profile/profilepic.jpg";
-import "./Navbar.css";
+import "./index.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMobileMenu = () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".navMobileMenu");
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    setIsOpen(!isOpen);
   };
 
   return (
     <nav className="navbar">
-      <ul className="navMobileMenu">
+      <ul className={`navMobileMenu ${isOpen ? "active" : ""}`}>
         <Image
           className="navProfilePicture"
           src={profilePicture}
@@ -52,7 +51,7 @@ const Navbar = () => {
       </ul>
       <button
         type="button"
-        className="hamburger"
+        className={`hamburger ${isOpen ? "active" : ""}`}
         onClick={toggleMobileMenu}
         onKeyDown={toggleMobileMenu}
       >

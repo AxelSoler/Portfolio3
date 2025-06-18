@@ -8,20 +8,20 @@ import projects from './AllProjects';
 import './Projects.css';
 
 const Projects = () => {
-  const addProjectsMenu = () => {
-    const hamburger = document.querySelector('.hamburger');
-    const projectsMenu = document.querySelector('.projectsMenu');
-    hamburger.classList.add('inactive');
-    projectsMenu.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  };
-  const removeProjectsMenu = () => {
-    const hamburger = document.querySelector('.hamburger');
-    const projectsMenu = document.querySelector('.projectsMenu');
-    hamburger.classList.remove('inactive');
-    projectsMenu.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  };
+  // const addProjectsMenu = () => {
+  //   const hamburger = document.querySelector('.hamburger');
+  //   const projectsMenu = document.querySelector('.projectsMenu');
+  //   hamburger.classList.add('inactive');
+  //   projectsMenu.classList.add('active');
+  //   document.body.style.overflow = 'hidden';
+  // };
+  // const removeProjectsMenu = () => {
+  //   const hamburger = document.querySelector('.hamburger');
+  //   const projectsMenu = document.querySelector('.projectsMenu');
+  //   hamburger.classList.remove('inactive');
+  //   projectsMenu.classList.remove('active');
+  //   document.body.style.overflow = 'auto';
+  // };
 
   // const responsive = {
   //   desktop: {
@@ -69,8 +69,8 @@ const Projects = () => {
         ))}
       </Carousel> */}
       <button
-        onClick={addProjectsMenu}
-        onKeyDown={addProjectsMenu}
+        // onClick={addProjectsMenu}
+        // onKeyDown={addProjectsMenu}
         id="ProjectsBtn"
         type="button"
       >
@@ -78,8 +78,8 @@ const Projects = () => {
       </button>
       <div className="projectsMenu">
         <button
-          onClick={removeProjectsMenu}
-          onKeyDown={removeProjectsMenu}
+          // onClick={removeProjectsMenu}
+          // onKeyDown={removeProjectsMenu}
           className="removeProjectsBtn"
           type="button"
         >
