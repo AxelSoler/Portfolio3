@@ -1,8 +1,3 @@
-.description {
-  font-size: 20px;
-  margin: 1% 0;
-}
-
 .marquee {
   width: 85%;
   margin: 16px auto;
@@ -26,20 +21,6 @@
   display: flex;
 }
 
-.SkillsDescription {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  align-items: center;
-  width: 90%;
-  font-size: 20px;
-  margin: 8px 0;
-}
-
-.SkillsDescription img {
-  align-self: center;
-  justify-self: center;
-}
-
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -59,7 +40,10 @@
 }
 
 .skill {
-  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .railsimg {
@@ -68,18 +52,9 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .description {
-    font-size: 24px;
-    width: 100%;
-  }
-
   .marquee {
-    font-size: 28px;
-    width: 50%;
-  }
-
-  .skill {
-    width: 40px;
+    font-size: 20px;
+    width: 80%;
   }
 
   .railsimg {
@@ -105,11 +80,5 @@
     100% {
       transform: translateX(-1830px);
     }
-  }
-
-  .SkillsDescription {
-    width: 60%;
-    font-size: 28px;
-    margin: 16px 0;
   }
 }

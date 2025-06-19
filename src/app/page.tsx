@@ -1,4 +1,4 @@
-import About from "../components/about/About";
+import About from "../components/about";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 
 export default function Home() {
