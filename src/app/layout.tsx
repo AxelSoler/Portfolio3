@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+import ClientOnly from "./client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-white bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 shadow-md dark:bg-gradient-to-r dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <Navbar />
-          {children}
+          <ClientOnly>
+            <Navbar />
+            {children}
+          </ClientOnly>
         </ThemeProvider>
       </body>
     </html>
