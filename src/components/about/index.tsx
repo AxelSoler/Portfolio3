@@ -1,15 +1,17 @@
-import HTMLimg from "../../img/symbols/html.svg";
-import CSSimg from "../../img/symbols/css.svg";
-import JavaScriptimg from "../../img/symbols/javascript.svg";
-import reactimg from "../../img/symbols/react.svg";
-import Rubyimg from "../../img/symbols/ruby.svg";
-import Railsimg from "../../img/symbols/rails.svg";
-import Postgresimg from "../../img/symbols/postgresql.svg";
-import RSpecimg from "../../img/symbols/RSpec.svg";
-import Githubimg from "../../img/symbols/github.svg";
-import Gitlabimg from "../../img/symbols/gitlab.svg";
 import profilePicture from "@/img/profile/profilepic.jpg";
 import Image from "next/image";
+import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
+import { SiRubyonrails, SiRubygems, SiCplusplus, SiRedux, SiJest, SiMongodb, SiMysql, SiDocker, SiFigma, SiPostman } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
+import {
+  FaGithubSquare,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitlab
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
 
 const About = () => (
@@ -126,90 +128,142 @@ const About = () => (
       </div> */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
         <div className="text-center md:text-left text-lg md:text-xl space-y-4">
-          <h3 className="text-2xl font-bold">About My self</h3>
+          <h3 className="text-2xl font-bold border-b border-black dark:border-white">About Me</h3>
           <p>
-            I’m a Full Stack Developer with a strong focus on Frontend
-            technologies. I specialize in building modern, responsive, and
-            high-performance web applications using React, Next.js, and Tailwind
-            CSS.
+            I’m a Full Stack Developer with a frontend focus, passionate about
+            crafting fast, modern, and responsive web apps. I mainly work with
+            React, Next.js, and Tailwind CSS, building clean and scalable user
+            experiences.
           </p>
 
           <p>
-            I’m passionate about programming, and I thrive in collaborative,
-            fully remote environments where I can learn and grow alongside
-            teammates from around the world.
+            I love working in remote, collaborative environments where I can
+            grow with others and contribute to something meaningful. I’ve been
+            part of agile teams across different time zones and enjoy pairing
+            up, sharing knowledge, and iterating fast.
           </p>
 
           <p>
-            I’m patient, collaborative, committed, and always looking to
-            improve. I bring a growth mindset and a friendly attitude to every
-            project.
+            I’m detail-oriented, open to feedback, and always learning. My
+            mindset is: keep improving, stay humble, and build great things
+            together.
           </p>
-          <p>I’m fluent in both English and Spanish.</p>
           <p>
-            Feel free to explore my work in the Projects section. If something
-            catches your eye, don’t hesitate to reach out through the Contact
-            section.
+            Fluent in English and Spanish, I can adapt and communicate easily
+            with international teams.
+          </p>
+          <p>
+            Take a look at my [Projects](#). if anything stands out, feel free
+            to [reach out](#), I’d love to connect!
           </p>
         </div>
         <div className="text-lg md:text-xl">
-          <h3 className="text-2xl font-bold">Main Technologies</h3>
-          <div className="flex flex-wrap justify-between my-4">
+          <h3 className="text-center md:text-left text-2xl font-bold border-b border-black dark:border-white">Core Stack</h3>
+          <div className="flex flex-wrap justify-between my-2 items-center">
+            <h3 className="text-xl font-bold">Frontend:</h3>
             <div className="skill">
-              <Image className="w-12" src={JavaScriptimg} alt=" logo" />
+              <IoLogoJavascript color="yellow" size="52px" />
               JavaScript
             </div>
             <div className="skill">
-              <Image className="w-12" src={reactimg} alt=" logo" />
+              <FaReact color="black" size="52px" />
               React
             </div>
             <div className="skill">
-              <Image className="w-12" src={reactimg} alt=" logo" />
+              <RiNextjsFill color="black" size="52px" />
               Next.js
             </div>
             <div className="skill">
-              <Image className="w-12" src={reactimg} alt=" logo" />
+              <RiTailwindCssFill color="#004aad" size="52px" />
               TailwindCSS
             </div>
             <div className="skill">
-              <Image className="w-12" src={HTMLimg} alt=" logo" />
+              <FaHtml5 color="#FF6B00" size="52px" />
               HTML
             </div>
             <div className="skill">
-              <Image className="w-12" src={CSSimg} alt=" logo" />
+              <FaCss3Alt color="#00BFFF" size="52px" />
               CSS
             </div>
             <div className="skill">
-              <Image className="w-12" src={Githubimg} alt=" logo" />
-              Github
+              <BiLogoTypescript color="blue" size="52px" />
+              TypeScript
+            </div>
+            <div className="skill">
+              <SiRedux color="#8F00FF" size="52px" />
+              Redux
             </div>
           </div>
 
-          <h3 className="text-2xl font-bold">Secondary Technologies</h3>
-          <div className="flex flex-wrap justify-between my-4">
+          <div className="flex flex-wrap justify-between my-2 items-center">
+            <h3 className="text-xl font-bold">Backend:</h3>
             <div className="skill">
-              <Image className="w-12" src={Railsimg} alt="Rails logo" />
+              <RiNodejsLine color="green" size="52px" />
               Node.JS
             </div>
             <div className="skill">
-              <Image className="w-12" src={Rubyimg} alt="Ruby logo" />
+              <DiRuby color="red" size="52px" />
               Ruby
             </div>
             <div className="skill">
-              <Image className="w-12" src={Railsimg} alt="Rails logo" />
+              <SiRubyonrails color="red" size="52px" />
               Ruby on Rails
             </div>
+          </div>
+
+          <div className="flex flex-wrap justify-between my-2 items-center">
+            <h3 className="text-xl font-bold">Databases:</h3>
             <div className="skill">
-              <Image className="w-12" src={Postgresimg} alt=" logo" />
-              Postgres
+              <SiMongodb color="green" size="52px" />
+              MongoDB
             </div>
             <div className="skill">
-              <Image className="w-12" src={RSpecimg} alt=" logo" />
+              <SiMysql  color="#1E3A8A" size="56px" />
+              MySQL
+            </div>
+            <div className="skill">
+              <BiLogoPostgresql color="#1E3A8A" size="52px" />
+              PostgreSQL
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-between my-2 items-center">
+            <h3 className="text-xl font-bold">Testing/DevOps:</h3>
+            <div className="skill">
+              <FaGithubSquare color="black" size="52px" />
+              Github
+            </div>
+            <div className="skill">
+              <FaGitlab color="#FF6B00" size="52px" />
+              Gitlab
+            </div>
+            <div className="skill">
+              <SiJest color="orange" size="52px" />
+              Jest
+            </div>
+            <div className="skill">
+              <SiRubygems color="red" size="52px" />
               RSpec
             </div>
+          </div>
+
+          <div className="flex flex-wrap justify-between my-2 items-center">
+            <h3 className="text-xl font-bold">Others:</h3>
             <div className="skill">
-              <Image className="w-12" src={Gitlabimg} alt="skill logo" />
-              Gitlab
+              <SiDocker color="#00BFFF" size="52px" />
+              Docker
+            </div>
+            <div className="skill">
+              <SiFigma color="black" size="52px" />
+              Figma
+            </div>
+            <div className="skill">
+              <SiPostman color="orange" size="52px" />
+              Postman
+            </div>
+            <div className="skill">
+              <SiCplusplus color="#00BFFF" size="52px" />
+              C#
             </div>
           </div>
         </div>
