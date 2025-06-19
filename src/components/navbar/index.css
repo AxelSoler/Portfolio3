@@ -108,17 +108,4 @@
     gap: 8px;
     font-weight: 700;
   }
-
-  .navPcMenu a {
-    font-size: 18px;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+81,7db9e8+100 */
-    background: rgb(59, 103, 158); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 81%, rgba(125, 185, 232, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
 }
