@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
+import Link from "next/link";
 
 const About = () => (
   <section className="text-center flex flex-col items-center md:mt-16" id="about">
@@ -153,8 +154,8 @@ const About = () => (
             with international teams.
           </p>
           <p>
-            Take a look at my [Projects](#). if anything stands out, feel free
-            to [reach out](#), I’d love to connect!
+            Take a look at my <Link href="#projects" className="underline text-green-700 dark:text-green-300">projects</Link>. if anything stands out, feel free
+            to <Link href="#contact" className="underline text-green-700 dark:text-green-300">reach out</Link>, I’d love to connect!
           </p>
         </div>
         <div className="text-lg md:text-xl">
