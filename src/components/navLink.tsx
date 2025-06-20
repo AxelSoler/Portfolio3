@@ -1,17 +1,47 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-export default function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  const pathname = usePathname();
-  const isActive = pathname === href;
+const sections = ["#about", "#proyects", "#contact"]; // Ajustalo a tus secciones reales
+
+export default function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries.find((entry) => entry.isIntersecting);
+        if (visibleSection) {
+          setActiveSection(`#${visibleSection.target.id}`);
+        }
+      },
+      { threshold: 0.6 } // Ajustá este valor según lo que consideres "visible"
+    );
+
+    sections.forEach((id) => {
+      const el = document.querySelector(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const isActive = activeSection === href;
 
   return (
     <Link
       href={href}
       className={`px-4 py-2 rounded-md transition-colors text-xl ${
-        isActive ? "dark:text-green-400 text-green-700 font-bold" : "text-gray-500 hover:text-green-400"
+        isActive
+          ? "dark:text-green-400 text-green-700 font-bold"
+          : "text-gray-500 hover:text-green-400"
       }`}
     >
       {children}
