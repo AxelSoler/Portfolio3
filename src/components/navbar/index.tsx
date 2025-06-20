@@ -7,7 +7,7 @@ import profilePicture from "../../img/profile/profilepic.jpg";
 import "./index.css";
 import { useState } from "react";
 import ThemeToggle from "../ThemeToggle";
-import NavLink from "../navLink";
+import NavLink from "../NavLink";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="aboutLink"
-          href="/"
+          href="#about"
           onClick={toggleMobileMenu}
         >
           About
@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="projectsLink"
-          href="/projects"
+          href="#projects"
           onClick={toggleMobileMenu}
         >
           Projects
@@ -50,7 +50,7 @@ const Navbar = () => {
         <Link
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="contactLink"
-          href="/contact"
+          href="#contact"
           onClick={toggleMobileMenu}
         >
           Contact
@@ -73,9 +73,9 @@ const Navbar = () => {
           <p className="text-xl">Axel Soler</p>
           <p>Full Stack Developer</p>
         </div>
-        <NavLink href="/">ABOUT</NavLink>
-        <NavLink href="/projects">PROJECTS</NavLink>
-        <NavLink href="/contact">CONTACT</NavLink>
+        <NavLink href="#about">ABOUT</NavLink>
+        <NavLink href="#projects">PROJECTS</NavLink>
+        <NavLink href="#contact">CONTACT</NavLink>
         <ThemeToggle />
       </div>
     </nav>

@@ -1,5 +1,5 @@
 import { FiExternalLink } from 'react-icons/fi';
-import './Contact.css';
+import './index.css';
 
 const ContactForm = () => {
   return (

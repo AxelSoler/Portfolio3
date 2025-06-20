@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ImCross } from 'react-icons/im';
 import projects from './AllProjects';
 // import Project from './Project';
-import './Projects.css';
+import './index.css';
 
 const Projects = () => {
   // const addProjectsMenu = () => {

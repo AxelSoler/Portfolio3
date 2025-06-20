@@ -15,7 +15,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
 
 const About = () => (
-  <section className="text-center flex flex-col items-center" id="about">
+  <section className="text-center flex flex-col items-center md:mt-16" id="about">
     <h1 className="text-4xl font-bold">AXEL SOLER</h1>
     <h2 className="text-3xl font-bold">Full Stack Developer</h2>
     <div className="flex flex-col items-center lg:w-4/5">
@@ -199,7 +199,7 @@ const About = () => (
             <h3 className="text-xl font-bold">Backend:</h3>
             <div className="skill">
               <RiNodejsLine color="green" size="52px" />
-              Node.JS
+              Node.js
             </div>
             <div className="skill">
               <DiRuby color="red" size="52px" />
@@ -218,7 +218,7 @@ const About = () => (
               MongoDB
             </div>
             <div className="skill">
-              <SiMysql  color="#1E3A8A" size="56px" />
+              <SiMysql  color="#00758F" size="56px" />
               MySQL
             </div>
             <div className="skill">
@@ -231,7 +231,7 @@ const About = () => (
             <h3 className="text-xl font-bold">Testing/DevOps:</h3>
             <div className="skill">
               <FaGithubSquare color="black" size="52px" />
-              Github
+              GitHub
             </div>
             <div className="skill">
               <FaGitlab color="#FF6B00" size="52px" />
