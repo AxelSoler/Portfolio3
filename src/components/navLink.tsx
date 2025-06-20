@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const sections = ["#about", "#proyects", "#contact"]; // Ajustalo a tus secciones reales
+const sections = ["#about", "#proyects", "#contact"];
 
 export default function NavLink({
   href,
@@ -22,7 +22,7 @@ export default function NavLink({
           setActiveSection(`#${visibleSection.target.id}`);
         }
       },
-      { threshold: 0.6 } // Ajustá este valor según lo que consideres "visible"
+      { threshold: 0.6 }
     );
 
     sections.forEach((id) => {

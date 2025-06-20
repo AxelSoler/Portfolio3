@@ -1,5 +1,6 @@
 import { FiExternalLink } from 'react-icons/fi';
 import './index.css';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const ContactForm = () => {
   return (
@@ -56,6 +57,7 @@ const ContactForm = () => {
           <FiExternalLink size="20px" color="#ff2441" />
         </a>
       </p>
+      <SocialLinks />
     </form>
   );
 };

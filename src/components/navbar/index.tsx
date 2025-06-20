@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar backdrop-blur-xs bg-white/50 dark:bg-zinc-900/60 shadow-sm transition-colors duration-300 ease-in-out">
       <ul
         className={`navMobileMenu md:hidden ${
           isOpen ? "flex" : "hidden"
