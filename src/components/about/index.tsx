@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const About = () => (
   <section className="text-center flex flex-col items-center md:mt-16" id="about">
-    <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-500/30 dark:bg-black/60">
+    <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-600/30 dark:bg-black/60">
       <div>
         <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
         <h2 className="text-lg md:text-3xl font-bold">Full Stack Developer</h2>
@@ -31,7 +31,7 @@ const About = () => (
     </div>
     <div className="flex flex-col items-center md:w-4/5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 text-left text-base md:text-lg ">
-        <div className="space-y-4 bg-gray-500/30 dark:bg-black/60 p-4 rounded-2xl">
+        <div className="space-y-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
           <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">About Me</h3>
           <p>
             I’m a Full Stack Developer with a frontend focus, passionate about
@@ -61,7 +61,7 @@ const About = () => (
             to <Link href="#contact" className="underline text-blue-700 dark:text-green-300">reach out</Link>, I’d love to connect!
           </p>
         </div>
-        <div className="bg-gray-500/30 dark:bg-black/60 p-4 rounded-2xl">
+        <div className="bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
           <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">Core Stack</h3>
           <div className="flex flex-wrap justify-between my-2 items-center">
             <h4 className="font-bold">Frontend:</h4>
