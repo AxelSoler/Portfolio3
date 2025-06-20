@@ -17,119 +17,22 @@ import Link from "next/link";
 
 const About = () => (
   <section className="text-center flex flex-col items-center md:mt-16" id="about">
-    <h1 className="text-4xl font-bold">AXEL SOLER</h1>
-    <h2 className="text-3xl font-bold">Full Stack Developer</h2>
-    <div className="flex flex-col items-center lg:w-4/5">
+    <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-500/30 dark:bg-black/60">
+      <div>
+        <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
+        <h2 className="text-lg md:text-3xl font-bold">Full Stack Developer</h2>
+        <h2 className="text-lg md:text-3xl">React Specialist</h2>
+      </div>
       <Image
-        className="rounded-full w-60 border-4 border-[#4294ff]"
+        className="rounded-full w-28 h-28 md:w-40 md:h-40 border-4 border-[#4294ff]"
         src={profilePicture}
         alt="Axel Soler"
       />
-      {/* <div className="h-28 w-full mt-4">
-        <div className="marquee">
-          <div className="marqueeblock">
-            <ul className="ulmarquee">
-              <li>
-                <Image className="skill" src={HTMLimg} alt="skill logo" />
-                HTML
-              </li>
-              <li>
-                <Image className="skill" src={CSSimg} alt="skill logo" />
-                CSS
-              </li>
-              <li>
-                <Image className="skill" src={JavaScriptimg} alt="skill logo" />
-                JavaScript
-              </li>
-              <li>
-                <Image className="skill" src={reactimg} alt="skill logo" />
-                React
-              </li>
-              <li>
-                <Image className="skill" src={Rubyimg} alt="skill logo" />
-                Ruby
-              </li>
-              <li>
-                <Image
-                  className="skill railsimg"
-                  src={Railsimg}
-                  alt="skill logo"
-                />
-                Rails
-              </li>
-              <li>
-                <Image className="skill" src={Postgresimg} alt="skill logo" />
-                Postgres
-              </li>
-              <li>
-                <Image className="skill" src={RSpecimg} alt="skill logo" />
-                RSpec
-              </li>
-              <li>
-                <Image className="skill" src={Githubimg} alt="skill logo" />
-                Github
-              </li>
-              <li>
-                <Image className="skill" src={Gitlabimg} alt="skill logo" />
-                Gitlab
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="marquee">
-          <div className="marqueeblock marqueeblock2">
-            <ul className="ulmarquee">
-              <li>
-                <Image className="skill" src={HTMLimg} alt="skill logo" />
-                HTML
-              </li>
-              <li>
-                <Image className="skill" src={CSSimg} alt="skill logo" />
-                CSS
-              </li>
-              <li>
-                <Image className="skill" src={JavaScriptimg} alt="skill logo" />
-                JavaScript
-              </li>
-              <li>
-                <Image className="skill" src={reactimg} alt="skill logo" />
-                React
-              </li>
-              <li>
-                <Image className="skill" src={Rubyimg} alt="skill logo" />
-                Ruby
-              </li>
-              <li>
-                <Image
-                  className="skill railsimg"
-                  src={Railsimg}
-                  alt="skill logo"
-                />
-                Rails
-              </li>
-              <li>
-                <Image className="skill" src={Postgresimg} alt="skill logo" />
-                Postgres
-              </li>
-              <li>
-                <Image className="skill" src={RSpecimg} alt="skill logo" />
-                RSpec
-              </li>
-              <li>
-                <Image className="skill" src={Githubimg} alt="skill logo" />
-                Github
-              </li>
-              <li>
-                <Image className="skill" src={Gitlabimg} alt="skill logo" />
-                Gitlab
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-        <div className="text-center md:text-left text-lg md:text-xl space-y-4">
-          <h3 className="text-2xl font-bold border-b border-black dark:border-white">About Me</h3>
+    </div>
+    <div className="flex flex-col items-center md:w-4/5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 text-left text-base md:text-lg ">
+        <div className="space-y-4 bg-gray-500/30 dark:bg-black/60 p-4 rounded-2xl">
+          <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">About Me</h3>
           <p>
             I’m a Full Stack Developer with a frontend focus, passionate about
             crafting fast, modern, and responsive web apps. I mainly work with
@@ -154,20 +57,20 @@ const About = () => (
             with international teams.
           </p>
           <p>
-            Take a look at my <Link href="#projects" className="underline text-green-700 dark:text-green-300">projects</Link>. if anything stands out, feel free
-            to <Link href="#contact" className="underline text-green-700 dark:text-green-300">reach out</Link>, I’d love to connect!
+            Take a look at my <Link href="#projects" className="underline text-blue-700 dark:text-green-300">projects</Link>. if anything stands out, feel free
+            to <Link href="#contact" className="underline text-blue-700 dark:text-green-300">reach out</Link>, I’d love to connect!
           </p>
         </div>
-        <div className="text-lg md:text-xl">
-          <h3 className="text-center md:text-left text-2xl font-bold border-b border-black dark:border-white">Core Stack</h3>
+        <div className="bg-gray-500/30 dark:bg-black/60 p-4 rounded-2xl">
+          <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">Core Stack</h3>
           <div className="flex flex-wrap justify-between my-2 items-center">
-            <h3 className="text-xl font-bold">Frontend:</h3>
+            <h4 className="font-bold">Frontend:</h4>
             <div className="skill">
               <IoLogoJavascript color="yellow" size="52px" />
               JavaScript
             </div>
             <div className="skill">
-              <FaReact color="black" size="52px" />
+              <FaReact color="#00BFFF" size="52px" />
               React
             </div>
             <div className="skill">
@@ -197,7 +100,7 @@ const About = () => (
           </div>
 
           <div className="flex flex-wrap justify-between my-2 items-center">
-            <h3 className="text-xl font-bold">Backend:</h3>
+            <h4 className="font-bold">Backend:</h4>
             <div className="skill">
               <RiNodejsLine color="green" size="52px" />
               Node.js
@@ -213,7 +116,7 @@ const About = () => (
           </div>
 
           <div className="flex flex-wrap justify-between my-2 items-center">
-            <h3 className="text-xl font-bold">Databases:</h3>
+            <h4 className="font-bold">Databases:</h4>
             <div className="skill">
               <SiMongodb color="green" size="52px" />
               MongoDB
@@ -229,7 +132,7 @@ const About = () => (
           </div>
 
           <div className="flex flex-wrap justify-between my-2 items-center">
-            <h3 className="text-xl font-bold">Testing/DevOps:</h3>
+            <h4 className="font-bold">Testing/DevOps:</h4>
             <div className="skill">
               <FaGithubSquare color="black" size="52px" />
               GitHub
@@ -249,7 +152,7 @@ const About = () => (
           </div>
 
           <div className="flex flex-wrap justify-between my-2 items-center">
-            <h3 className="text-xl font-bold">Others:</h3>
+            <h4 className="font-bold">Others:</h4>
             <div className="skill">
               <SiDocker color="#00BFFF" size="52px" />
               Docker
