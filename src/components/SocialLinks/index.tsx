@@ -1,10 +1,10 @@
-import './SocialLinks.css';
 import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaAngellist } from 'react-icons/fa';
+import './index.css';
 
 const SocialLinks = () => (
   <div className="socialMedia">
-    <ul className="ulSocial">
+    <ul className="ulSocial bg-[#004aad] dark:bg-white">
       <li className="social">
         <a
           href="https://github.com/AxelSoler"
@@ -12,7 +12,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Github"
         >
-          <BsGithub color="#004aad" size="28px" />
+          <BsGithub size="28px" className='text-white dark:text-[#004aad]' />
         </a>
       </li>
       <li className="social">
@@ -22,7 +22,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <BsLinkedin color="#004aad" size="28px" />
+          <BsLinkedin size="28px" className='text-white dark:text-[#004aad]' />
         </a>
       </li>
       <li className="social">
@@ -32,7 +32,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Angellist"
         >
-          <FaAngellist color="#004aad" size="28px" />
+          <FaAngellist size="28px" className='text-white dark:text-[#004aad]' />
         </a>
       </li>
       <li className="social">
@@ -42,7 +42,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Twitter"
         >
-          <BsTwitter color="#004aad" size="28px" />
+          <BsTwitter size="28px" className='text-white dark:text-[#004aad]' />
         </a>
       </li>
     </ul>

@@ -1,53 +1,8 @@
-.submitedContainer {
-  color: #fff;
-  font-family: roboto, sans-serif;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10%;
-}
-
-.thanksMessage {
-  padding-top: 48px;
-  padding-bottom: 2px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid #fff;
-  font-size: 18px;
-}
-
-.contactLink {
-  margin-top: 24px;
-  color: #fff;
-  background-color: #004aad;
-  border-radius: 16px;
-  padding: 12px 24px;
-  text-decoration: none;
-}
-
-.contactForm {
-  width: 85%;
-  padding-top: 24px;
-  margin: 0 auto;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-size: 28px;
-  margin: 6px auto 6px auto;
-  padding: 12px 0;
-  width: 80%;
-  text-shadow: 4px 4px blue;
-}
-
 .labelInput {
   display: flex;
   flex-direction: column;
   font-size: 22px;
+  font-weight: 600;
   margin-top: 10px;
   text-align: left;
   width: 80%;
@@ -58,14 +13,14 @@
   margin: 8px 0;
   border: 2px solid #004aad;
   border-radius: 8px;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 2px 2px 2px black;
 }
 
 #submitButton {
   margin: 8px 0;
   color: #fff;
   background-color: #004aad;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 2px 2px 2px black;
   border: 2px solid #000;
   border-radius: 16px;
   padding: 12px 24px;
@@ -84,29 +39,6 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .thanksMessage {
-    padding-top: 64px;
-    padding-bottom: 4px;
-    margin-bottom: 48px;
-    border-bottom: 2px solid #fff;
-    font-size: 28px;
-  }
-
-  .contactForm {
-    width: 60%;
-    margin: 0 auto;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 48px;
-    text-shadow: 4px 4px blue;
-  }
-
   .input {
     padding: 8px 12px;
     font-size: 22px;
@@ -115,7 +47,6 @@
 
   #submitButton {
     font-size: 20px;
-    border: 3px solid black;
   }
 
   #formspreeLink {
