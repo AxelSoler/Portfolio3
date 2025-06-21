@@ -1,7 +1,18 @@
 import profilePicture from "@/img/profile/profilepic.jpg";
 import Image from "next/image";
 import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
-import { SiRubyonrails, SiRubygems, SiCplusplus, SiRedux, SiJest, SiMongodb, SiMysql, SiDocker, SiFigma, SiPostman } from "react-icons/si";
+import {
+  SiRubyonrails,
+  SiRubygems,
+  SiCplusplus,
+  SiRedux,
+  SiJest,
+  SiMongodb,
+  SiMysql,
+  SiDocker,
+  SiFigma,
+  SiPostman
+} from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -16,7 +27,10 @@ import "./index.css";
 import Link from "next/link";
 
 const About = () => (
-  <section className="text-center flex flex-col items-center md:mt-16" id="about">
+  <section
+    className="text-center flex flex-col items-center md:mt-16"
+    id="about"
+  >
     <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-600/30 dark:bg-black/60">
       <div>
         <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
@@ -30,9 +44,11 @@ const About = () => (
       />
     </div>
     <div className="flex flex-col items-center md:w-4/5">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 text-left text-base md:text-lg ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 text-left text-sm md:text-lg">
         <div className="space-y-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
-          <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">About Me</h3>
+          <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">
+            About Me
+          </h3>
           <p>
             I’m a Full Stack Developer with a frontend focus, passionate about
             crafting fast, modern, and responsive web apps. I mainly work with
@@ -57,117 +73,146 @@ const About = () => (
             with international teams.
           </p>
           <p>
-            Take a look at my <Link href="#projects" className="underline text-blue-700 dark:text-green-300">projects</Link>. if anything stands out, feel free
-            to <Link href="#contact" className="underline text-blue-700 dark:text-green-300">reach out</Link>, I’d love to connect!
+            Take a look at my{" "}
+            <Link
+              href="#projects"
+              className="underline text-blue-700 dark:text-green-300"
+            >
+              projects
+            </Link>
+            . if anything stands out, feel free to{" "}
+            <Link
+              href="#contact"
+              className="underline text-blue-700 dark:text-green-300"
+            >
+              reach out
+            </Link>
+            , I’d love to connect!
           </p>
         </div>
-        <div className="bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
-          <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">Core Stack</h3>
-          <div className="flex flex-wrap justify-between my-2 items-center">
-            <h4 className="font-bold">Frontend:</h4>
-            <div className="skill">
-              <IoLogoJavascript color="yellow" size="52px" />
-              JavaScript
+        <div className="bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl grid">
+          <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">
+            Core Stack
+          </h3>
+          <div className="grid grid-cols-[1fr_3fr] py-4 gap-4">
+            <div className="flex items-center">
+              <h4 className="font-bold">Frontend:</h4>
             </div>
-            <div className="skill">
-              <FaReact color="#00BFFF" size="52px" />
-              React
+            <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+              <div className="skill">
+                <IoLogoJavascript
+                  color="yellow"
+                  className="text-4xl xl:text-5xl"
+                />
+                JavaScript
+              </div>
+              <div className="skill">
+                <FaReact
+                  color="#00BFFF"
+                  className="text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]"
+                />
+                React
+              </div>
+              <div className="skill">
+                <RiNextjsFill className="text-4xl xl:text-5xl text-black dark:text-white" />
+                Next.js
+              </div>
+              <div className="skill">
+                <BiLogoTypescript className="text-4xl xl:text-5xl text-blue-600 dark:text-blue-400" />
+                TypeScript
+              </div>
+              <div className="skill">
+                <FaHtml5 color="#FF6B00" className="text-4xl xl:text-5xl" />
+                HTML
+              </div>
+              <div className="skill">
+                <FaCss3Alt className="text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
+                CSS
+              </div>
+              <div className="skill">
+                <SiRedux color="#8F00FF" className="text-4xl xl:text-5xl" />
+                Redux
+              </div>
+              <div className="skill">
+                <RiTailwindCssFill className="text-4xl xl:text-5xl text-[#004aad] dark:text-blue-400" />
+                TailwindCSS
+              </div>
             </div>
-            <div className="skill">
-              <RiNextjsFill color="black" size="52px" />
-              Next.js
+            <div className="flex items-center">
+              <h4 className="font-bold">Backend:</h4>
             </div>
-            <div className="skill">
-              <RiTailwindCssFill color="#004aad" size="52px" />
-              TailwindCSS
+            <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+              <div className="skill">
+                <RiNodejsLine color="green" className="text-4xl xl:text-5xl" />
+                Node.js
+              </div>
+              <div className="skill">
+                <DiRuby color="red" className="text-4xl xl:text-5xl" />
+                Ruby
+              </div>
+              <div className="skill">
+                <SiRubyonrails color="red" className="text-4xl xl:text-5xl" />
+                Rails
+              </div>
             </div>
-            <div className="skill">
-              <FaHtml5 color="#FF6B00" size="52px" />
-              HTML
+            <div className="flex items-center">
+              <h4 className="font-bold">Databases:</h4>
             </div>
-            <div className="skill">
-              <FaCss3Alt color="#00BFFF" size="52px" />
-              CSS
+            <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+              <div className="skill">
+                <BiLogoPostgresql className="text-4xl xl:text-5xl text-[#1E3A8A] dark:text-blue-400" />
+                PostgreSQL
+              </div>
+              <div className="skill">
+                <SiMongodb color="green" className="text-4xl xl:text-5xl" />
+                MongoDB
+              </div>
+              <div className="skill">
+                <SiMysql className="text-4xl xl:text-5xl text-[#005366] dark:text-[#00758F]" />
+                MySQL
+              </div>
             </div>
-            <div className="skill">
-              <BiLogoTypescript color="blue" size="52px" />
-              TypeScript
+            <div className="flex items-center">
+              <h4 className="font-bold">Testing/DevOps:</h4>
             </div>
-            <div className="skill">
-              <SiRedux color="#8F00FF" size="52px" />
-              Redux
+            <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+              <div className="skill">
+                <FaGithubSquare className="text-4xl xl:text-5xl text-black dark:text-white" />
+                GitHub
+              </div>
+              <div className="skill">
+                <FaGitlab color="#FF6B00" className="text-4xl xl:text-5xl" />
+                Gitlab
+              </div>
+              <div className="skill">
+                <SiJest color="#FF6B00" className="text-4xl xl:text-5xl" />
+                Jest
+              </div>
+              <div className="skill">
+                <SiRubygems color="red" className="text-4xl xl:text-5xl" />
+                RSpec
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-wrap justify-between my-2 items-center">
-            <h4 className="font-bold">Backend:</h4>
-            <div className="skill">
-              <RiNodejsLine color="green" size="52px" />
-              Node.js
+            <div className="flex items-center">
+              <h4 className="font-bold">Others:</h4>
             </div>
-            <div className="skill">
-              <DiRuby color="red" size="52px" />
-              Ruby
-            </div>
-            <div className="skill">
-              <SiRubyonrails color="red" size="52px" />
-              Ruby on Rails
-            </div>
-          </div>
-
-          <div className="flex flex-wrap justify-between my-2 items-center">
-            <h4 className="font-bold">Databases:</h4>
-            <div className="skill">
-              <SiMongodb color="green" size="52px" />
-              MongoDB
-            </div>
-            <div className="skill">
-              <SiMysql  color="#00758F" size="56px" />
-              MySQL
-            </div>
-            <div className="skill">
-              <BiLogoPostgresql color="#1E3A8A" size="52px" />
-              PostgreSQL
-            </div>
-          </div>
-
-          <div className="flex flex-wrap justify-between my-2 items-center">
-            <h4 className="font-bold">Testing/DevOps:</h4>
-            <div className="skill">
-              <FaGithubSquare color="black" size="52px" />
-              GitHub
-            </div>
-            <div className="skill">
-              <FaGitlab color="#FF6B00" size="52px" />
-              Gitlab
-            </div>
-            <div className="skill">
-              <SiJest color="orange" size="52px" />
-              Jest
-            </div>
-            <div className="skill">
-              <SiRubygems color="red" size="52px" />
-              RSpec
-            </div>
-          </div>
-
-          <div className="flex flex-wrap justify-between my-2 items-center">
-            <h4 className="font-bold">Others:</h4>
-            <div className="skill">
-              <SiDocker color="#00BFFF" size="52px" />
-              Docker
-            </div>
-            <div className="skill">
-              <SiFigma color="black" size="52px" />
-              Figma
-            </div>
-            <div className="skill">
-              <SiPostman color="orange" size="52px" />
-              Postman
-            </div>
-            <div className="skill">
-              <SiCplusplus color="#00BFFF" size="52px" />
-              C#
+            <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+              <div className="skill">
+                <SiDocker className="text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
+                Docker
+              </div>
+              <div className="skill">
+                <SiFigma className="text-4xl xl:text-5xl text-black dark:text-white" />
+                Figma
+              </div>
+              <div className="skill">
+                <SiPostman color="#FF6B00" className="text-4xl xl:text-5xl" />
+                Postman
+              </div>
+              <div className="skill">
+                <SiCplusplus className="text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
+                C#
+              </div>
             </div>
           </div>
         </div>
