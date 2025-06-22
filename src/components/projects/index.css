@@ -19,11 +19,11 @@
   border: 2px solid #002a60;
   border-radius: 12px;
   margin: 0 12px;
-  height: 500px;
+  height: 570px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
@@ -41,7 +41,6 @@
   box-shadow: 2px 2px 2px #000;
   box-sizing: border-box;
   color: #fff;
-  cursor: pointer;
   display: inline-flex;
   font-family: system-ui, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
