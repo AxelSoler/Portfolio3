@@ -49,7 +49,7 @@ const Projects = () => {
         swipeable
         transitionDuration={500}
       >
-        {projects.map((project) => (
+        {projects.slice(0, 5).map((project) => (
           <Project key={project.name} project={project} />
         ))}
       </Carousel>
