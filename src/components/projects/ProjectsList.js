@@ -9,20 +9,21 @@ import mycroverseimg from '../../img/projects/Mycroverse2.0.png';
 const projects = [
   {
     name: 'YellowRooms',
-    description: 'Reserve your ideal Yellow Room here!!!',
+    description: 'A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience.',
     image: yellowroomsimg,
     technologies: [
       'JavaScript',
       'React',
+      'CSS',
       'Ruby',
-      'RoR',
+      'Rails',
     ],
     live: 'https://yellow-rooms.netlify.app/',
     repository: 'https://github.com/AxelSoler/YellowRooms-Front',
   },
   {
     name: 'Monster Hunter World',
-    description: 'Web application to analyze the information about all the monsters of Monster Hunter World.',
+    description: 'An interactive web application that provides detailed data and statistics on all monsters from the Monster Hunter World game. Users can filter, explore, and learn about each creature’s behavior and attributes.',
     image: monsterimg,
     technologies: [
       'CSS',
@@ -35,12 +36,12 @@ const projects = [
   },
   {
     name: 'Super Budget App',
-    description: 'Super Budget App is a mobile application where you can track all the transactions you have done',
+    description: 'A mobile-first budgeting app that helps users track their expenses and categorize transactions. Built with Ruby on Rails and tested with RSpec to ensure performance and reliability.',
     image: budgetimg,
     technologies: [
       'CSS',
       'Ruby',
-      'RoR',
+      'Rails',
       'RSpec',
     ],
     live: 'https://super-budget-app.fly.dev/',
@@ -48,7 +49,7 @@ const projects = [
   },
   {
     name: 'Space Travelers Hub',
-    description: 'Web application for a company that provides commercial and scientific space travel services.',
+    description: 'A space-themed web app where users can book missions and join rockets. It simulates a commercial space travel experience, integrating Redux for efficient state management.',
     image: spaceimg,
     technologies: [
       'CSS',
@@ -61,7 +62,7 @@ const projects = [
   },
   {
     name: 'Cocktail',
-    description: 'You can see the different Margaritas stored in an API, see their description and add a comment or leave a like.',
+    description: 'A dynamic interface to explore Margarita cocktail recipes using an external API. Users can view detailed descriptions, leave likes, and add comments to their favorite drinks.',
     image: cocktailimg,
     technologies: [
       'CSS',
@@ -73,7 +74,7 @@ const projects = [
   },
   {
     name: 'Sonic Leaderboard',
-    description: 'The Sonic leaderboard allows you to keep a record of scores submitted by different players.',
+    description: 'A real-time leaderboard application inspired by Sonic, where players can submit and view scores. Fully responsive and powered by asynchronous JavaScript and an external API.',
     image: sonicimg,
     technologies: [
       'CSS',
@@ -85,7 +86,7 @@ const projects = [
   },
   {
     name: 'Mycroverse-2.0',
-    description: 'A promoting page about my new course.',
+    description: 'A sleek and modern landing page promoting an educational program. Highlights the course benefits and encourages visitors to enroll through interactive design.',
     image: mycroverseimg,
     technologies: [
       'CSS',

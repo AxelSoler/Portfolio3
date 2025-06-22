@@ -1,5 +1,7 @@
 import Image from "next/image";
 import type { StaticImageData } from 'next/image';
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 type projectProps = {
   name: string;
@@ -29,7 +31,8 @@ const Project = (props: { project: projectProps }) => {
           rel="noopener noreferrer"
           className="projectLink"
         >
-          See live version
+          Live Site
+          <HiOutlineExternalLink />
         </a>
         <a
           href={project.repository}
@@ -37,7 +40,8 @@ const Project = (props: { project: projectProps }) => {
           rel="noopener noreferrer"
           className="projectLink"
         >
-          See Repository
+          View Code
+          <FaGithub />
         </a>
       </div>
     </div>

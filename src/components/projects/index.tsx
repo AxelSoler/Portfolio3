@@ -3,7 +3,7 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ImCross } from "react-icons/im";
-import projects from "./AllProjects";
+import projects from "./ProjectsList";
 import Project from "./Project";
 import "./index.css";
 import { useState } from "react";
