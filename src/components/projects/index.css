@@ -18,32 +18,13 @@
 .project {
   border: 2px solid #002a60;
   border-radius: 12px;
-  margin: 0 24px;
-  height: 400px;
+  margin: 0 12px;
+  height: 500px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#131313+0,1c1c1c+9,2b2b2b+24,111111+29,000000+33,2c2c2c+35,474747+61,666666+75,595959+88,4c4c4c+100 */
-  background: rgb(19, 19, 19); /* Old browsers */
-  background: -moz-linear-gradient(-45deg, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 29%, rgba(0, 0, 0, 1) 33%, rgba(44, 44, 44, 1) 35%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 29%, rgba(0, 0, 0, 1) 33%, rgba(44, 44, 44, 1) 35%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(19, 19, 19, 1) 0%, rgba(28, 28, 28, 1) 9%, rgba(43, 43, 43, 1) 24%, rgba(17, 17, 17, 1) 29%, rgba(0, 0, 0, 1) 33%, rgba(44, 44, 44, 1) 35%, rgba(71, 71, 71, 1) 61%, rgba(102, 102, 102, 1) 75%, rgba(89, 89, 89, 1) 88%, rgba(76, 76, 76, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-.ulTech {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.repoLinks {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .projectLink {
@@ -56,7 +37,7 @@
   background-clip: padding-box;
   border: 1px solid transparent;
   border-radius: 6px;
-  box-shadow: 5px 2px 2px #000;
+  box-shadow: 2px 2px 2px #000;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -93,10 +74,6 @@
   background-color: #002a60;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
-}
-
-.projectName {
-  font-size: 24px;
 }
 
 #ProjectsBtn {
@@ -231,13 +208,9 @@
 
 @media only screen and (min-width: 769px) {
   .project {
-    height: 550px;
+    height: 650px;
     border-radius: 18px;
     padding: 36px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .picture {
@@ -249,18 +222,6 @@
 
   .projectLink {
     font-size: 24px;
-  }
-
-  .ulTech {
-    font-size: 22px;
-  }
-
-  .projectName {
-    font-size: 28px;
-  }
-
-  .cardDescription {
-    font-size: 22px;
   }
 
   #ProjectsBtn {

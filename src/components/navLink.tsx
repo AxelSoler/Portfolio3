@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const sections = ["#about", "#proyects", "#contact"];
+const sections = ["#about", "#projects", "#contact"];
 
 export default function NavLink({
   href,
