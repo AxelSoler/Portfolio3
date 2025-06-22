@@ -20,7 +20,9 @@ import {
   FaReact,
   FaHtml5,
   FaCss3Alt,
-  FaGitlab
+  FaGitlab,
+  FaGoogleDrive,
+  FaDownload
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
@@ -45,7 +47,7 @@ const About = () => (
     </div>
     <div className="flex flex-col items-center md:w-4/5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 text-left text-sm md:text-lg">
-        <div className="space-y-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
+        <div className="flex flex-col gap-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
           <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">
             About Me
           </h3>
@@ -89,6 +91,26 @@ const About = () => (
             </Link>
             , I’d love to connect!
           </p>
+          <div className="flex justify-center items-center gap-4 mt-auto mb-1 md:mb-8">
+            <a
+              href="/AxelSolerResume.pdf"
+              download
+              className="px-2 md:px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition flex items-center gap-2"
+            >
+              Get My Resume
+              <FaDownload />
+            </a>
+            <p>or</p>
+            <a
+              href="https://drive.google.com/file/d/1Ful06pTzhNJO2ErFBoUAmNYZEsEeN1F2/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-2 md:px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition flex items-center gap-2"
+            >
+              Google Drive
+              <FaGoogleDrive />
+            </a>
+          </div>
         </div>
         <div className="bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl grid">
           <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">
