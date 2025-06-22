@@ -21,20 +21,20 @@ const Project = (props: { project: projectProps }) => {
       id={project.name}
       className="project text-md md:text-lg gap-2 bg-gray-600/30 dark:bg-black/60"
     >
-      <Image className="picture" src={project.image} alt={project.name} />
-      <h3 className="text-xl md:text-3xl mb-2">{project.name}</h3>
+      <Image className="picture object-contain" src={project.image} alt={project.name} />
+      <h3 className="text-xl md:text-3xl">{project.name}</h3>
       <p className="md:text-xl">{project.description}</p>
-      <p className="mr-auto">Company: {project.company}</p>
+      <p className="mr-auto mt-auto">Company: {project.company}</p>
       <p className="mr-auto">Role: {project.position}</p>
-      <p className="flex gap-2 mr-auto">
+      <div className="flex gap-2 mr-auto">
         Stack:
         <ul className="flex flex-wrap gap-2 justify-start">
           {project.technologies.map((technology: string) => (
             <li key={technology}>{technology}</li>
           ))}
         </ul>
-      </p>
-      <div className="flex justify-between items-center w-full mt-auto">
+      </div>
+      <div className="flex justify-between items-center w-full">
         {project.live === "private" ? (
           <span className="projectLink cursor-not-allowed opacity-50 flex items-center gap-1">
             Private

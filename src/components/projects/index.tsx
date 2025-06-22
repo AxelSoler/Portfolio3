@@ -13,11 +13,11 @@ const Projects = () => {
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1392 },
       items: 3
     },
     laptop: {
-      breakpoint: { max: 1024, min: 768 },
+      breakpoint: { max: 1392, min: 768 },
       items: 2
     },
     mobile: {
