@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowForward } from "react-icons/io";
 import profilePicture from "../../img/profile/profilepic.jpg";
 import "./index.css";
 import { useState } from "react";

@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 
 const sections = ["#about", "#projects", "#contact"];
 
-export default function NavLink({
+const NavLink = ({
   href,
-  children,
+  children
 }: {
   href: string;
   children: React.ReactNode;
-}) {
+}) => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -47,4 +47,6 @@ export default function NavLink({
       {children}
     </Link>
   );
-}
+};
+
+export default NavLink;
