@@ -45,7 +45,7 @@ const ContactForm = () => {
           placeholder="Enter text here"
         />
       </label>
-      <button id="submitButton" type="submit">
+      <button className="inline-block my-2 text-lg px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300" type="submit">
         Send Message
       </button>
       <p id="formspreeLink">

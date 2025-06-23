@@ -63,7 +63,7 @@ const Project = (props: { project: projectProps }) => {
             rel="noopener noreferrer"
             className="projectLink cursor-pointer flex items-center gap-1"
           >
-            Live Site
+            Repository
             <FaGithub />
           </a>
         )}

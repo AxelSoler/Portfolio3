@@ -1,17 +1,12 @@
 "use client";
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { ImCross } from "react-icons/im";
 import projects from "./ProjectsList";
 import Project from "./Project";
 import "./index.css";
-import { useState } from "react";
-import NavLink from "../NavLink";
+import Link from "next/link";
 
 const Projects = () => {
-  const [showProjectsMenu, setShowProjectsMenu] = useState(false);
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1392 },
@@ -28,8 +23,8 @@ const Projects = () => {
   };
   return (
     <section className="pt-6 w-full md:w-4/5 mx-auto " id="projects">
-      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline md:mt-16 mb-10 text-center">
-        LAST PROJECTS
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline md:mt-16 mb-10 text-center">
+        What I Have Been Working On
       </h2>
       <Carousel
         arrows={true}
@@ -54,55 +49,14 @@ const Projects = () => {
           <Project key={project.name} project={project} />
         ))}
       </Carousel>
-      <NavLink href="/projects">See All Projects</NavLink>
-      <button
-        onClick={() => setShowProjectsMenu(true)}
-        id="ProjectsBtn"
-        type="button"
-      >
-        See All Projects
-      </button>
-      {showProjectsMenu && (
-        <div className="projectsMenu">
-          <button
-            onClick={() => setShowProjectsMenu(false)}
-            className="removeProjectsBtn"
-            type="button"
-          >
-            <ImCross size="20px" color="#fff" />
-          </button>
-          <h2>PROJECTS LIST</h2>
-          {projects.map((project) => (
-            <li key={project.name} className="projectItem">
-              <Image className="imageItem object-contain" src={project.image} alt="project" />
-              <div className="itemContainer">
-                <div className="itemTitle">
-                  <h3>{project.name}</h3>
-                  <p className="itemDesc">{project.description}</p>
-                </div>
-                <div className="itemLinks">
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="itemLink"
-                  >
-                    Live Version
-                  </a>
-                  <a
-                    href={project.repository}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="itemLink"
-                  >
-                    Repository
-                  </a>
-                </div>
-              </div>
-            </li>
-          ))}
-        </div>
-      )}
+      <div className="w-full flex justify-center">
+        <Link
+          href="/projects"
+          className="inline-block mt-8 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
+        >
+          See All Projects
+        </Link>
+      </div>
     </section>
   );
 };
