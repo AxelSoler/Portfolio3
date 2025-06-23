@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <section className="pt-6 w-full md:w-4/5 mx-auto " id="projects">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline md:mt-16 mb-10 text-center">
-        What I Have Been Working On
+        Latest Creations
       </h2>
       <Carousel
         arrows={true}
