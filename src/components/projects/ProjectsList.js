@@ -13,7 +13,7 @@ import ghs from "../../img/projects/ghs.png";
 const projects = [
   {
     name: "GHS",
-    description: "A web app for GH school to manage football players’ profiles and track their college offers in an organized and accessible way.",
+    description: "A web app for Grapevine High School to manage football players’ profiles and track their college offers in an organized and accessible way.",
     longDescription:
       "This web application was developed for a school to manage and showcase its football players and their college offers. Coaches and staff can easily add, update, and view player profiles, including personal information, athletic stats, highlight videos, and academic achievements. The platform also tracks college offers received by each player, providing a clear and organized view of their recruitment progress. This tool enhances visibility for student-athletes and simplifies communication between the school and interested universities.",
     image: ghs,
