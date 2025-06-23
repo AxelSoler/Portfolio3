@@ -66,9 +66,9 @@ const About = () => (
           </p>
 
           <p>
-            I’m detail-oriented, open to feedback, and always learning. My
-            mindset is: keep improving, stay humble, and build great things
-            together.
+            I’m detail-oriented, receptive to feedback, and constantly learning.
+            I believe in continuous improvement, staying humble, and building
+            meaningful things together.
           </p>
           <p>
             Fluent in English and Spanish, I can adapt and communicate easily
@@ -144,7 +144,10 @@ const About = () => (
                 TypeScript
               </div>
               <div className="skill">
-                <FaHtml5 color="#FF6B00" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <FaHtml5
+                  color="#FF6B00"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 HTML
               </div>
               <div className="skill">
@@ -152,7 +155,10 @@ const About = () => (
                 CSS
               </div>
               <div className="skill">
-                <SiRedux color="#8F00FF" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiRedux
+                  color="#8F00FF"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Redux
               </div>
               <div className="skill">
@@ -165,15 +171,24 @@ const About = () => (
             </div>
             <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
               <div className="skill">
-                <RiNodejsLine color="green" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <RiNodejsLine
+                  color="green"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Node.js
               </div>
               <div className="skill">
-                <DiRuby color="red" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <DiRuby
+                  color="red"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Ruby
               </div>
               <div className="skill">
-                <SiRubyonrails color="red" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiRubyonrails
+                  color="red"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Rails
               </div>
             </div>
@@ -182,7 +197,10 @@ const About = () => (
             </div>
             <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
               <div className="skill">
-                <SiMongodb color="green" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiMongodb
+                  color="green"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 MongoDB
               </div>
               <div className="skill">
@@ -203,15 +221,24 @@ const About = () => (
                 GitHub
               </div>
               <div className="skill">
-                <FaGitlab color="#FF6B00" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <FaGitlab
+                  color="#FF6B00"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Gitlab
               </div>
               <div className="skill">
-                <SiJest color="#FF6B00" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiJest
+                  color="#FF6B00"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Jest
               </div>
               <div className="skill">
-                <SiRubygems color="red" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiRubygems
+                  color="red"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 RSpec
               </div>
             </div>
@@ -228,7 +255,10 @@ const About = () => (
                 Figma
               </div>
               <div className="skill">
-                <SiPostman color="#FF6B00" className="text-2xl lg:text-4xl xl:text-5xl" />
+                <SiPostman
+                  color="#FF6B00"
+                  className="text-2xl lg:text-4xl xl:text-5xl"
+                />
                 Postman
               </div>
               <div className="skill">
