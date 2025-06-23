@@ -7,6 +7,7 @@ import projects from "./ProjectsList";
 import Project from "./Project";
 import "./index.css";
 import { useState } from "react";
+import NavLink from "../NavLink";
 
 const Projects = () => {
   const [showProjectsMenu, setShowProjectsMenu] = useState(false);
@@ -27,7 +28,7 @@ const Projects = () => {
   };
   return (
     <section className="pt-6 w-full md:w-4/5 mx-auto " id="projects">
-      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline mt-20 mb-10 text-center">
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline md:mt-16 mb-10 text-center">
         LAST PROJECTS
       </h2>
       <Carousel
@@ -53,9 +54,9 @@ const Projects = () => {
           <Project key={project.name} project={project} />
         ))}
       </Carousel>
+      <NavLink href="/projects">See All Projects</NavLink>
       <button
         onClick={() => setShowProjectsMenu(true)}
-        onKeyDown={() => setShowProjectsMenu(true)}
         id="ProjectsBtn"
         type="button"
       >
@@ -65,7 +66,6 @@ const Projects = () => {
         <div className="projectsMenu">
           <button
             onClick={() => setShowProjectsMenu(false)}
-            onKeyDown={() => setShowProjectsMenu(false)}
             className="removeProjectsBtn"
             type="button"
           >
@@ -74,7 +74,7 @@ const Projects = () => {
           <h2>PROJECTS LIST</h2>
           {projects.map((project) => (
             <li key={project.name} className="projectItem">
-              <Image className="imageItem" src={project.image} alt="project" />
+              <Image className="imageItem object-contain" src={project.image} alt="project" />
               <div className="itemContainer">
                 <div className="itemTitle">
                   <h3>{project.name}</h3>

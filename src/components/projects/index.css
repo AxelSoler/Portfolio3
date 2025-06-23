@@ -90,10 +90,6 @@
 }
 
 .projectsMenu {
-  display: none;
-}
-
-.projectsMenu.active {
   z-index: 1006;
   position: fixed;
   top: 0;
@@ -124,7 +120,8 @@
 }
 
 .imageItem {
-  width: 96px;
+  width: 256px;
+  height: 200px;
   border-radius: 4px;
 }
 
@@ -237,7 +234,7 @@
     cursor: pointer;
   }
 
-  .projectsMenu.active {
+  .projectsMenu {
     overflow-y: auto;
   }
 
@@ -245,10 +242,6 @@
     margin-top: 12px;
     padding: 12px;
     font-size: 18px;
-  }
-
-  .imageItem {
-    width: 256px;
   }
 
   .removeProjectsBtn {
