@@ -1,25 +1,33 @@
-'use client'
+"use client";
 
-import { useTheme } from 'next-themes';
+import { useEffect } from "react";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  }
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    // Set default to dark if theme is not set yet
+    if (!theme || theme === "system") {
+      setTheme("dark");
+    }
+  }, [theme, setTheme]);
 
   return (
     <>
-      <div className='flex justify-between gap-2 w-full md:hidden'>
+      <div className="flex justify-between gap-2 w-full md:hidden">
         <button
-          onClick={() => setTheme('light')}
+          onClick={() => setTheme("light")}
           className="w-full p-2 rounded bg-gray-200 text-black dark:bg-gray-700 transition-colors duration-500 ease-in-out"
         >
           🌞 Light
         </button>
         <button
-          onClick={() => setTheme('dark')}
+          onClick={() => setTheme("dark")}
           className="w-full p-2 rounded text-slate-300 dark:bg-gray-900 dark:text-white bg-gray-500 transition-colors duration-500 ease-in-out"
         >
           🌙 Dark
@@ -29,8 +37,8 @@ export default function ThemeToggle() {
         onClick={toggleTheme}
         className="hidden md:block p-2 rounded bg-gray-200 dark:bg-gray-800 text-black dark:text-white cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-500 ease-in-out"
       >
-        {theme === 'dark' ? '🌙 Dark' : '🌞 Light'}
+        {theme === "dark" ? "🌙 Dark" : "🌞 Light"}
       </button>
     </>
-  )
+  );
 }
