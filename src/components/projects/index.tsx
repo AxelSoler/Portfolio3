@@ -23,18 +23,16 @@ const Projects = () => {
         const isEven = index % 2 === 0;
 
         return (
-          <Project
-            key={project.name}
-            project={project}
-            isEven={isEven}
-          ></Project>
+          <div key={project.name} className="fade-in-up">
+            <Project project={project} isEven={isEven} />
+          </div>
         );
       })}
 
       <div className="flex justify-center w-full">
         <button
           onClick={handleLoadMore}
-          className={`mt-4 px-6 w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-full shadow-lg transform transition duration-300 
+          className={`mt-4 px-6 w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 
           ${
             visibleCount >= projects.length
               ? "opacity-50 cursor-not-allowed"
@@ -43,7 +41,9 @@ const Projects = () => {
           disabled={visibleCount >= projects.length}
         >
           <FiChevronDown className="inline mr-2 text-2xl" />
-          Load More Projects
+          {visibleCount >= projects.length
+            ? "All projects loaded"
+            : "Load More Projects"}
           <FiChevronDown className="inline ml-2 text-2xl" />
         </button>
       </div>
