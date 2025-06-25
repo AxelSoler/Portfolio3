@@ -4,7 +4,7 @@ import './index.css';
 
 const SocialLinks = () => (
   <div className="socialMedia">
-    <ul className="ulSocial bg-[#004aad] dark:bg-white">
+    <ul className="ulSocial bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-[#fffefe] dark:to-[#cecece]">
       <li className="social">
         <a
           href="https://github.com/AxelSoler"

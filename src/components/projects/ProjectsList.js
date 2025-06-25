@@ -1,9 +1,5 @@
 import yellowroomsimg from "../../img/projects/YellowRooms.png";
 import monsterimg from "../../img/projects/MonsterHunterWorld.png";
-import budgetimg from "../../img/projects/SuperBudgetApp.jpg";
-import spaceimg from "../../img/projects/SpaceTravelersHub.png";
-import cocktailimg from "../../img/projects/Cocktail.png";
-import sonicimg from "../../img/projects/SonicLeaderboard.png";
 import mycroverseimg from "../../img/projects/Mycroverse2.0.png";
 import afi from "../../img/projects/afi.png";
 import rocketbooking from "../../img/projects/rp1.png";
@@ -13,7 +9,7 @@ import ghs from "../../img/projects/ghs.png";
 const projects = [
   {
     name: "GHS",
-    description: "A web app for GH school to manage football players’ profiles and track their college offers in an organized and accessible way.",
+    description: "A web app for Grapevine High School to manage football players’ profiles and track their college offers in an organized and accessible way.",
     longDescription:
       "This web application was developed for a school to manage and showcase its football players and their college offers. Coaches and staff can easily add, update, and view player profiles, including personal information, athletic stats, highlight videos, and academic achievements. The platform also tracks college offers received by each player, providing a clear and organized view of their recruitment progress. This tool enhances visibility for student-athletes and simplifies communication between the school and interested universities.",
     image: ghs,
@@ -87,7 +83,7 @@ const projects = [
   {
     name: "YellowRooms",
     description:
-      "A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience.",
+      "Final project for the Microverse program. A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience.",
     image: yellowroomsimg,
     technologies: ["JavaScript", "React", "CSS", "Ruby", "Rails"],
     live: "https://yellow-rooms.netlify.app/",
@@ -104,50 +100,6 @@ const projects = [
     live: "https://classy-banoffee-260a19.netlify.app/",
     repository: "https://github.com/AxelSoler/monster-hunter-world",
     position: "Full Stack Developer",
-    company: "Microverse"
-  },
-  {
-    name: "Super Budget App",
-    description:
-      "A mobile-first budgeting app that helps users track their expenses and categorize transactions. Built with Ruby on Rails and tested with RSpec to ensure performance and reliability.",
-    image: budgetimg,
-    technologies: ["CSS", "Ruby", "Rails", "RSpec"],
-    live: "private",
-    repository: "https://github.com/AxelSoler/super-budget-app",
-    position: "Full Stack Developer",
-    company: "Microverse"
-  },
-  {
-    name: "Space Travelers Hub",
-    description:
-      "A space-themed web app where users can book missions and join rockets. It simulates a commercial space travel experience, integrating Redux for efficient state management.",
-    image: spaceimg,
-    technologies: ["CSS", "JavaScript", "React", "Redux"],
-    live: "https://spiffy-marigold-45bbb6.netlify.app/",
-    repository: "https://github.com/AxelSoler/space-travelers-hub",
-    position: "Front End Developer",
-    company: "Microverse"
-  },
-  {
-    name: "Cocktail",
-    description:
-      "A dynamic interface to explore Margarita cocktail recipes using an external API. Users can view detailed descriptions, leave likes, and add comments to their favorite drinks.",
-    image: cocktailimg,
-    technologies: ["CSS", "HTML", "JavaScript"],
-    live: "https://axelsoler.github.io/JavaScript-capstone-project/dist/",
-    repository: "https://github.com/AxelSoler/JavaScript-capstone-project",
-    position: "Front End Developer",
-    company: "Microverse"
-  },
-  {
-    name: "Sonic Leaderboard",
-    description:
-      "A real-time leaderboard application inspired by Sonic, where players can submit and view scores. Fully responsive and powered by asynchronous JavaScript and an external API.",
-    image: sonicimg,
-    technologies: ["CSS", "HTML", "JavaScript"],
-    live: "https://axelsoler.github.io/Leaderboard/dist/",
-    repository: "https://github.com/AxelSoler/Leaderboard",
-    position: "Front End Developer",
     company: "Microverse"
   },
   {

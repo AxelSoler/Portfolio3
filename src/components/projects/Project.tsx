@@ -1,11 +1,10 @@
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
-import { FaGithub } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
 
 type projectProps = {
   name: string;
   description: string;
+  longDescription?: string;
   image: StaticImageData;
   live: string;
   repository: string;
@@ -14,59 +13,66 @@ type projectProps = {
   company: string;
 };
 
-const Project = (props: { project: projectProps }) => {
-  const { project } = props;
+const Project = ({
+  project,
+  isEven
+}: {
+  project: projectProps;
+  isEven: boolean;
+}) => {
   return (
     <div
       id={project.name}
-      className="project text-md md:text-lg gap-2 bg-gray-600/30 dark:bg-black/60"
+      className={`bg-gray-600/30 dark:bg-black/60 flex flex-col xl:flex-row items-center p-4 md:p-6 lg:p-8 rounded ${
+        isEven ? "xl:flex-row" : "xl:flex-row-reverse"
+      } gap-6`}
     >
-      <Image className="picture object-contain" src={project.image} alt={project.name} />
-      <h3 className="text-xl md:text-3xl">{project.name}</h3>
-      <p className="md:text-xl">{project.description}</p>
-      <p className="mr-auto mt-auto">Company: {project.company}</p>
-      <p className="mr-auto">Role: {project.position}</p>
-      <div className="flex gap-2 mr-auto">
-        Stack:
-        <ul className="flex flex-wrap gap-2 justify-start">
-          {project.technologies.map((technology: string) => (
-            <li key={technology}>{technology}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="flex justify-between items-center w-full">
-        {project.live === "private" ? (
-          <span className="projectLink cursor-not-allowed opacity-50 flex items-center gap-1">
-            Private
-            <HiOutlineExternalLink />
-          </span>
-        ) : (
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectLink cursor-pointer flex items-center gap-1"
-          >
-            Live Site
-            <HiOutlineExternalLink />
-          </a>
-        )}
-        {project.repository === "private" ? (
-          <span className="projectLink cursor-not-allowed opacity-50 flex items-center gap-1">
-            Private
-            <FaGithub />
-          </span>
-        ) : (
-          <a
-            href={project.repository}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectLink cursor-pointer flex items-center gap-1"
-          >
-            Repository
-            <FaGithub />
-          </a>
-        )}
+      <Image
+        src={project.image}
+        alt={project.name}
+        className="w-[400px] h-[250px] object-contain rounded-xl"
+      />
+      <div className="flex flex-col gap-4">
+        <h3 className="underline font-bold lg:text-xl">{project.name}</h3>
+        <p className="md:text-lg">
+          {project.longDescription
+            ? project.longDescription
+            : project.description}
+        </p>
+        {/* <div className="flex justify-evenly w-full mt-auto">
+          {project.live === "private" ? (
+            <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-not-allowed opacity-50 flex items-center gap-1">
+              Private
+              <HiOutlineExternalLink />
+            </span>
+          ) : (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-pointer flex items-center gap-1"
+            >
+              Live Site
+              <HiOutlineExternalLink />
+            </a>
+          )}
+          {project.repository === "private" ? (
+            <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-not-allowed opacity-50 flex items-center gap-1">
+              Private
+              <FaGithub />
+            </span>
+          ) : (
+            <a
+              href={project.repository}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-pointer flex items-center gap-1"
+            >
+              Repository
+              <FaGithub />
+            </a>
+          )}
+        </div> */}
       </div>
     </div>
   );
