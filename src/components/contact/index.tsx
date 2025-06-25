@@ -7,8 +7,52 @@ import "./index.css";
 const ContactForm = () => {
   const [status, setStatus] = useState("");
 
+  const [errors, setErrors] = useState<{
+    username?: string;
+    userEmail?: string;
+    message?: string;
+  }>({});
+  const [formValues, setFormValues] = useState({
+    username: "",
+    userEmail: "",
+    message: ""
+  });
+
+  const validate = () => {
+    const newErrors: typeof errors = {};
+
+    if (!formValues.username.trim()) {
+      newErrors.username = "Name is required";
+    } else if (formValues.username.length < 2) {
+      newErrors.username = "Name must be at least 2 characters";
+    }
+
+    if (!formValues.userEmail.trim()) {
+      newErrors.userEmail = "Email is required";
+    } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(formValues.userEmail)) {
+      newErrors.userEmail = "Invalid email format";
+    }
+
+    if (!formValues.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (formValues.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!validate()) return;
     const form = e.currentTarget;
     setStatus("loading");
 
@@ -27,7 +71,8 @@ const ContactForm = () => {
 
     if (response.ok) {
       setStatus("success");
-      form.reset();
+      setFormValues({ username: "", userEmail: "", message: "" });
+      setErrors({});
     } else {
       setStatus("error");
     }
@@ -51,8 +96,13 @@ const ContactForm = () => {
           className="input"
           id="username"
           name="username"
+          value={formValues.username}
+          onChange={handleChange}
           placeholder="Name"
         />
+        {errors.username && (
+          <p className="text-red-600 dark:text-red-500 text-sm">{errors.username}</p>
+        )}
       </label>
       <label className="labelInput" htmlFor="email">
         Email Address
@@ -61,29 +111,70 @@ const ContactForm = () => {
           className="input"
           id="email"
           name="userEmail"
+          value={formValues.userEmail}
+          onChange={handleChange}
           placeholder="email@gmail.com"
         />
+        {errors.userEmail && (
+          <p className="text-red-600 dark:text-red-500 text-sm">{errors.userEmail}</p>
+        )}
       </label>
       <label className="labelInput" htmlFor="message">
         Send me your message
         <textarea
           name="message"
-          className="input"
+          className="input w-full resize-y overflow-x-hidden break-words"
           id="message"
+          value={formValues.message}
+          onChange={handleChange}
           placeholder="Enter text here"
         />
+        {errors.message && (
+          <p className="text-red-600 dark:text-red-500 text-sm">{errors.message}</p>
+        )}
       </label>
       {status === "success" && (
-        <p className="dark:text-green-400 text-green-700 font-bold lg:text-xl mt-2">Message sent successfully!</p>
+        <p className="dark:text-green-400 text-green-700 font-bold lg:text-xl mt-2">
+          Message sent successfully!
+        </p>
       )}
       {status === "error" && (
-        <p className="text-red-600 dark:text-red-500 font-bold lg:text-xl mt-2">Something went wrong. Try again.</p>
+        <p className="text-red-600 dark:text-red-500 font-bold lg:text-xl mt-2">
+          Something went wrong. Try again.
+        </p>
       )}
       <button
-        className="inline-block cursor-pointer my-2 text-lg px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
+        className="inline-flex items-center gap-2 cursor-pointer my-2 text-lg px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
         type="submit"
+        disabled={status === "loading"}
       >
-        Send Message
+        {status === "loading" ? (
+          <>
+            <svg
+              className="animate-spin h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              />
+            </svg>
+            Sending...
+          </>
+        ) : (
+          "Send Message"
+        )}
       </button>
       <p id="formspreeLink">
         Powered by
