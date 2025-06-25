@@ -36,7 +36,7 @@ const Project = ({
       />
       <div className="flex flex-col gap-4">
         <h3 className="underline font-bold lg:text-xl">{project.name}</h3>
-        <p>
+        <p className="md:text-lg">
           {project.longDescription
             ? project.longDescription
             : project.description}
