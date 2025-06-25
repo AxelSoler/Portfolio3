@@ -6,10 +6,11 @@ import ProjectsModal from "./ProjectsModal";
 const Projects = () => {
   const [projectsModal, setProjectsModal] = useState(false);
   useEffect(() => {
+    const html = document.documentElement;
     if (projectsModal) {
-      document.body.style.overflow = "hidden";
+      html.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto";
+      html.style.overflow = "auto";
     }
   }, [projectsModal]);
   return (
