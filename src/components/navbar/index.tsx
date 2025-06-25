@@ -44,7 +44,7 @@ const Navbar = () => {
           href="#projects"
           onClick={toggleMobileMenu}
         >
-          Projects
+          Experience
           <IoIosArrowForward size="28px" />
         </Link>
         <Link
@@ -74,7 +74,7 @@ const Navbar = () => {
           <p>Full Stack Developer</p>
         </div>
         <NavLink href="#about">ABOUT</NavLink>
-        <NavLink href="#projects">PROJECTS</NavLink>
+        <NavLink href="#projects">EXPERIENCE</NavLink>
         <NavLink href="#contact">CONTACT</NavLink>
         <ThemeToggle />
       </div>

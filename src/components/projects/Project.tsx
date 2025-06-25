@@ -1,7 +1,5 @@
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
-import { FaGithub } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
 
 type projectProps = {
   name: string;
@@ -41,7 +39,7 @@ const Project = ({
             ? project.longDescription
             : project.description}
         </p>
-        <div className="flex justify-evenly w-full mt-auto">
+        {/* <div className="flex justify-evenly w-full mt-auto">
           {project.live === "private" ? (
             <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-not-allowed opacity-50 flex items-center gap-1">
               Private
@@ -74,7 +72,7 @@ const Project = ({
               <FaGithub />
             </a>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

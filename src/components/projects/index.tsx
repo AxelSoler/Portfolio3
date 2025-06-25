@@ -1,16 +1,17 @@
 "use client";
-import { useState } from "react";
-import projects from "./ProjectsList";
-import Project from "./Project";
+import { useEffect, useState } from "react";
 import "./index.css";
-import { FiChevronDown } from "react-icons/fi";
+import ProjectsModal from "./ProjectsModal";
 
 const Projects = () => {
-  const [visibleCount, setVisibleCount] = useState(2);
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 2);
-  };
+  const [projectsModal, setProjectsModal] = useState(false);
+  useEffect(() => {
+    if (projectsModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [projectsModal]);
   return (
     <section
       className="pt-6 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
@@ -51,10 +52,14 @@ const Projects = () => {
             <br />
             <br />
             This role has not only enhanced my technical skill set but also
-            strengthened my soft skills—such as effective communication within
+            strengthened my soft skills, such as effective communication within
             distributed teams, accurate task estimation, and the ability to
             quickly adapt to new projects and technologies in agile
             environments.
+            <br />
+            <br />I always strive to deliver clean, maintainable, and scalable
+            code, with a strong focus on quality, performance, and client
+            satisfaction.
             <br />
             <br />
             This role has not only enhanced my technical skills but also helped
@@ -62,41 +67,20 @@ const Projects = () => {
             significant experience working asynchronously with international
             teams, participating in code reviews, and contributing to shared
             goals across different time zones.
-            <br />
-            <br />I always strive to deliver clean, maintainable, and scalable
-            code, with a strong focus on quality, performance, and client
-            satisfaction.
           </p>
         </div>
       </div>
-      {projects.slice(0, visibleCount).map((project, index) => {
-        const isEven = index % 2 === 0;
-
-        return (
-          <div key={project.name} className="fade-in-up">
-            <Project project={project} isEven={isEven} />
-          </div>
-        );
-      })}
 
       <div className="flex justify-center w-full">
         <button
-          onClick={handleLoadMore}
-          className={`mt-4 px-6 w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 
-          ${
-            visibleCount >= projects.length
-              ? "opacity-50 cursor-not-allowed"
-              : "hover:scale-105 cursor-pointer"
-          }`}
-          disabled={visibleCount >= projects.length}
+          onClick={() => setProjectsModal(true)}
+          className="mt-4 px-6 cursor-pointer w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
         >
-          <FiChevronDown className="inline mr-2 text-2xl" />
-          {visibleCount >= projects.length
-            ? "All projects loaded"
-            : "Load More Projects"}
-          <FiChevronDown className="inline ml-2 text-2xl" />
+          See Last Projects
         </button>
       </div>
+
+      {projectsModal && <ProjectsModal closeModal={() => setProjectsModal(false)} />}
     </section>
   );
 };
