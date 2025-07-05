@@ -18,11 +18,10 @@ const Projects = () => {
       className="pt-6 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
       id="projects"
     >
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline md:mt-16 mb-10 text-center">
-        Professional Experience
-      </h2>
-
       <div className="p-4 md:p-6 bg-gray-600/30 dark:bg-black/60 rounded-2xl">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
+          Professional Experience
+        </h2>
         <div>
           <h3 className="text-xl md:text-2xl font-semibold">
             Frontend Developer – GoodSoftwareDev
@@ -70,15 +69,14 @@ const Projects = () => {
             goals across different time zones.
           </p>
         </div>
-      </div>
-
-      <div className="flex justify-center w-full">
-        <button
-          onClick={() => setProjectsModal(true)}
-          className="mt-4 px-6 cursor-pointer w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
-        >
-          See Last Projects
-        </button>
+        <div className="flex justify-center w-full">
+          <button
+            onClick={() => setProjectsModal(true)}
+            className="mt-4 px-6 cursor-pointer w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            See Last Projects
+          </button>
+        </div>
       </div>
 
       {projectsModal && <ProjectsModal closeModal={() => setProjectsModal(false)} />}
