@@ -2,6 +2,7 @@ import Projects from "@/components/projects";
 import About from "../components/about";
 import ContactForm from "@/components/contact";
 import Navbar from "@/components/navbar";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Projects />
+      <Education />
       <ContactForm />
     </div>
   );
