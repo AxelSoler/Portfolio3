@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,21 +46,21 @@ const About = () => {
           <h2 className="text-lg md:text-3xl">React Specialist</h2>
         </div>
         <div className="relative w-28 h-28 md:w-40 md:h-40">
-        {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          </div>
-        )}
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
 
-        <Image
-          className={`rounded-full border-4 border-[#4294ff] object-cover transition-opacity duration-500 ${
-            isLoading ? "opacity-0" : "opacity-100"
-          }`}
-          src={profilePicture}
-          alt="Axel Soler"
-          fill
-          onLoad={() => setIsLoading(false)}
-        />
+          <Image
+            className={`rounded-full border-4 border-[#4294ff] object-cover transition-opacity duration-500 ${
+              isLoading ? "opacity-0" : "opacity-100"
+            }`}
+            src={profilePicture}
+            alt="Axel Soler"
+            fill
+            onLoad={() => setIsLoading(false)}
+          />
         </div>
       </div>
       <div className="flex flex-col items-center md:w-4/5">

@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
+import ProjectModal from "./ProjectModal";
 
 type projectProps = {
   name: string;
@@ -13,68 +15,46 @@ type projectProps = {
   company: string;
 };
 
-const Project = ({
-  project,
-  isEven
-}: {
-  project: projectProps;
-  isEven: boolean;
-}) => {
+const Project = ({ project }: { project: projectProps }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [projectModal, setProjectModal] = useState(false);
+  useEffect(() => {
+    const html = document.documentElement;
+    if (projectModal) {
+      html.style.overflow = "hidden";
+    } else {
+      html.style.overflow = "auto";
+    }
+  }, [projectModal]);
   return (
-    <div
-      id={project.name}
-      className={`bg-gray-600/30 dark:bg-black/60 flex flex-col xl:flex-row items-center p-4 md:p-6 lg:p-8 rounded ${
-        isEven ? "xl:flex-row" : "xl:flex-row-reverse"
-      } gap-6`}
-    >
-      <Image
-        src={project.image}
-        alt={project.name}
-        className="w-[400px] h-[250px] object-contain rounded-xl"
-      />
-      <div className="flex flex-col gap-4">
+    <>
+      <div
+        id={project.name}
+        className="bg-gray-600/30 dark:bg-black/60 flex flex-col items-center p-4 md:p-6 lg:p-8 rounded gap-4 cursor-pointer"
+        onClick={() => setProjectModal(true)}
+      >
+        {isLoading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
+        <Image
+          src={project.image}
+          alt={project.name}
+          className={`w-[400px] h-[250px] object-cover transition-opacity duration-500 rounded-xl ${
+            isLoading ? "opacity-0" : "opacity-100"
+          }`}
+          onLoad={() => setIsLoading(false)}
+        />
         <h3 className="underline font-bold lg:text-xl">{project.name}</h3>
-        <p className="md:text-lg">
-          {project.longDescription
-            ? project.longDescription
-            : project.description}
-        </p>
-        {/* <div className="flex justify-evenly w-full mt-auto">
-          {project.live === "private" ? (
-            <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-not-allowed opacity-50 flex items-center gap-1">
-              Private
-              <HiOutlineExternalLink />
-            </span>
-          ) : (
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-pointer flex items-center gap-1"
-            >
-              Live Site
-              <HiOutlineExternalLink />
-            </a>
-          )}
-          {project.repository === "private" ? (
-            <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-not-allowed opacity-50 flex items-center gap-1">
-              Private
-              <FaGithub />
-            </span>
-          ) : (
-            <a
-              href={project.repository}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300 cursor-pointer flex items-center gap-1"
-            >
-              Repository
-              <FaGithub />
-            </a>
-          )}
-        </div> */}
       </div>
-    </div>
+      {projectModal && (
+        <ProjectModal
+          project={project}
+          closeModal={() => setProjectModal(false)}
+        />
+      )}
+    </>
   );
 };
 

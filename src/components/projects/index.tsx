@@ -1,18 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Project from "./Project";
+import projects from "./ProjectsList";
 import "./index.css";
-import ProjectsModal from "./ProjectsModal";
 
 const Projects = () => {
-  const [projectsModal, setProjectsModal] = useState(false);
-  useEffect(() => {
-    const html = document.documentElement;
-    if (projectsModal) {
-      html.style.overflow = "hidden";
-    } else {
-      html.style.overflow = "auto";
-    }
-  }, [projectsModal]);
+  const [showProjects, setShowProjects] = useState(false);
   return (
     <section
       className="pt-6 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
@@ -69,17 +62,24 @@ const Projects = () => {
             goals across different time zones.
           </p>
         </div>
-        <div className="flex justify-center w-full">
+        <div className="flex flex-col items-center w-full">
+          {showProjects && (
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-8 fade-in-up">
+              {projects.slice(0, 4).map((project) => (
+                <div key={project.name}>
+                  <Project project={project} />
+                </div>
+              ))}
+            </div>
+          )}
           <button
-            onClick={() => setProjectsModal(true)}
-            className="mt-4 px-6 cursor-pointer w-full md:w-auto py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
+            onClick={() => setShowProjects(!showProjects)}
+            className="mt-4 px-6 cursor-pointer w-full md:w-fit py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
           >
-            See Last Projects
+            {showProjects ? "Close Projects" : "See Last Projects"}
           </button>
         </div>
       </div>
-
-      {projectsModal && <ProjectsModal closeModal={() => setProjectsModal(false)} />}
     </section>
   );
 };
