@@ -30,7 +30,7 @@ const Project = ({ project }: { project: projectProps }) => {
     <>
       <div
         id={project.name}
-        className="bg-gray-600/30 dark:bg-black/60 flex flex-col items-center p-4 md:p-6 lg:p-8 rounded gap-4 cursor-pointer"
+        className="bg-gray-600/30 dark:bg-black/60 flex flex-col items-center p-4 md:p-6 lg:p-8 rounded gap-4 cursor-pointer w-full h-full"
         onClick={() => setProjectModal(true)}
       >
         {isLoading && (
@@ -46,7 +46,7 @@ const Project = ({ project }: { project: projectProps }) => {
           }`}
           onLoad={() => setIsLoading(false)}
         />
-        <h3 className="underline font-bold lg:text-xl">{project.name}</h3>
+        <h3 className="underline font-bold text-xl">{project.name}</h3>
       </div>
       {projectModal && (
         <ProjectModal

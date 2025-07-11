@@ -66,9 +66,7 @@ const Projects = () => {
           {showProjects && (
             <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-8 fade-in-up">
               {projects.slice(0, 4).map((project) => (
-                <div key={project.name}>
-                  <Project project={project} />
-                </div>
+                <Project project={project} key={project.name} />
               ))}
             </div>
           )}
