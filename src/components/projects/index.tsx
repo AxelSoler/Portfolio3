@@ -64,7 +64,7 @@ const Projects = () => {
         </div>
         <div className="flex flex-col items-center w-full">
           {showProjects && (
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-8 fade-in-up">
+            <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-8 fade-in-up">
               {projects.slice(0, 4).map((project) => (
                 <div key={project.name}>
                   <Project project={project} />
