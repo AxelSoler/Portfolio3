@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import profilePicture from "@/img/profile/profilepic.jpg";
@@ -31,7 +29,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
 
 const About = () => {
-  const [isLoading, setIsLoading] = useState(true);
   return (
     <section
       className="text-center flex flex-col items-center md:pt-16"
@@ -46,20 +43,12 @@ const About = () => {
           <h2 className="text-lg md:text-3xl">React Specialist</h2>
         </div>
         <div className="relative w-28 h-28 md:w-40 md:h-40">
-          {isLoading && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
-            </div>
-          )}
-
           <Image
-            className={`rounded-full border-4 border-[#4294ff] object-cover transition-opacity duration-500 ${
-              isLoading ? "opacity-0" : "opacity-100"
-            }`}
+            className="rounded-full border-4 border-[#4294ff] object-cover transition-opacity duration-500"
             src={profilePicture}
             alt="Axel Soler"
             fill
-            onLoad={() => setIsLoading(false)}
+            priority
           />
         </div>
       </div>
@@ -111,7 +100,7 @@ const About = () => {
             </p>
             <div className="flex justify-center items-center gap-4 mt-auto mb-1 md:mb-8">
               <a
-                href="/AxelSolerResume.pdf"
+                href="/Axel_Soler_Resume.pdf"
                 download
                 className="px-2 md:px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition flex items-center gap-2"
               >
