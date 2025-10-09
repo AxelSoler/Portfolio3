@@ -12,7 +12,8 @@ import {
   SiMysql,
   SiDocker,
   SiFigma,
-  SiPostman
+  SiPostman,
+  SiAngular
 } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
@@ -253,6 +254,10 @@ const About = () => {
                 <h4 className="font-bold">Others:</h4>
               </div>
               <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+                <div className="skill">
+                  <SiAngular className="text-2xl lg:text-4xl xl:text-5xl text-[#DD0031]" />
+                  Angular
+                </div>
                 <div className="skill">
                   <SiDocker className="text-2xl lg:text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
                   Docker
