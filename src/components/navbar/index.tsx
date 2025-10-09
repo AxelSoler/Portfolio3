@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
-import profilePicture from "../../img/profile/profilepic.jpg";
+import logo from "@/img/profile/logo.png";
 import "./index.css";
 import { useState } from "react";
 import ThemeToggle from "../ThemeToggle";
@@ -26,7 +26,7 @@ const Navbar = () => {
       >
         <Image
           className="navProfilePicture"
-          src={profilePicture}
+          src={logo}
           alt="Axel Soler"
         />
         <Link

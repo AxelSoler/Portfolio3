@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import profilePicture from "@/img/profile/profilepic.jpg";
+import logo from "@/img/profile/logo.png";
 import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
 import {
   SiRubyonrails,
@@ -13,7 +14,7 @@ import {
   SiDocker,
   SiFigma,
   SiPostman,
-  SiAngular
+  SiAngular,
 } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
@@ -24,7 +25,7 @@ import {
   FaCss3Alt,
   FaGitlab,
   FaGoogleDrive,
-  FaDownload
+  FaDownload,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import "./index.css";
@@ -36,21 +37,15 @@ const About = () => {
       id="about"
     >
       <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-600/30 dark:bg-black/60">
+        <div className="relative w-28 h-28 md:w-40 md:h-40">
+          <Image src={logo} alt="Axel Soler Logo" fill priority />
+        </div>
         <div>
           <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
           <h2 className="text-lg md:text-3xl font-bold">
             Full Stack Developer
           </h2>
           <h2 className="text-lg md:text-3xl">React Specialist</h2>
-        </div>
-        <div className="relative w-28 h-28 md:w-40 md:h-40">
-          <Image
-            className="rounded-full border-4 border-[#4294ff] object-cover transition-opacity duration-500"
-            src={profilePicture}
-            alt="Axel Soler"
-            fill
-            priority
-          />
         </div>
       </div>
       <div className="flex flex-col items-center md:w-4/5">
