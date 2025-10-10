@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
-import { FiExternalLink } from "react-icons/fi";
 import SocialLinks from "../SocialLinks";
+import { useTranslations } from "next-intl";
 import "./index.css";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("");
+  const t = useTranslations("Contact");
 
   const [errors, setErrors] = useState<{
     username?: string;
@@ -88,13 +89,13 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
         >
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline">
-            Let’s chat!
+            {t("title")}
           </h2>
           <p className="text-lg md:text-2xl font-bold my-2">
-            Looking for a developer? Send me a message!
+            {t("subtitle")}
           </p>
           <label className="labelInput" htmlFor="username">
-            What is your name?
+            {t("labelName")}
             <input
               type="text"
               className="input"
@@ -102,7 +103,7 @@ const ContactForm = () => {
               name="username"
               value={formValues.username}
               onChange={handleChange}
-              placeholder="Name"
+              placeholder={t("placeholderName") || "Your Name"}
             />
             {errors.username && (
               <p className="text-red-600 dark:text-red-500 text-sm">
@@ -111,7 +112,7 @@ const ContactForm = () => {
             )}
           </label>
           <label className="labelInput" htmlFor="email">
-            Email Address
+            {t("labelEmail")}
             <input
               type="email"
               className="input"
@@ -119,7 +120,7 @@ const ContactForm = () => {
               name="userEmail"
               value={formValues.userEmail}
               onChange={handleChange}
-              placeholder="email@gmail.com"
+              placeholder={t("placeholderEmail") || "Your Email"}
             />
             {errors.userEmail && (
               <p className="text-red-600 dark:text-red-500 text-sm">
@@ -128,14 +129,14 @@ const ContactForm = () => {
             )}
           </label>
           <label className="labelInput" htmlFor="message">
-            Send me your message
+            {t("labelMessage")}
             <textarea
               name="message"
               className="input w-full resize-y overflow-x-hidden break-words"
               id="message"
               value={formValues.message}
               onChange={handleChange}
-              placeholder="Enter text here"
+              placeholder={t("placeholderMessage") || "Your Message"}
             />
             {errors.message && (
               <p className="text-red-600 dark:text-red-500 text-sm">
@@ -180,24 +181,12 @@ const ContactForm = () => {
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
                   />
                 </svg>
-                Sending...
+                {t("sending")}
               </>
             ) : (
-              "Send Message"
+              t("send")
             )}
           </button>
-          <p id="formspreeLink">
-            Powered by
-            <a
-              href="https://formspree.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="formspree"
-            >
-              Formspree
-              <FiExternalLink size="20px" color="#ff2441" />
-            </a>
-          </p>
           <p className="">
             Or send me an email to{" "}
             <a
