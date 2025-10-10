@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import logo from "@/img/profile/logo.png";
@@ -8,10 +7,14 @@ import "./index.css";
 import { useState } from "react";
 import ThemeToggle from "../ThemeToggle";
 import NavLink from "../NavLink";
+import { useTranslations } from "next-intl";
+import LanguageToggle from "../LanguageToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const t = useTranslations("Navbar");
+
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
     setTimeout(() => setShowMenu(!showMenu), 10);
@@ -29,34 +32,35 @@ const Navbar = () => {
           src={logo}
           alt="Axel Soler"
         />
-        <Link
+        <a
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="aboutLink"
           href="#about"
           onClick={toggleMobileMenu}
         >
-          About
+          {t("about")}
           <IoIosArrowForward size="28px" />
-        </Link>
-        <Link
+        </a>
+        <a
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="projectsLink"
           href="#projects"
           onClick={toggleMobileMenu}
         >
-          Experience
+          {t("projects")}
           <IoIosArrowForward size="28px" />
-        </Link>
-        <Link
+        </a>
+        <a
           className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
           id="contactLink"
           href="#contact"
           onClick={toggleMobileMenu}
         >
-          Contact
+          {t("contact")}
           <IoIosArrowForward size="28px" />
-        </Link>
+        </a>
         <ThemeToggle />
+        <LanguageToggle />
       </ul>
       <button
         type="button"
@@ -73,10 +77,11 @@ const Navbar = () => {
           <p className="text-xl">Axel Soler</p>
           <p>Full Stack Developer</p>
         </div>
-        <NavLink href="#about">ABOUT</NavLink>
-        <NavLink href="#projects">EXPERIENCE</NavLink>
-        <NavLink href="#contact">CONTACT</NavLink>
+        <NavLink href="#about">{t("about")}</NavLink>
+        <NavLink href="#projects">{t("projects")}</NavLink>
+        <NavLink href="#contact">{t("contact")}</NavLink>
         <ThemeToggle />
+        <LanguageToggle />
       </div>
     </nav>
   );

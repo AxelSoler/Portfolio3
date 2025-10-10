@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import ClientOnly from "./client";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-white bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 shadow-md dark:bg-gradient-to-r dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <ClientOnly>{children}</ClientOnly>
+          <NextIntlClientProvider>
+            <ClientOnly>{children}</ClientOnly>
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
