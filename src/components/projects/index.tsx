@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
 import Project from "./Project";
-import projects from "./ProjectsList";
+import useProjects from "./ProjectsList";
+import { useTranslations } from "next-intl";
 import "./index.css";
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
+  const t = useTranslations("Projects");
+  const projects = useProjects();
   return (
     <section
       className="pt-6 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
@@ -13,53 +16,30 @@ const Projects = () => {
     >
       <div className="p-4 md:p-6 bg-gray-600/30 dark:bg-black/60 rounded-2xl">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
-          Professional Experience
+          {t("title")}
         </h2>
         <div>
           <h3 className="text-xl md:text-2xl font-semibold">
-            Frontend Developer – GoodSoftwareDev
+            {t("GoodsoftwaredevRole")}
           </h3>
-          <p className="text-sm italic">2022 – Present</p>
+          <p className="text-sm italic">{t("GoodsoftwaredevDate")}</p>
           <p className="mt-2 text-base leading-relaxed md:text-lg">
-            Since 2022, I’ve been part of the development team at{" "}
-            <span className="font-semibold">GoodSoftwareDev</span>, working on
-            the design, development, and maintenance of modern, scalable user
-            interfaces using technologies such as{" "}
-            <span className="font-medium">React.js</span>, and{" "}
-            <span className="font-medium">Tailwind CSS</span>.
-            <br />
-            <br />
-            I’ve contributed to building interactive dashboards, SEO-optimized
-            landing pages, and reusable components focused on performance and
-            accessibility. I collaborate closely with UI/UX designers and
-            backend developers to ensure seamless integration between frontend
-            interfaces and REST APIs.
-            <br />
-            <br />
-            Throughout this experience, I’ve developed strong proficiency with
-            tools like <span className="font-medium">Git</span>,{" "}
-            <span className="font-medium">Figma</span>,{" "}
-            <span className="font-medium">Notion</span>, and{" "}
-            <span className="font-medium">Postman</span> for continuous
-            deployment.
-            <br />
-            <br />
-            This role has not only enhanced my technical skill set but also
-            strengthened my soft skills, such as effective communication within
-            distributed teams, accurate task estimation, and the ability to
-            quickly adapt to new projects and technologies in agile
-            environments.
-            <br />
-            <br />I always strive to deliver clean, maintainable, and scalable
-            code, with a strong focus on quality, performance, and client
-            satisfaction.
-            <br />
-            <br />
-            This role has not only enhanced my technical skills but also helped
-            me grow professionally in remote work environments. I’ve gained
-            significant experience working asynchronously with international
-            teams, participating in code reviews, and contributing to shared
-            goals across different time zones.
+            {t.rich("GoodsoftwaredevDescription", {
+              goodsoftwaredev: (chunks) => (
+                <span className="font-semibold">{chunks}</span>
+              ),
+              react: (chunks) => <span className="font-medium">{chunks}</span>,
+              tailwind: (chunks) => (
+                <span className="font-medium">{chunks}</span>
+              ),
+              git: (chunks) => <span className="font-medium">{chunks}</span>,
+              figma: (chunks) => <span className="font-medium">{chunks}</span>,
+              notion: (chunks) => <span className="font-medium">{chunks}</span>,
+              postman: (chunks) => (
+                <span className="font-medium">{chunks}</span>
+              ),
+              br: () => <br />,
+            })}
           </p>
         </div>
         <div className="flex flex-col items-center w-full">
@@ -74,7 +54,7 @@ const Projects = () => {
             onClick={() => setShowProjects(!showProjects)}
             className="mt-4 px-6 cursor-pointer w-full md:w-fit py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
           >
-            {showProjects ? "Close Projects" : "See Last Projects"}
+            {showProjects ? t("closeProjects") : t("seeProjects")}
           </button>
         </div>
       </div>

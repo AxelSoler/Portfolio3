@@ -26,5 +26,43 @@
       "Tools": "Tools",
       "Others": "Familiar with"
     }
+  },
+  "Projects": {
+    "title": "Professional Experience",
+    "GoodsoftwaredevRole": "Frontend Developer – GoodSoftwareDev",
+    "GoodsoftwaredevDate": "December 2022 – September 2025",
+    "GoodsoftwaredevDescription": "Since 2022, I’ve been part of the development team at <goodsoftwaredev>GoodSoftwareDev</goodsoftwaredev>, working on the design, development, and maintenance of modern, scalable user interfaces using technologies such as <react>React.js</react>, and <tailwind>Tailwind CSS</tailwind>.<br></br><br></br>I’ve contributed to building interactive dashboards, SEO-optimized landing pages, and reusable components focused on performance and accessibility. I collaborate closely with UI/UX designers and backend developers to ensure seamless integration between frontend interfaces and REST APIs.<br></br><br></br>Throughout this experience, I’ve developed strong proficiency with tools like <git>Git</git>, <figma>Figma</figma>, <notion>Notion</notion>, and <postman>Postman</postman> for continuous deployment.<br></br><br></br>This role has not only enhanced my technical skill set but also strengthened my soft skills, such as effective communication within distributed teams, accurate task estimation, and the ability to quickly adapt to new projects and technologies in agile environments.<br></br><br></br>I always strive to deliver clean, maintainable, and scalable code, with a strong focus on quality, performance, and client satisfaction.<br></br><br></br>This role has not only enhanced my technical skills but also helped me grow professionally in remote work environments. I’ve gained significant experience working asynchronously with international teams, participating in code reviews, and contributing to shared goals across different time zones.",
+    "seeProjects": "See Last Projects",
+    "closeProjects": "Close projects"
+  },
+  "projects": {
+    "ghs": {
+      "description": "A web app for Grapevine High School to manage football players’ profiles and track their college offers in an organized and accessible way.",
+      "longDescription": "This web application was developed for a school to manage and showcase its football players and their college offers. Coaches and staff can easily add, update, and view player profiles, including personal information, athletic stats, highlight videos, and academic achievements. The platform also tracks college offers received by each player, providing a clear and organized view of their recruitment progress. This tool enhances visibility for student-athletes and simplifies communication between the school and interested universities."
+    },
+    "rocketbooking": {
+      "description": "Users can create and manage targeted SMS and email campaigns to promote their services through an intuitive and centralized platform designed for effective outreach.",
+      "longDescription": "This web application allows users to create and manage personalized SMS and email marketing campaigns targeted to their contact lists. Designed to help small businesses and professionals promote their services, the platform offers easy-to-use tools for composing messages, scheduling delivery, and tracking engagement, all in one place."
+    },
+    "homeplate": {
+      "description": "Each user can design and customize their own personal page with content, styles, and layouts that reflect their identity, making it easy to share who they are in a unique and professional way.",
+      "longDescription": "This project allows users to create and personalize their own individual web pages, tailoring content, colors, fonts, and layout to suit their preferences. The platform provides a simple and intuitive interface for editing, so users can express their personal brand or online identity without needing technical skills."
+    },
+    "afi": {
+      "description": "American Fleet Insurance is the fastest growing commercial vehicle insurance agency in the US. We build operational software to decrease the sales process timeline.",
+      "longDescription": "American Fleet Insurance is the fastest growing commercial vehicle insurance agency in the US. We build operational software to decrease the sales process timeline."
+    },
+    "yellowrooms": {
+      "description": "Final project for the Microverse program. A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience.",
+      "longDescription": "Final project for the Microverse program. A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience."
+    },
+    "monsterhunter": {
+      "description": "An interactive web application that provides detailed data and statistics on all monsters from the Monster Hunter World game. Users can filter, explore, and learn about each creature’s behavior and attributes.",
+      "longDescription": "An interactive web application that provides detailed data and statistics on all monsters from the Monster Hunter World game. Users can filter, explore, and learn about each creature’s behavior and attributes."
+    },
+    "mycroverse": {
+      "description": "A sleek and modern landing page promoting an educational program. Highlights the course benefits and encourages visitors to enroll through interactive design.",
+      "longDescription": "A sleek and modern landing page promoting an educational program. Highlights the course benefits and encourages visitors to enroll through interactive design."
+    }
   }
 }

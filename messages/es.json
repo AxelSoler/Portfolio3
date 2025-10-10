@@ -26,5 +26,43 @@
       "Tools": "Herramientas",
       "Others": "Adicionales"
     }
+  },
+  "Projects": {
+    "title": "Experiencia Profesional",
+    "GoodsoftwaredevRole": "Desarrollador Frontend – GoodSoftwareDev",
+    "GoodsoftwaredevDate": "Diciembre 2022 – Septiembre 2025",
+    "GoodsoftwaredevDescription": "Desde 2022, formo parte del equipo de desarrollo de <goodsoftwaredev>GoodSoftwareDev</goodsoftwaredev>, donde trabajo en el diseño, desarrollo y mantenimiento de interfaces de usuario modernas y escalables utilizando tecnologías como <react>React.js</react> y <tailwind>Tailwind CSS</tailwind>.<br></br><br></br>He contribuido a la creación de dashboards interactivos, landing pages optimizadas para SEO y componentes reutilizables centrados en el rendimiento y la accesibilidad. Colaboro estrechamente con diseñadores UI/UX y desarrolladores de backend para garantizar una integración fluida entre las interfaces de frontend y las API REST.<br></br><br></br>A lo largo de esta experiencia, he desarrollado un sólido dominio de herramientas como <git>Git</git>, <figma>Figma</figma>, <notion>Notion</notion> y <postman>Postman</postman> para el despliegue continuo.<br></br><br></br>Este rol no solo ha mejorado mi conjunto de habilidades técnicas, sino que también ha fortalecido mis habilidades blandas, como la comunicación efectiva en equipos distribuidos, la estimación precisa de tareas y la capacidad de adaptarme rápidamente a nuevos proyectos y tecnologías in entornos ágiles.<br></br><br></br>Siempre me esfuerzo por entregar código limpio, mantenible y escalable, con un fuerte enfoque en la calidad, el rendimiento y la satisfacción del cliente.<br></br><br></br>Este rol no solo ha mejorado mis habilidades técnicas, sino que también me ha ayudado a crecer profesionalmente en entornos de trabajo remoto. He adquirido una experiencia significativa trabajando de forma asíncrona con equipos internacionales, participando en revisiones de código y contribuyendo a objetivos compartidos en diferentes zonas horarias.",
+    "seeProjects": "Ver últimos proyectos",
+    "closeProjects": "Cerrar proyectos"
+  },
+  "projects": {
+    "ghs": {
+      "description": "Una aplicación web para que Grapevine High School gestione los perfiles de los jugadores de fútbol y realice un seguimiento de sus ofertas universitarias de una manera organizada y accesible.",
+      "longDescription": "Esta aplicación web fue desarrollada para que una escuela gestione y muestre a sus jugadores de fútbol y sus ofertas universitarias. Los entrenadores y el personal pueden agregar, actualizar y ver fácilmente los perfiles de los jugadores, incluida información personal, estadísticas deportivas, videos destacados y logros académicos. La plataforma también realiza un seguimiento de las ofertas universitarias recibidas por cada jugador, proporcionando una vista clara y organizada de su progreso de reclutamiento. Esta herramienta mejora la visibilidad de los estudiantes-atletas y simplifica la comunicación entre la escuela y las universidades interesadas."
+    },
+    "rocketbooking": {
+      "description": "Los usuarios pueden crear y gestionar campañas de SMS y correo electrónico dirigidas para promocionar sus servicios a través de una plataforma intuitiva y centralizada diseñada para un alcance efectivo.",
+      "longDescription": "Esta aplicación web permite a los usuarios crear y gestionar campañas de marketing por SMS y correo electrónico personalizadas y dirigidas a sus listas de contactos. Diseñada para ayudar a las pequeñas empresas y profesionales a promocionar sus servicios, la plataforma ofrece herramientas fáciles de usar para redactar mensajes, programar la entrega y realizar un seguimiento de la participación, todo en un solo lugar."
+    },
+    "homeplate": {
+      "description": "Cada usuario puede diseñar y personalizar su propia página personal con contenido, estilos y diseños que reflejen su identidad, lo que facilita compartir quiénes son de una manera única y profesional.",
+      "longDescription": "Este proyecto permite a los usuarios crear y personalizar sus propias páginas web individuales, adaptando el contenido, los colores, las fuentes y el diseño a sus preferencias. La plataforma proporciona una interfaz simple e intuitiva para editar, para que los usuarios puedan expresar su marca personal o identidad en línea sin necesidad de conocimientos técnicos."
+    },
+    "afi": {
+      "description": "American Fleet Insurance es la agencia de seguros de vehículos comerciales de más rápido crecimiento en los EE. UU. Creamos software operativo para disminuir el cronograma del proceso de ventas.",
+      "longDescription": "American Fleet Insurance es la agencia de seguros de vehículos comerciales de más rápido crecimiento en los EE. UU. Creamos software operativo para disminuir el cronograma del proceso de ventas."
+    },
+    "yellowrooms": {
+      "description": "Proyecto final para el programa Microverse. Una plataforma de reserva de hoteles de pila completa donde los usuarios pueden buscar, reservar y gestionar su estancia en elegantes habitaciones amarillas. Creado con React y Ruby on Rails para una experiencia perfecta.",
+      "longDescription": "Proyecto final para el programa Microverse. Una plataforma de reserva de hoteles de pila completa donde los usuarios pueden buscar, reservar y gestionar su estancia en elegantes habitaciones amarillas. Creado con React y Ruby on Rails para una experiencia perfecta."
+    },
+    "monsterhunter": {
+      "description": "Una aplicación web interactiva que proporciona datos y estadísticas detallados sobre todos los monstruos del juego Monster Hunter World. Los usuarios pueden filtrar, explorar y aprender sobre el comportamiento y los atributos de cada criatura.",
+      "longDescription": "Una aplicación web interactiva que proporciona datos y estadísticas detallados sobre todos los monstruos del juego Monster Hunter World. Los usuarios pueden filtrar, explorar y aprender sobre el comportamiento y los atributos de cada criatura."
+    },
+    "mycroverse": {
+      "description": "Una página de destino elegante y moderna que promociona un programa educativo. Destaca los beneficios del curso y anima a los visitantes a inscribirse a través de un diseño interactivo.",
+      "longDescription": "Una página de destino elegante y moderna que promociona un programa educativo. Destaca los beneficios del curso y anima a los visitantes a inscribirse a través de un diseño interactivo."
+    }
   }
 }
