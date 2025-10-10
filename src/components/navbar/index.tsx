@@ -1,25 +1,32 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import lightLogo from "@/img/profile/light_logo.png";
 import darkLogo from "@/img/profile/dark_logo.png";
-import "./index.css";
-import { useState } from "react";
 import ThemeToggle from "../ThemeToggle";
 import NavLink from "../NavLink";
 import { useTranslations } from "next-intl";
 import LanguageToggle from "../LanguageToggle";
+import { useTheme } from "next-themes";
+import "./index.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const { theme } = useTheme();
+  const [logo, setLogo] = useState(lightLogo);
   const t = useTranslations("Navbar");
 
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
     setTimeout(() => setShowMenu(!showMenu), 10);
   };
+
+  useEffect(() => {
+    setLogo(theme === "dark" ? lightLogo : darkLogo);
+  }, [theme]);
 
   return (
     <nav className="navbar backdrop-blur-xs bg-white/50 dark:bg-zinc-900/60 shadow-sm transition-colors duration-300 ease-in-out">
@@ -31,7 +38,7 @@ const Navbar = () => {
         <li className="w-full">
           <Image
             className="navProfilePicture"
-            src={lightLogo}
+            src={logo}
             alt="Axel Soler"
           />
         </li>
