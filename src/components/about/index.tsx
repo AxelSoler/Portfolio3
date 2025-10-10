@@ -35,7 +35,7 @@ const About = () => {
   const t = useTranslations("About");
   return (
     <section
-      className="text-center flex flex-col items-center md:pt-24"
+      className="text-center flex flex-col items-center pt-10 md:pt-24"
       id="about"
     >
       <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-600/30 dark:bg-black/60">
