@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // import profilePicture from "@/img/profile/profilepic.jpg";
-import logo from "@/img/profile/logo.png";
+import logo from "@/img/profile/light_logo.png";
 import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
 import {
   SiRubyonrails,
