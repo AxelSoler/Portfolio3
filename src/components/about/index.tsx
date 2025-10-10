@@ -35,7 +35,7 @@ const About = () => {
   const t = useTranslations("About");
   return (
     <section
-      className="text-center flex flex-col items-center md:pt-16"
+      className="text-center flex flex-col items-center md:pt-24"
       id="about"
     >
       <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 bg-gray-600/30 dark:bg-black/60">
@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col items-center md:w-4/5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 text-left text-sm md:text-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 md:mt-8 text-left text-sm md:text-lg">
           <div className="flex flex-col gap-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
             <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">
               {t("title")}
