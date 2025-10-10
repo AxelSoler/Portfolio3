@@ -1,5 +1,6 @@
-import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FaAngellist } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 import './index.css';
 
 const SocialLinks = () => (
@@ -37,12 +38,12 @@ const SocialLinks = () => (
       </li>
       <li className="social">
         <a
-          href="https://twitter.com/AxelSoler18"
+          href="mailto:axelss369@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Twitter"
+          aria-label="Mail"
         >
-          <BsTwitter size="28px" className='text-white dark:text-[#004aad]' />
+          <HiOutlineMail size="28px" className='text-white dark:text-[#004aad]' />
         </a>
       </li>
     </ul>

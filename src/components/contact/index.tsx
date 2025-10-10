@@ -146,12 +146,12 @@ const ContactForm = () => {
           </label>
           {status === "success" && (
             <p className="dark:text-green-400 text-green-700 font-bold lg:text-xl mt-2">
-              Message sent successfully!
+              {t("success")}
             </p>
           )}
           {status === "error" && (
             <p className="text-red-600 dark:text-red-500 font-bold lg:text-xl mt-2">
-              Something went wrong. Try again.
+              {t("error")}
             </p>
           )}
           <button
@@ -187,17 +187,6 @@ const ContactForm = () => {
               t("send")
             )}
           </button>
-          <p className="">
-            Or send me an email to{" "}
-            <a
-              href="mailto:axelss369@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-300 text-xl underline font-semibold transition duration-300 mt-2"
-            >
-              axelss369@gmail.com
-            </a>
-          </p>
           <SocialLinks />
         </form>
       </div>

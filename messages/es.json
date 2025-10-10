@@ -81,6 +81,8 @@
     "labelMessage": "Envía tu mensaje",
     "placeholderMessage": "¿Cómo puedo ayudarte?",
     "send": "Enviar",
-    "sending": "Enviando..."
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Ocurrió un error. Por favor, inténtalo de nuevo"
   }
 }

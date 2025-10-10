@@ -81,6 +81,8 @@
     "labelMessage": "Send me your message",
     "placeholderMessage": "How can I help you?",
     "send": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred. Please try again."
   }
 }
