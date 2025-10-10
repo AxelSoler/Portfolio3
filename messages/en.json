@@ -3,6 +3,28 @@
     "about": "About",
     "projects": "Projects",
     "education": "Education",
-    "contact": "Contact"
+    "contact": "Contact",
+    "developer": "Full Stack Developer"
+  },
+  "ThemeToggle": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "About": {
+    "developer": "Full Stack Developer",
+    "specialist": "React Specialist",
+    "title": "About Me",
+    "description1": "I’m a Full Stack Developer with a frontend focus, passionate about crafting fast, modern, and responsive web apps. I mainly work with React, Next.js, and Tailwind CSS, building clean and scalable user experiences.",
+    "description2": "I love working in remote, collaborative environments where I can grow with others and contribute to something meaningful. I’ve been part of agile teams across different time zones and enjoy pairing up, sharing knowledge, and iterating fast.",
+    "description3": "I’m detail-oriented, receptive to feedback, and constantly learning. I believe in continuous improvement, staying humble, and building meaningful things together.",
+    "description4": "Fluent in English and Spanish, I can adapt and communicate easily with international teams.",
+    "downloadCV": "Download Resume",
+    "connect": "Take a look at my <projectsLink>projects</projectsLink>. if anything stands out, feel free to <contactLink>reach out</contactLink>, I’d love to connect!",
+    "skillsTitle": "Skills",
+    "skills": {
+      "Databases": "Databases",
+      "Tools": "Tools",
+      "Others": "Familiar with"
+    }
   }
 }

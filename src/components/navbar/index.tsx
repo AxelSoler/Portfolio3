@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="navPcMenu border-b border-black dark:border-white">
         <div className="mr-auto">
           <p className="text-xl">Axel Soler</p>
-          <p>Full Stack Developer</p>
+          <p>{t("developer")}</p>
         </div>
         <NavLink href="#about">{t("about")}</NavLink>
         <NavLink href="#projects">{t("projects")}</NavLink>

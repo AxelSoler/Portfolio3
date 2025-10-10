@@ -1,8 +1,30 @@
 {
   "Navbar": {
-    "about": "Sobre Mí",
+    "about": "Perfil",
     "projects": "Proyectos",
     "education": "Educación",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "developer": "Desarrollador Full Stack"
+  },
+  "ThemeToggle": {
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "About": {
+    "developer": "Desarrollador Full Stack",
+    "specialist": "Especialista en React",
+    "title": "Perfil",
+    "description1": "Soy un Desarrollador Full Stack con enfoque en frontend, apasionado por crear aplicaciones web rápidas, modernas y responsivas. Principalmente trabajo con React, Next.js y Tailwind CSS, construyendo experiencias de usuario limpias y escalables.",
+    "description2": "Me encanta trabajar en entornos remotos y colaborativos donde puedo crecer con otros y contribuir a algo significativo. He sido parte de equipos ágiles en diferentes zonas horarias y disfruto trabajando en equipo.",
+    "description3": "Soy detallista, receptivo a la retroalimentación y estoy en constante aprendizaje. Creo en la mejora continua, mantenerme humilde y construir cosas significativas juntos.",
+    "description4": "Capaz de comunicarme en inglés y español, puedo adaptarme y comunicarme fácilmente con equipos internacionales.",
+    "downloadCV": "Descargar CV",
+    "connect": "Echa un vistazo a mis <projectsLink>proyectos</projectsLink>. Si algo te llama la atención, no dudes en <contactLink>contactarme</contactLink>.",
+    "skillsTitle": "Habilidades",
+    "skills": {
+      "Databases": "Bases de datos",
+      "Tools": "Herramientas",
+      "Others": "Adicionales"
+    }
   }
 }

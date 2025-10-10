@@ -28,9 +28,11 @@ import {
   FaDownload,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { useTranslations } from "next-intl";
 import "./index.css";
 
 const About = () => {
+  const t = useTranslations("About");
   return (
     <section
       className="text-center flex flex-col items-center md:pt-16"
@@ -42,57 +44,41 @@ const About = () => {
         </div>
         <div>
           <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
-          <h2 className="text-lg md:text-3xl font-bold">
-            Full Stack Developer
-          </h2>
-          <h2 className="text-lg md:text-3xl">React Specialist</h2>
+          <h2 className="text-lg md:text-3xl font-bold">{t("developer")}</h2>
+          <h2 className="text-lg md:text-3xl">{t("specialist")}</h2>
         </div>
       </div>
       <div className="flex flex-col items-center md:w-4/5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2 text-left text-sm md:text-lg">
           <div className="flex flex-col gap-4 bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl">
             <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">
-              About Me
+              {t("title")}
             </h3>
-            <p>
-              I’m a Full Stack Developer with a frontend focus, passionate about
-              crafting fast, modern, and responsive web apps. I mainly work with
-              React, Next.js, and Tailwind CSS, building clean and scalable user
-              experiences.
-            </p>
+            <p>{t("description1")}</p>
 
-            <p>
-              I love working in remote, collaborative environments where I can
-              grow with others and contribute to something meaningful. I’ve been
-              part of agile teams across different time zones and enjoy pairing
-              up, sharing knowledge, and iterating fast.
-            </p>
+            <p>{t("description2")}</p>
 
+            <p>{t("description3")}</p>
+            <p>{t("description4")}</p>
             <p>
-              I’m detail-oriented, receptive to feedback, and constantly
-              learning. I believe in continuous improvement, staying humble, and
-              building meaningful things together.
-            </p>
-            <p>
-              Fluent in English and Spanish, I can adapt and communicate easily
-              with international teams.
-            </p>
-            <p>
-              Take a look at my{" "}
-              <Link
-                href="#projects"
-                className="underline text-blue-700 dark:text-green-300"
-              >
-                projects
-              </Link>
-              . if anything stands out, feel free to{" "}
-              <Link
-                href="#contact"
-                className="underline text-blue-700 dark:text-green-300"
-              >
-                reach out
-              </Link>
-              , I’d love to connect!
+              {t.rich("connect", {
+                projectsLink: (chunks) => (
+                  <Link
+                    href="#projects"
+                    className="underline text-blue-700 dark:text-green-300"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+                contactLink: (chunks) => (
+                  <Link
+                    href="#contact"
+                    className="underline text-blue-700 dark:text-green-300"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
             <div className="flex justify-center items-center gap-4 mt-auto mb-1 md:mb-8">
               <a
@@ -100,10 +86,9 @@ const About = () => {
                 download
                 className="px-2 md:px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition flex items-center gap-2"
               >
-                Get My Resume
+                {t("downloadCV")}
                 <FaDownload />
               </a>
-              <p>or</p>
               <a
                 href="https://drive.google.com/file/d/1Ful06pTzhNJO2ErFBoUAmNYZEsEeN1F2/view?usp=drive_link"
                 target="_blank"
@@ -117,9 +102,9 @@ const About = () => {
           </div>
           <div className="bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl grid">
             <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white">
-              Core Stack
+              {t("skillsTitle")}
             </h3>
-            <div className="grid grid-cols-[1fr_3fr] py-4 gap-4 text-xs md:text-sm lg:text-lg">
+            <div className="grid grid-cols-[1fr_3fr] py-4 gap-y-4 text-xs md:text-sm lg:text-lg">
               <div className="flex items-center">
                 <h4 className="font-bold">Frontend:</h4>
               </div>
@@ -137,14 +122,6 @@ const About = () => {
                     className="text-2xl lg:text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]"
                   />
                   React
-                </div>
-                <div className="skill">
-                  <RiNextjsFill className="text-2xl lg:text-4xl xl:text-5xl text-black dark:text-white" />
-                  Next.js
-                </div>
-                <div className="skill">
-                  <BiLogoTypescript className="text-2xl lg:text-4xl xl:text-5xl text-blue-600 dark:text-blue-400" />
-                  TypeScript
                 </div>
                 <div className="skill">
                   <FaHtml5
@@ -196,7 +173,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <h4 className="font-bold">Databases:</h4>
+                <h4 className="font-bold">{t("skills.Databases")}:</h4>
               </div>
               <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
                 <div className="skill">
@@ -216,7 +193,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <h4 className="font-bold">Testing/DevOps:</h4>
+                <h4 className="font-bold">{t("skills.Tools")}:</h4>
               </div>
               <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
                 <div className="skill">
@@ -244,22 +221,9 @@ const About = () => {
                   />
                   RSpec
                 </div>
-              </div>
-              <div className="flex items-center">
-                <h4 className="font-bold">Others:</h4>
-              </div>
-              <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
-                <div className="skill">
-                  <SiAngular className="text-2xl lg:text-4xl xl:text-5xl text-[#DD0031]" />
-                  Angular
-                </div>
                 <div className="skill">
                   <SiDocker className="text-2xl lg:text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
                   Docker
-                </div>
-                <div className="skill">
-                  <SiFigma className="text-2xl lg:text-4xl xl:text-5xl text-black dark:text-white" />
-                  Figma
                 </div>
                 <div className="skill">
                   <SiPostman
@@ -267,6 +231,27 @@ const About = () => {
                     className="text-2xl lg:text-4xl xl:text-5xl"
                   />
                   Postman
+                </div>
+              </div>
+              <div className="flex items-center">
+                <h4 className="font-bold">{t("skills.Others")}:</h4>
+              </div>
+              <div className="flex flex-wrap justify-start gap-3 lg:gap-6 xl:gap-8">
+                <div className="skill">
+                  <RiNextjsFill className="text-2xl lg:text-4xl xl:text-5xl text-black dark:text-white" />
+                  Next.js
+                </div>
+                <div className="skill">
+                  <SiAngular className="text-2xl lg:text-4xl xl:text-5xl text-[#DD0031]" />
+                  Angular
+                </div>
+                <div className="skill">
+                  <BiLogoTypescript className="text-2xl lg:text-4xl xl:text-5xl text-blue-600 dark:text-blue-400" />
+                  TypeScript
+                </div>
+                <div className="skill">
+                  <SiFigma className="text-2xl lg:text-4xl xl:text-5xl text-black dark:text-white" />
+                  Figma
                 </div>
                 <div className="skill">
                   <SiCplusplus className="text-2xl lg:text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
