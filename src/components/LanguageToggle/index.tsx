@@ -1,42 +1,36 @@
 "use client";
 
+import { useState } from "react";
 import Cookies from "js-cookie";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import ReactFlagsSelect from "react-flags-select";
 
 const LanguageToggle = () => {
   const router = useRouter();
   const locale = useLocale();
+  const [selected, setSelected] = useState(locale === "es" ? "AR" : "US");
 
   const handleLocaleChange = (newLocale: string) => {
     Cookies.set("locale", newLocale);
     router.refresh();
   };
 
+  const onSelect = (code: string) => {
+    const newLocale = code === "AR" ? "es" : "en";
+    setSelected(code);
+    handleLocaleChange(newLocale);
+  };
+
   return (
-    <div className="flex gap-2 items-center">
-      <button
-        onClick={() => handleLocaleChange("en")}
-        className={`px-2 py-1 rounded-md text-sm ${
-          locale === "en"
-            ? "bg-slate-300 dark:bg-slate-700 font-bold"
-            : "bg-slate-200 dark:bg-slate-800"
-        }`}
-        disabled={locale === "en"}
-      >
-        EN
-      </button>
-      <button
-        onClick={() => handleLocaleChange("es")}
-        className={`px-2 py-1 rounded-md text-sm ${
-          locale === "es"
-            ? "bg-slate-300 dark:bg-slate-700 font-bold"
-            : "bg-slate-200 dark:bg-slate-800"
-        }`}
-        disabled={locale === "es"}
-      >
-        ES
-      </button>
+    <div className="flex items-center w-full md:w-auto">
+      <ReactFlagsSelect
+        countries={["AR", "US"]}
+        customLabels={{ AR: "ES", US: "EN" }}
+        selected={selected}
+        onSelect={onSelect}
+        className="text-black w-full md:w-auto"
+      />
     </div>
   );
 };
