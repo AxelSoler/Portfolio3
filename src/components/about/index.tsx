@@ -44,7 +44,7 @@ const About = () => {
             <FaChevronDown className="transition-transform duration-300 mt-1" />
           </Link>
           <Link
-            href="#projects"
+            href="#contact"
             className="flex items-center justify-center md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-md"
           >
             <FaChevronDown className="transition-transform duration-300 mt-1" />
