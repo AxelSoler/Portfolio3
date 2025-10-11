@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "about": "Perfil",
-    "projects": "Proyectos",
+    "projects": "Experiencia",
     "education": "Educación",
     "contact": "Contacto",
     "developer": "Desarrollador Full Stack"
@@ -23,7 +23,11 @@
     "connect": "Echa un vistazo a mis <projectsLink>proyectos</projectsLink>. Si algo te llama la atención, no dudes en <contactLink>contactarme</contactLink>.",
     "skillsTitle": "Habilidades",
     "showMore": "Ver más",
-    "showLess": "Ver menos"
+    "showLess": "Ver menos",
+    "haveIdea": "¿Tienes una idea?",
+    "makeItReal": "¡Yo puedo volverla realidad!",
+    "contactLink": "Contactame",
+    "experienceLink": "Experiencia"
   },
   "Projects": {
     "title": "Experiencia Profesional",

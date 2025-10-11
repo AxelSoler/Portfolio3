@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "about": "About",
-    "projects": "Projects",
+    "projects": "Experience",
     "education": "Education",
     "contact": "Contact",
     "developer": "Full Stack Developer"
@@ -23,7 +23,11 @@
     "connect": "Take a look at my <projectsLink>projects</projectsLink>. if anything stands out, feel free to <contactLink>reach out</contactLink>, I’d love to connect!",
     "skillsTitle": "Skills",
     "showMore": "Show more",
-    "showLess": "Show less"
+    "showLess": "Show less",
+    "haveIdea": "Have an idea?",
+    "makeItReal": "I can make it real!",
+    "contactLink": "Contact me",
+    "experienceLink": "Experience"
   },
   "Projects": {
     "title": "Professional Experience",

@@ -178,18 +178,18 @@ export default function Skills() {
 
       <button
         onClick={() => setExpanded(!expanded)}
-        className="self-center flex items-center gap-2 px-4 py-2 bg-blue-600 dark:bg-green-600 text-white rounded-full hover:bg-blue-700 dark:hover:bg-green-700 transition-all duration-300 shadow-md"
+        className="self-center flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl cursor-pointer transition-all duration-300 shadow-md"
       >
         {expanded ? (
-          <FaChevronUp className="transition-transform duration-300" />
+          <FaChevronUp className="transition-transform duration-300 mt-1" />
         ) : (
-          <FaChevronDown className="transition-transform duration-300" />
+          <FaChevronDown className="transition-transform duration-300 mt-1" />
         )}
         {expanded ? t("showLess") : t("showMore")}
         {expanded ? (
-          <FaChevronUp className="transition-transform duration-300" />
+          <FaChevronUp className="transition-transform duration-300 mt-1" />
         ) : (
-          <FaChevronDown className="transition-transform duration-300" />
+          <FaChevronDown className="transition-transform duration-300 mt-1" />
         )}
       </button>
     </div>
