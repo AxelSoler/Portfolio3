@@ -19,13 +19,11 @@
     "description3": "I’m detail-oriented, receptive to feedback, and constantly learning. I believe in continuous improvement, staying humble, and building meaningful things together.",
     "description4": "Fluent in English and Spanish, I can adapt and communicate easily with international teams.",
     "downloadCV": "Download Resume",
+    "resumeDownloadLink": "/Axel_Soler_Resume.pdf",
     "connect": "Take a look at my <projectsLink>projects</projectsLink>. if anything stands out, feel free to <contactLink>reach out</contactLink>, I’d love to connect!",
     "skillsTitle": "Skills",
-    "skills": {
-      "Databases": "Databases",
-      "Tools": "Tools",
-      "Others": "Familiar with"
-    }
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "Projects": {
     "title": "Professional Experience",

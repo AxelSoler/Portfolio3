@@ -19,13 +19,11 @@
     "description3": "Soy detallista, receptivo a la retroalimentación y estoy en constante aprendizaje. Creo en la mejora continua, mantenerme humilde y construir cosas significativas juntos.",
     "description4": "Capaz de comunicarme en inglés y español, puedo adaptarme y comunicarme fácilmente con equipos internacionales.",
     "downloadCV": "Descargar CV",
+    "resumeDownloadLink": "/Axel_Soler_CV.pdf",
     "connect": "Echa un vistazo a mis <projectsLink>proyectos</projectsLink>. Si algo te llama la atención, no dudes en <contactLink>contactarme</contactLink>.",
     "skillsTitle": "Habilidades",
-    "skills": {
-      "Databases": "Bases de datos",
-      "Tools": "Herramientas",
-      "Others": "Adicionales"
-    }
+    "showMore": "Ver más",
+    "showLess": "Ver menos"
   },
   "Projects": {
     "title": "Experiencia Profesional",
