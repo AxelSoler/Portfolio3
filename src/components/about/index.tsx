@@ -14,7 +14,7 @@ const About = () => {
       className="text-center flex flex-col items-center pt-10 md:pt-24"
       id="about"
     >
-      <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60">
+      <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_rgba(0,0,0,0.5)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)]">
         <div className="relative w-28 h-28 md:w-40 md:h-40">
           <Image src={logo} alt="Axel Soler Logo" fill priority />
         </div>
@@ -25,7 +25,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col items-center md:w-4/5 mt-4 md:mt-8 lg:mt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-left text-sm md:text-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 text-left text-sm md:text-lg">
           <AboutSection />
           <Skills />
         </div>

@@ -15,7 +15,7 @@ export default function AboutSection() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="flex flex-col gap-4 bg-gray-600/30 dark:bg-black/60 p-4 lg:p-6 rounded-2xl md:min-h-[240px] h-fit">
+    <div className="flex flex-col gap-4 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_rgba(0,0,0,0.5)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)] p-4 lg:p-6 rounded-2xl md:min-h-[240px] h-fit">
       <h3 className="text-lg md:text-2xl font-bold border-b border-black dark:border-white">
         {t("title")}
       </h3>
