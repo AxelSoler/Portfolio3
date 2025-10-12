@@ -83,7 +83,7 @@ const ContactForm = () => {
       className="pt-6 md:w-4/5 mx-auto"
       id="contact"
     >
-      <div className="w-full bg-gray-600/30 dark:bg-black/60 rounded-2xl mx-auto flex flex-col items-center">
+      <div className="w-full lg:p-16 bg-gray-600/30 dark:bg-black/60 rounded-2xl mx-auto flex flex-col items-center">
         <form
           className="w-full lg:w-3/5 flex flex-col items-center p-6"
           onSubmit={handleSubmit}
@@ -155,7 +155,7 @@ const ContactForm = () => {
             </p>
           )}
           <button
-            className="inline-flex items-center gap-2 cursor-pointer my-2 text-lg px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
+            className="inline-flex items-center gap-2 cursor-pointer my-2 text-lg px-14 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
             type="submit"
             disabled={status === "loading"}
           >

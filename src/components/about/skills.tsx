@@ -35,7 +35,7 @@ export default function Skills() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="flex flex-col bg-gray-600/30 dark:bg-black/60 p-4 rounded-2xl md:min-h-[240px] h-fit">
+    <div className="flex flex-col bg-gray-600/30 dark:bg-black/60 p-4 lg:p-6 rounded-2xl md:min-h-[240px] h-fit">
       <h3 className="text-left text-lg md:text-2xl font-bold border-b border-black dark:border-white mb-4">
         {t("skillsTitle")}
       </h3>
@@ -178,7 +178,7 @@ export default function Skills() {
 
       <button
         onClick={() => setExpanded(!expanded)}
-        className="self-center flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl cursor-pointer transition-all duration-300 shadow-md hover:scale-105"
+        className="self-center flex items-center gap-2 px-4 py-2 mt-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl cursor-pointer transition-all duration-300 shadow-md hover:scale-105"
       >
         {expanded ? (
           <FaChevronUp className="transition-transform duration-300 mt-1" />

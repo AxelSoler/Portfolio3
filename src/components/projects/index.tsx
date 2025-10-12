@@ -14,7 +14,7 @@ const Projects = () => {
       className="pt-6 md:pt-24 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
       id="projects"
     >
-      <div className="p-4 md:p-6 bg-gray-600/30 dark:bg-black/60 rounded-2xl">
+      <div className="p-4 md:p-6 lg:p-16 bg-gray-600/30 dark:bg-black/60 rounded-2xl">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
           {t("title")}
         </h2>
