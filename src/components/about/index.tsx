@@ -32,12 +32,12 @@ const About = () => {
         <p className="text-center text-xl lg:text-4xl font-bold border-b border-black dark:border-white mt-4 md:mt-10 lg:mt-18">
           {t("haveIdea")}
           <br className="md:hidden" />
-          {t("makeItReal")}
+          {" "}{t("makeItReal")}
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-24 mt-4 md:mt-8 md:justify-center w-full font-bold">
           <Link
             href="#projects"
-            className="flex items-center justify-center md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-md"
+            className="flex items-center justify-center md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-md hover:scale-105"
           >
             <FaChevronDown className="transition-transform duration-300 mt-1" />
             {t("experienceLink")}
@@ -45,7 +45,7 @@ const About = () => {
           </Link>
           <Link
             href="#contact"
-            className="flex items-center justify-center md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-md"
+            className="flex items-center justify-center md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-md hover:scale-105"
           >
             <FaChevronDown className="transition-transform duration-300 mt-1" />
             {t("contactLink")}
