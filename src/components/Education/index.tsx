@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Schooldescription from "./schoolDescription";
 
 const Education = () => {
   const t = useTranslations("Education");
@@ -11,17 +12,9 @@ const Education = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
           {t("title")}
         </h2>
-        <div>
-          <h3 className="text-xl md:text-2xl font-semibold">
-            {t("degree")} – Microverse
-          </h3>
-          <p className="text-sm italic">{t("date")}</p>
-          <p className="mt-2 text-base leading-relaxed md:text-lg">
-            {t.rich("microverse", {
-              br: () => <br />,
-            })}
-          </p>
-        </div>
+        <Schooldescription section="microverse" />
+        <Schooldescription section="university" />
+        <Schooldescription section="highschool" />
       </div>
     </section>
   );

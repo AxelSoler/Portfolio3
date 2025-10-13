@@ -29,6 +29,7 @@ import {
 import { IoLogoJavascript } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import "./index.css";
+import ExpandButton from "../buttons/expandButton";
 
 export default function Skills() {
   const t = useTranslations("About");
@@ -72,7 +73,7 @@ export default function Skills() {
       </div>
 
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out mb-2 ${
           expanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -176,22 +177,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="self-center flex items-center gap-2 px-4 py-2 mt-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl cursor-pointer transition-all duration-300 shadow-md hover:scale-105"
-      >
-        {expanded ? (
-          <FaChevronUp className="transition-transform duration-300 mt-1" />
-        ) : (
-          <FaChevronDown className="transition-transform duration-300 mt-1" />
-        )}
-        {expanded ? t("showLess") : t("showMore")}
-        {expanded ? (
-          <FaChevronUp className="transition-transform duration-300 mt-1" />
-        ) : (
-          <FaChevronDown className="transition-transform duration-300 mt-1" />
-        )}
-      </button>
+      <ExpandButton onClick={() => setExpanded(!expanded)} expanded={expanded} />
     </div>
   );
 }

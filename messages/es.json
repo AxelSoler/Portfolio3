@@ -14,7 +14,7 @@
     "developer": "Desarrollador Full Stack",
     "specialist": "Especialista en React",
     "title": "Perfil",
-    "description1": "Soy un Desarrollador Full Stack con enfoque en frontend, apasionado por crear aplicaciones web rápidas, modernas y responsivas. Principalmente trabajo con React, Next.js y Tailwind CSS, construyendo experiencias de usuario limpias y escalables.",
+    "description1": "Soy un Desarrollador Full Stack con enfoque en frontend, apasionado por crear aplicaciones web rápidas, modernas y responsivas. Principalmente trabajo con React y Next.js, construyendo experiencias de usuario limpias y escalables.",
     "description2": "Me encanta trabajar en entornos remotos y colaborativos donde puedo crecer con otros y contribuir a algo significativo. He sido parte de equipos ágiles en diferentes zonas horarias y disfruto trabajando en equipo.",
     "description3": "Soy detallista, receptivo a la retroalimentación y estoy en constante aprendizaje. Creo en la mejora continua, mantenerme humilde y construir cosas significativas juntos.",
     "description4": "Capaz de comunicarme en inglés y español, puedo adaptarme y comunicarme fácilmente con equipos internacionales.",
@@ -69,9 +69,24 @@
   },
   "Education": {
     "title": "Educación",
-    "degree": "Desarrollador Full Stack",
-    "date": "2022 - 2023",
-    "microverse": "En 2022, me uní a Microverse, un programa intensivo de desarrollo de software remoto a tiempo completo donde dediqué más de 1300 horas a dominar el desarrollo web full-stack. El plan de estudios se centró principalmente en JavaScript, React, Redux y Ruby on Rails, con un fuerte énfasis en algoritmos, estructuras de datos y la creación de aplicaciones escalables a través del aprendizaje basado en proyectos.<br></br><br></br>A través de sesiones diarias de pair programming remoto y proyectos de equipo semanales, adquirí experiencia práctica colaborando con desarrolladores de todo el mundo, simulando entornos ágiles del mundo real. Practiqué flujos de trabajo de Git estándar de la industria, realicé revisiones de código y participé en reuniones diarias para garantizar una comunicación transparente y asíncrona.<br></br><br></br>Más allá del desarrollo técnico, también fui mentor de desarrolladores junior, apoyándolos en la comprensión de las mejores prácticas de React, metodologías de prueba y estrategias de depuración. Esta experiencia profundizó mis habilidades de liderazgo y comunicación, al tiempo que reforzó mi compromiso de escribir código limpio, mantenible y escalable.<br></br><br></br>Microverse me preparó no solo como desarrollador, sino como un profesional remoto, listo para prosperar en equipos distribuidos globalmente y adaptarme continuamente a nuevos desafíos in entornos de ritmo rápido."
+    "microverse": {
+      "degree": "Desarrollador Full Stack – Microverse",
+      "date": "2022 - 2023",
+      "shortDescription": "Programa de desarrollo de software remoto a tiempo completo con un enfoque en JavaScript, React, Redux y Ruby on Rails.",
+      "fullDescription": "En 2022, me uní a Microverse, un programa intensivo de desarrollo de software remoto a tiempo completo donde dediqué más de 1300 horas a dominar el desarrollo web full-stack. El plan de estudios se centró principalmente en JavaScript, React, Redux y Ruby on Rails, con un fuerte énfasis en algoritmos, estructuras de datos y la creación de aplicaciones escalables a través del aprendizaje basado en proyectos.<br></br><br></br>A través de sesiones diarias de pair programming remoto y proyectos de equipo semanales, adquirí experiencia práctica colaborando con desarrolladores de todo el mundo, simulando entornos ágiles del mundo real. Practiqué flujos de trabajo de Git estándar de la industria, realicé revisiones de código y participé en reuniones diarias para garantizar una comunicación transparente y asíncrona.<br></br><br></br>Más allá del desarrollo técnico, también fui mentor de desarrolladores junior, apoyándolos en la comprensión de las mejores prácticas de React, metodologías de prueba y estrategias de depuración. Esta experiencia profundizó mis habilidades de liderazgo y comunicación, al tiempo que reforzó mi compromiso de escribir código limpio, mantenible y escalable.<br></br><br></br>Microverse me preparó no solo como desarrollador, sino como un profesional remoto, listo para prosperar en equipos distribuidos globalmente y adaptarme continuamente a nuevos desafíos in entornos de ritmo rápido."
+    },
+    "university": {
+      "degree": "Ingeniería Electromecánica (incompleto) - Universidad Nacional de Mar del Plata, Argentina",
+      "date": "2019 - 2021",
+      "shortDescription": "Completé cursos en matemáticas, física y fundamentos de ingeniería antes de hacer la transición a una carrera en desarrollo de software.",
+      "fullDescription": "Durante mi tiempo estudiando Ingeniería Electromecánica, desarrollé una sólida base en resolución de problemas, pensamiento analítico y matemáticas aplicadas. El riguroso enfoque del programa en física, mecánica y diseño de sistemas me ayudó a construir un enfoque metódico para abordar desafíos técnicos complejos.<br></br><br></br>Mientras trabajaba en varios proyectos de ingeniería, descubrí una pasión por el software y la automatización, dándome cuenta de cómo el código podría extender las capacidades de los sistemas físicos y optimizar los flujos de trabajo.<br></br><br></br>Este interés creciente me llevó a hacer la transición al desarrollo de software, donde pude combinar mi mentalidad analítica con la creatividad para diseñar soluciones digitales eficientes y escalables."
+    },
+    "highschool": {
+      "degree": "Técnico Electromecánico - E.E.S.T. N°3, Mar del Plata, Argentina",
+      "date": "2010 - 2016",
+      "shortDescription": "Me gradué con un enfoque en ciencias y matemáticas, lo que me proporcionó una base sólida para el pensamiento analítico y las habilidades para resolver problemas.",
+      "fullDescription": "Mi educación secundaria en Electromecánica me introdujo al mundo de la tecnología y el pensamiento sistémico. Dediqué gran parte de mi tiempo a comprender el funcionamiento de las máquinas, aprendiendo a analizar, ensamblar y mantener componentes mecánicos y eléctricos. Lo que comenzó como curiosidad por el funcionamiento de las cosas se convirtió en una pasión por crear nuevas soluciones, lo que finalmente me llevó a la programación y al desarrollo de software. Esta base me ayudó a desarrollar la disciplina, la paciencia y la mentalidad analítica que sigo aplicando en mi trabajo como desarrollador."
+    }
   },
   "Contact": {
     "title": "Contacto",
@@ -86,5 +101,9 @@
     "sending": "Enviando...",
     "success": "¡Mensaje enviado con éxito!",
     "error": "Ocurrió un error. Por favor, inténtalo de nuevo"
+  },
+  "Buttons": {
+    "showMore": "Ver más",
+    "showLess": "Ver menos"
   }
 }

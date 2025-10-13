@@ -14,7 +14,7 @@
     "developer": "Full Stack Developer",
     "specialist": "React Specialist",
     "title": "About Me",
-    "description1": "I’m a Full Stack Developer with a frontend focus, passionate about crafting fast, modern, and responsive web apps. I mainly work with React, Next.js, and Tailwind CSS, building clean and scalable user experiences.",
+    "description1": "I’m a Full Stack Developer with a frontend focus, passionate about crafting fast, modern, and responsive web apps. I mainly work with React and Next.js, building clean and scalable user experiences.",
     "description2": "I love working in remote, collaborative environments where I can grow with others and contribute to something meaningful. I’ve been part of agile teams across different time zones and enjoy pairing up, sharing knowledge, and iterating fast.",
     "description3": "I’m detail-oriented, receptive to feedback, and constantly learning. I believe in continuous improvement, staying humble, and building meaningful things together.",
     "description4": "Fluent in English and Spanish, I can adapt and communicate easily with international teams.",
@@ -69,9 +69,24 @@
   },
   "Education": {
     "title": "Education",
-    "degree": "Full Stack Developer",
-    "date": "2022 - 2023",
-    "microverse": "In 2022, I joined Microverse, an intensive, full-time remote software development program where I dedicated over 1300 hours to mastering full-stack web development. The curriculum focused heavily on JavaScript, React, Redux, and Ruby on Rails, with a strong emphasis on algorithms, data structures, and building scalable applications through project-based learning.<br></br><br></br>Through daily remote pair programming sessions and weekly team projects, I gained hands-on experience collaborating with developers from all over the world, simulating real-world agile environments. I practiced industry-standard Git workflows, conducted code reviews, and participated in daily stand-ups to ensure transparent, async communication.<br></br><br></br>Beyond technical development, I also mentored junior developers, supporting them in understanding React best practices, testing methodologies, and debugging strategies. This experience deepened my leadership and communication skills, while reinforcing my commitment to writing clean, maintainable, and scalable code.<br></br><br></br>Microverse prepared me not only as a developer but as a remote professional, ready to thrive in globally distributed teams and continuously adapt to new challenges in fast-paced environments."
+    "microverse": {
+      "degree": "Full Stack Developer – Microverse",
+      "date": "2022 - 2023",
+      "shortDescription": "Intensive remote software development program focused on full-stack web development with JavaScript, React, Redux, and Ruby on Rails.",
+      "fullDescription": "In 2022, I joined Microverse, an intensive, full-time remote software development program where I dedicated over 1300 hours to mastering full-stack web development. The curriculum focused heavily on JavaScript, React, Redux, and Ruby on Rails, with a strong emphasis on algorithms, data structures, and building scalable applications through project-based learning.<br></br><br></br>Through daily remote pair programming sessions and weekly team projects, I gained hands-on experience collaborating with developers from all over the world, simulating real-world agile environments. I practiced industry-standard Git workflows, conducted code reviews, and participated in daily stand-ups to ensure transparent, async communication.<br></br><br></br>Beyond technical development, I also mentored junior developers, supporting them in understanding React best practices, testing methodologies, and debugging strategies. This experience deepened my leadership and communication skills, while reinforcing my commitment to writing clean, maintainable, and scalable code.<br></br><br></br>Microverse prepared me not only as a developer but as a remote professional, ready to thrive in globally distributed teams and continuously adapt to new challenges in fast-paced environments."
+    },
+    "university": {
+      "degree": "Elechtromechanical Engineering (incomplete) - National University of Mar del Plata, Argentina",
+      "date": "2017 - 2021",
+      "shortDescription": "Completed coursework in mathematics, physics, and engineering fundamentals before transitioning to a career in software development.",
+      "fullDescription": "During my time studying Electromechanical Engineering, I developed a strong foundation in problem-solving, analytical thinking, and applied mathematics. The program’s rigorous focus on physics, mechanics, and systems design helped me build a methodical approach to tackling complex technical challenges.<br></br><br></br>While working on various engineering projects, I discovered a passion for software and automation — realizing how code could extend the capabilities of physical systems and streamline workflows.<br></br><br></br>This growing interest led me to transition into software development, where I could combine my analytical mindset with creativity to design efficient and scalable digital solutions."
+    },
+    "highschool": {
+      "degree": "Electromechanical Technician - E.E.S.T. N°3, Mar del Plata, Argentina",
+      "date": "2010 - 2016",
+      "shortDescription": "Graduated with a focus on science and mathematics, laying a strong foundation for analytical thinking and problem-solving skills.",
+      "fullDescription": "My high school education in Electromechanics introduced me to the world of technology and systems thinking. I spent much of my time understanding how machines worked, learning to analyze, assemble, and maintain mechanical and electrical components.<br></br><br></br>What began as curiosity about how things function evolved into a passion for creating new solutions, which ultimately led me toward programming and software development.<br></br><br></br>This foundation helped me build the discipline, patience, and analytical mindset that I continue to apply in my work as a developer."
+    }
   },
   "Contact": {
     "title": "Let’s chat!",
@@ -86,5 +101,9 @@
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "An error occurred. Please try again."
+  },
+  "Buttons": {
+    "showMore": "Show more",
+    "showLess": "Show less"
   }
 }
