@@ -36,7 +36,15 @@ export default function Schooldescription({
         />
       </div>
 
-      {expanded && <p>{t.rich("fullDescription", { br: () => <br /> })}</p>}
+      <div
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${
+          expanded ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="mt-2 text-base leading-relaxed md:text-xl">
+          {t.rich("fullDescription", { br: () => <br /> })}
+        </p>
+      </div>
 
       <div className="flex justify-center my-4 md:my-6 lg:my-8">
         <ExpandButton
