@@ -35,7 +35,7 @@ const Navbar = () => {
           isOpen ? "flex" : "hidden"
         } bg-gradient-to-t from-slate-400 via-slate-100 to-slate-400 shadow-md dark:bg-gradient-to-t dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
-        <li className="w-full">
+        <li className="w-full flex items-center justify-center">
           <Image
             className="navProfilePicture"
             src={logo}
@@ -53,7 +53,7 @@ const Navbar = () => {
             <IoIosArrowForward size="28px" />
           </a>
         </li>
-        <li className="w-full">
+        <li className="w-full my-6">
           <a
             className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
             id="projectsLink"
@@ -67,6 +67,17 @@ const Navbar = () => {
         <li className="w-full">
           <a
             className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
+            id="projectsLink"
+            href="#education"
+            onClick={toggleMobileMenu}
+          >
+            {t("projects")}
+            <IoIosArrowForward size="28px" />
+          </a>
+        </li>
+        <li className="w-full my-6">
+          <a
+            className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
             id="contactLink"
             href="#contact"
             onClick={toggleMobileMenu}
@@ -75,11 +86,11 @@ const Navbar = () => {
             <IoIosArrowForward size="28px" />
           </a>
         </li>
-        <li className="w-full">
-          <ThemeToggle />
+        <li className="w-full mb-2">
+          <LanguageToggle />
         </li>
         <li className="w-full">
-          <LanguageToggle />
+          <ThemeToggle />
         </li>
       </ul>
       <button
@@ -99,6 +110,7 @@ const Navbar = () => {
         </div>
         <NavLink href="#about">{t("about")}</NavLink>
         <NavLink href="#projects">{t("projects")}</NavLink>
+        <NavLink href="#education">{t("education")}</NavLink>
         <NavLink href="#contact">{t("contact")}</NavLink>
         <ThemeToggle />
         <LanguageToggle />
