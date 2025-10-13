@@ -155,7 +155,7 @@ const ContactForm = () => {
             </p>
           )}
           <button
-            className="inline-flex items-center gap-2 cursor-pointer my-2 text-lg px-14 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-lg hover:scale-105 transform transition duration-300"
+            className="inline-flex items-center gap-2 cursor-pointer my-2 text-lg px-14 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:scale-105 transform transition duration-300"
             type="submit"
             disabled={status === "loading"}
           >

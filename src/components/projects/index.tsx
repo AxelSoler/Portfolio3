@@ -52,7 +52,7 @@ const Projects = () => {
           )}
           <button
             onClick={() => setShowProjects(!showProjects)}
-            className="mt-4 md:mt-8 lg:mt-12 px-6 cursor-pointer w-full md:w-fit py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-lg transform transition duration-300 hover:scale-105"
+            className="mt-4 md:mt-8 lg:mt-12 px-6 cursor-pointer w-full md:w-fit py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium md:text-lg rounded-3xl shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] transform transition duration-300 hover:scale-105"
           >
             {showProjects ? t("closeProjects") : t("seeProjects")}
           </button>
