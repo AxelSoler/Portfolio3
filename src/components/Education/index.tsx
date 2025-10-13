@@ -1,5 +1,8 @@
 import { useTranslations } from "next-intl";
 import Schooldescription from "./schoolDescription";
+import microverse from "@/img/profile/Microverse_logo.png";
+import eest from "@/img/profile/eest_logo.jpg";
+import unmdp from "@/img/profile/unmdp_logo.jpg";
 
 const Education = () => {
   const t = useTranslations("Education");
@@ -12,9 +15,9 @@ const Education = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
           {t("title")}
         </h2>
-        <Schooldescription section="microverse" />
-        <Schooldescription section="university" />
-        <Schooldescription section="highschool" />
+        <Schooldescription section="microverse" image={microverse} />
+        <Schooldescription section="university" image={unmdp} />
+        <Schooldescription section="highschool" image={eest} />
       </div>
     </section>
   );
