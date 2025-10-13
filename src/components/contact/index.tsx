@@ -16,7 +16,7 @@ const ContactForm = () => {
   const [formValues, setFormValues] = useState({
     username: "",
     userEmail: "",
-    message: ""
+    message: "",
   });
 
   const validate = () => {
@@ -65,8 +65,8 @@ const ContactForm = () => {
         method: "POST",
         body: formData,
         headers: {
-          Accept: "application/json"
-        }
+          Accept: "application/json",
+        },
       }
     );
 
@@ -79,10 +79,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <section
-      className="pt-6 md:w-4/5 mx-auto"
-      id="contact"
-    >
+    <section className="pt-6 md:w-4/5 mx-auto" id="contact">
       <div className="w-full lg:p-16 lg:pb-4 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)] rounded-2xl mx-auto flex flex-col items-center">
         <form
           className="w-full lg:w-3/5 flex flex-col items-center p-6"

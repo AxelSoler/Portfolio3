@@ -17,7 +17,7 @@ type projectProps = {
 
 const ProjectModal = ({
   project,
-  closeModal
+  closeModal,
 }: {
   project: projectProps;
   closeModal: () => void;

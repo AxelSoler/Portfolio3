@@ -23,8 +23,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGitlab,
-  FaChevronDown,
-  FaChevronUp,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { useTranslations } from "next-intl";
@@ -177,7 +175,10 @@ export default function Skills() {
         </div>
       </div>
 
-      <ExpandButton onClick={() => setExpanded(!expanded)} expanded={expanded} />
+      <ExpandButton
+        onClick={() => setExpanded(!expanded)}
+        expanded={expanded}
+      />
     </div>
   );
 }

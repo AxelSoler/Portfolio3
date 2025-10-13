@@ -36,11 +36,7 @@ const Navbar = () => {
         } bg-gradient-to-t from-slate-400 via-slate-100 to-slate-400 shadow-md dark:bg-gradient-to-t dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
         <li className="w-full flex items-center justify-center">
-          <Image
-            className="navProfilePicture"
-            src={logo}
-            alt="Axel Soler"
-          />
+          <Image className="navProfilePicture" src={logo} alt="Axel Soler" />
         </li>
         <li className="w-full">
           <a

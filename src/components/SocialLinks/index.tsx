@@ -1,7 +1,7 @@
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { FaAngellist } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import './index.css';
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaAngellist } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import "./index.css";
 
 const SocialLinks = () => (
   <div className="socialMedia">
@@ -13,7 +13,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Github"
         >
-          <BsGithub size="28px" className='text-white dark:text-[#004aad]' />
+          <BsGithub size="28px" className="text-white dark:text-[#004aad]" />
         </a>
       </li>
       <li className="social">
@@ -23,7 +23,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <BsLinkedin size="28px" className='text-white dark:text-[#004aad]' />
+          <BsLinkedin size="28px" className="text-white dark:text-[#004aad]" />
         </a>
       </li>
       <li className="social">
@@ -33,7 +33,7 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Angellist"
         >
-          <FaAngellist size="28px" className='text-white dark:text-[#004aad]' />
+          <FaAngellist size="28px" className="text-white dark:text-[#004aad]" />
         </a>
       </li>
       <li className="social">
@@ -43,7 +43,10 @@ const SocialLinks = () => (
           rel="noopener noreferrer"
           aria-label="Mail"
         >
-          <HiOutlineMail size="28px" className='text-white dark:text-[#004aad]' />
+          <HiOutlineMail
+            size="28px"
+            className="text-white dark:text-[#004aad]"
+          />
         </a>
       </li>
     </ul>

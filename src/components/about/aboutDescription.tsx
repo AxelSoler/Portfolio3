@@ -2,12 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import {
-  FaDownload,
-  FaGoogleDrive,
-  FaChevronDown,
-  FaChevronUp,
-} from "react-icons/fa";
+import { FaDownload, FaGoogleDrive } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import ExpandButton from "../buttons/expandButton";
 
@@ -74,7 +69,10 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <ExpandButton onClick={() => setExpanded(!expanded)} expanded={expanded} />
+      <ExpandButton
+        onClick={() => setExpanded(!expanded)}
+        expanded={expanded}
+      />
     </div>
   );
 }

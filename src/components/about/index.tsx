@@ -21,8 +21,7 @@ const About = () => {
         </div>
         <p className="text-center text-xl lg:text-4xl font-bold border-b border-black dark:border-white mt-4 md:mt-10 lg:mt-18">
           {t("haveIdea")}
-          <br className="md:hidden" />
-          {" "}{t("makeItReal")}
+          <br className="md:hidden" /> {t("makeItReal")}
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-24 mt-4 md:mt-8 md:justify-center w-full font-bold">
           <Link

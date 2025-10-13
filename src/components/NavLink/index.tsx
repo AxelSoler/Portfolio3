@@ -7,7 +7,7 @@ const sections = ["#about", "#projects", "#contact"];
 
 const NavLink = ({
   href,
-  children
+  children,
 }: {
   href: string;
   children: React.ReactNode;
