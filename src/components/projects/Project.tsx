@@ -30,7 +30,7 @@ const Project = ({ project }: { project: projectProps }) => {
     <>
       <div
         id={project.name}
-        className="bg-gray-600/30 dark:bg-black/60 flex flex-col items-center p-4 md:p-6 lg:p-8 rounded gap-4 cursor-pointer w-full h-full"
+        className="bg-gray-600/30 dark:bg-black/60 border border-violet-600 dark:border-white/10 flex flex-col items-center p-4 md:p-6 lg:p-8 rounded-xl gap-4 cursor-pointer w-full h-full transition-transform hover:scale-[1.02] hover:shadow-xl duration-300"
         onClick={() => setProjectModal(true)}
       >
         {isLoading && (
