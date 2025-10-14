@@ -18,6 +18,7 @@ const ProfileCard = () => {
           alt="Axel Soler Logo"
           fill
           priority
+          sizes="100%"
         />
       </div>
       <div>

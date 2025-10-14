@@ -16,7 +16,7 @@ export default function Schooldescription({
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="my-8 lg:my-12 text-base leading-relaxed md:text-lg bg-gradient-to-b dark:from-[#0a0f1f] dark:to-[#0e1630] p-4 rounded-2xl shadow-lg border border-violet-600 dark:border-white/10 transition-transform hover:scale-[1.02] hover:shadow-xl duration-300">
+    <div className="my-8 lg:my-12 text-base leading-relaxed md:text-lg bg-gradient-to-b dark:from-[#0a0f1f] dark:to-[#0e1630] p-4 lg:pt-8 rounded-2xl shadow-lg border border-violet-600 dark:border-white/10 transition-transform hover:scale-[1.02] hover:shadow-xl duration-300">
       <div className="flex justify-between gap-4 items-start">
         <div>
           <h3 className="text-xl md:text-2xl font-semibold">{t("degree")}</h3>
@@ -46,7 +46,7 @@ export default function Schooldescription({
         </p>
       </div>
 
-      <div className="flex justify-center my-4 md:my-6 lg:my-8">
+      <div className="flex justify-center mt-4 md:mt-6 lg:mt-8">
         <ExpandButton
           onClick={() => setExpanded(!expanded)}
           expanded={expanded}
