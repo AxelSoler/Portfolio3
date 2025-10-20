@@ -1,8 +1,8 @@
-import Projects from "@/components/projects";
+import Projects from "@/components/professional";
 import About from "../components/about";
 import ContactForm from "@/components/contact";
 import Navbar from "@/components/navbar";
-import Education from "@/components/Education";
+import Education from "@/components/education";
 
 export default function Home() {
   return (
