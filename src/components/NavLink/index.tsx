@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const sections = ["#about", "#projects", "#contact"];
+const sections = ["#about", "#professional", "#education", "#contact"];
 
 const NavLink = ({
   href,
