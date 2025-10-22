@@ -6,7 +6,7 @@ import afi from "@/img/projects/afi.png";
 import rocketbooking from "@/img/projects/rp1.png";
 import homeplate from "@/img/projects/homeplate.png";
 import ghs from "@/img/projects/ghs.png";
-import healthTrack from "@/img/projects/healthTrack/healthtrack.png";
+import healthTrack from "@/img/projects/healthtrack/healthtrack.png";
 
 const useProjects = () => {
   const t = useTranslations("Projects");
