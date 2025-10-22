@@ -53,7 +53,7 @@ const Navbar = () => {
           <a
             className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
             id="projectsLink"
-            href="#projects"
+            href="#professional"
             onClick={toggleMobileMenu}
           >
             {t("projects")}
@@ -67,7 +67,7 @@ const Navbar = () => {
             href="#education"
             onClick={toggleMobileMenu}
           >
-            {t("projects")}
+            {t("education")}
             <IoIosArrowForward size="28px" />
           </a>
         </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
           <p>{t("developer")}</p>
         </div>
         <NavLink href="#about">{t("about")}</NavLink>
-        <NavLink href="#projects">{t("projects")}</NavLink>
+        <NavLink href="#professional">{t("projects")}</NavLink>
         <NavLink href="#education">{t("education")}</NavLink>
         <NavLink href="#contact">{t("contact")}</NavLink>
         <ThemeToggle />
