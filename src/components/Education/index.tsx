@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import Schooldescription from "./schoolDescription";
-import microverse from "@/img/profile/Microverse_logo.png";
-import eest from "@/img/profile/eest_logo.jpg";
-import unmdp from "@/img/profile/unmdp_logo.jpg";
+import microverse from "../../img/profile/Microverse_logo.png";
+import eest from "../../img/profile/eest_logo.jpg";
+import unmdp from "../../img/profile/unmdp_logo.jpg";
 
 const Education = () => {
   const t = useTranslations("Education");
