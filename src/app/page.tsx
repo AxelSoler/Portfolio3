@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Professional />
-      {/* <Projects /> */}
+      <Projects />
       <Education />
       <ContactForm />
     </div>
