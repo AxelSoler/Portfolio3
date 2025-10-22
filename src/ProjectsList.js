@@ -1,18 +1,19 @@
 import { useTranslations } from "next-intl";
-import yellowroomsimg from "../../img/projects/YellowRooms.png";
-import monsterimg from "../../img/projects/MonsterHunterWorld.png";
-import mycroverseimg from "../../img/projects/Mycroverse2.0.png";
-import afi from "../../img/projects/afi.png";
-import rocketbooking from "../../img/projects/rp1.png";
-import homeplate from "../../img/projects/homeplate.png";
-import ghs from "../../img/projects/ghs.png";
+import yellowroomsimg from "@/img/projects/YellowRooms.png";
+import monsterimg from "@/img/projects/MonsterHunterWorld.png";
+import mycroverseimg from "@/img/projects/Mycroverse2.0.png";
+import afi from "@/img/projects/afi.png";
+import rocketbooking from "@/img/projects/rp1.png";
+import homeplate from "@/img/projects/homeplate.png";
+import ghs from "@/img/projects/ghs.png";
 
 const useProjects = () => {
-  const t = useTranslations("projects");
+  const t = useTranslations("Projects");
 
   const projects = [
     {
       name: "GHS",
+      nameKey: "GHS",
       description: t("ghs.description"),
       longDescription: t("ghs.longDescription"),
       image: ghs,
@@ -30,7 +31,8 @@ const useProjects = () => {
       company: "GoodSoftwareDev",
     },
     {
-      name: "Rocket-Booking (RP-1)",
+      name: "Rocket-Booking",
+      nameKey: "RP-1",
       description: t("rocketbooking.description"),
       longDescription: t("rocketbooking.longDescription"),
       image: rocketbooking,
@@ -49,6 +51,7 @@ const useProjects = () => {
     },
     {
       name: "Home Plate",
+      nameKey: "HomePlate",
       description: t("homeplate.description"),
       longDescription: t("homeplate.longDescription"),
       image: homeplate,
@@ -67,6 +70,7 @@ const useProjects = () => {
     },
     {
       name: "American Fleet Insurance",
+      nameKey: "AFI",
       description: t("afi.description"),
       longDescription: t("afi.longDescription"),
       image: afi,
@@ -85,6 +89,7 @@ const useProjects = () => {
     },
     {
       name: "YellowRooms",
+      nameKey: "YellowRooms",
       description: t("yellowrooms.description"),
       longDescription: t("yellowrooms.longDescription"),
       image: yellowroomsimg,
@@ -96,6 +101,7 @@ const useProjects = () => {
     },
     {
       name: "Monster Hunter World",
+      nameKey: "MHW",
       description: t("monsterhunter.description"),
       longDescription: t("monsterhunter.longDescription"),
       image: monsterimg,
@@ -107,6 +113,7 @@ const useProjects = () => {
     },
     {
       name: "Mycroverse-2.0",
+      nameKey: "Mycroverse",
       description: t("mycroverse.description"),
       longDescription: t("mycroverse.longDescription"),
       image: mycroverseimg,
