@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import ExpandedContainer from "../container/ExpandedContainer";
+import ExpandedContainer from "@/components/container/ExpandedContainer";
 
 export default function Schooldescription({
   section,
