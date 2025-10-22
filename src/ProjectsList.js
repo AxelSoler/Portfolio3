@@ -6,6 +6,7 @@ import afi from "@/img/projects/afi.png";
 import rocketbooking from "@/img/projects/rp1.png";
 import homeplate from "@/img/projects/homeplate.png";
 import ghs from "@/img/projects/ghs.png";
+import healthTrack from "@/img/projects/healthTrack/healthtrack.png";
 
 const useProjects = () => {
   const t = useTranslations("Projects");
@@ -98,6 +99,24 @@ const useProjects = () => {
       repository: "https://github.com/AxelSoler/YellowRooms-Front",
       position: "Full Stack Developer",
       company: "Microverse",
+    },
+    {
+      name: "Health Track",
+      nameKey: "HealthTrack",
+      description: t("healthTrack.description"),
+      longDescription: t("healthTrack.longDescription"),
+      image: healthTrack,
+      technologies: [
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Next",
+        "Supabase",
+      ],
+      live: "private",
+      repository: "private",
+      position: "Full Stack Developer",
+      company: "Self-Employed",
     },
     {
       name: "Monster Hunter World",

@@ -58,6 +58,10 @@
       "description": "Final project for the Microverse program. A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience.",
       "longDescription": "Final project for the Microverse program. A full-stack hotel booking platform where users can search, reserve, and manage their stay in stylish Yellow Rooms. Built with React and Ruby on Rails for a seamless experience."
     },
+    "healthTrack": {
+      "description": "A health and fitness tracking web application that allows users to monitor their daily activities, set fitness goals, and analyze progress over time through interactive charts and reports.",
+      "longDescription": "A health and fitness tracking web application that allows users to monitor their daily activities, set fitness goals, and analyze progress over time through interactive charts and reports."
+    },
     "monsterhunter": {
       "description": "An interactive web application that provides detailed data and statistics on all monsters from the Monster Hunter World game. Users can filter, explore, and learn about each creature’s behavior and attributes.",
       "longDescription": "An interactive web application that provides detailed data and statistics on all monsters from the Monster Hunter World game. Users can filter, explore, and learn about each creature’s behavior and attributes."

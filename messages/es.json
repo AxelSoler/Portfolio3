@@ -58,6 +58,10 @@
       "description": "Proyecto final para el programa Microverse. Una plataforma de reserva de hoteles de pila completa donde los usuarios pueden buscar, reservar y gestionar su estancia en elegantes habitaciones amarillas. Creado con React y Ruby on Rails para una experiencia perfecta.",
       "longDescription": "Proyecto final para el programa Microverse. Una plataforma de reserva de hoteles de pila completa donde los usuarios pueden buscar, reservar y gestionar su estancia en elegantes habitaciones amarillas. Creado con React y Ruby on Rails para una experiencia perfecta."
     },
+    "healthTrack": {
+      "description": "Una aplicación web de seguimiento de salud y estado físico que permite a los usuarios monitorear sus actividades diarias, establecer objetivos de fitness y analizar el progreso a lo largo del tiempo mediante gráficos e informes interactivos.",
+      "longDescription": "Una aplicación web de seguimiento de salud y estado físico que permite a los usuarios monitorear sus actividades diarias, establecer objetivos de fitness y analizar el progreso a lo largo del tiempo mediante gráficos e informes interactivos."
+    },
     "monsterhunter": {
       "description": "Una aplicación web interactiva que proporciona datos y estadísticas detallados sobre todos los monstruos del juego Monster Hunter World. Los usuarios pueden filtrar, explorar y aprender sobre el comportamiento y los atributos de cada criatura.",
       "longDescription": "Una aplicación web interactiva que proporciona datos y estadísticas detallados sobre todos los monstruos del juego Monster Hunter World. Los usuarios pueden filtrar, explorar y aprender sobre el comportamiento y los atributos de cada criatura."
