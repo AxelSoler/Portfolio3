@@ -2,7 +2,7 @@ import Professional from "@/components/professional";
 import About from "@/components/about";
 import ContactForm from "@/components/contact";
 import Navbar from "@/components/navbar";
-import Education from "@/components/education";
+import Education from "@/components/education_temp";
 import Projects from "@/components/projects";
 
 export default function Home() {
