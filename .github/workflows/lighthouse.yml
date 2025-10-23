@@ -1,0 +1,42 @@
+name: Lighthouse CI on Netlify Preview
+
+on:
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  lighthouse:
+    name: Run Lighthouse on Netlify Preview
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Wait for Netlify Deploy Preview
+        id: netlify
+        uses: jsmrcaga/action-netlify-deploy-wait@v2
+        with:
+          netlify_site: ${{ secrets.NETLIFY_SITE_ID }}
+          netlify_auth_token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          max_timeout: 600
+
+      - name: Run Lighthouse CI
+        run: npx lhci autorun
+        env:
+          DEPLOY_URL: ${{ steps.netlify.outputs.deploy_url }}
+
+      - name: Comment results on PR
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: ${{ steps.netlify.outputs.deploy_url }}
+          temporaryPublicStorage: true
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
