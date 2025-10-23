@@ -2,8 +2,9 @@ import Professional from "@/components/professional";
 import About from "@/components/about";
 import ContactForm from "@/components/contact";
 import Navbar from "@/components/navbar";
-import Education from "@/components/education_temp";
+import Education from "@/components/education";
 import Projects from "@/components/projects";
+import ContactButton from "@/components/buttons/ContactButton";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Education />
       <ContactForm />
+      <ContactButton />
     </div>
   );
 }
