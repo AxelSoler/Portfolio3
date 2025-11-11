@@ -22,6 +22,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGitlab,
+  FaAws,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { useTranslations } from "next-intl";
@@ -146,6 +147,10 @@ const SkillsNode = () => (
     <div className="skill">
       <SiCplusplus className="text-2xl lg:text-4xl xl:text-5xl text-[#006385] dark:text-[#00BFFF]" />
       C#
+    </div>
+    <div className="skill">
+      <FaAws className="text-2xl lg:text-4xl xl:text-5xl text-black dark:text-orange-400" />
+      AWS
     </div>
   </div>
 );
