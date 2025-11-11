@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import lightLogo from "@/img/profile/light_logo.png";
@@ -17,6 +17,7 @@ const Navbar = () => {
   const { theme } = useTheme();
   const [logo, setLogo] = useState(lightLogo);
   const t = useTranslations("Navbar");
+  const menuRef = useRef<HTMLUListElement>(null);
 
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
@@ -27,6 +28,28 @@ const Navbar = () => {
     setLogo(theme === "dark" ? lightLogo : darkLogo);
   }, [theme]);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        const hamburger = document.querySelector(".hamburger");
+        if (hamburger && hamburger.contains(event.target as Node)) {
+          return;
+        }
+        toggleMobileMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
     <>
       <nav
@@ -35,6 +58,7 @@ const Navbar = () => {
         }`}
       >
         <ul
+          ref={menuRef}
           className={`flex flex-col items-center lg:justify-center lg:gap-2 w-full md:w-1/2 lg:w-1/3 h-[100vh] py-4 px-8 font-bold md:ml-auto bg-gradient-to-t from-slate-400 via-slate-100 to-slate-400 shadow-md dark:bg-gradient-to-t dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] md:border-l-2 border-black dark:border-white transition-all duration-500 ease-in-out`}
         >
           <li className="w-full flex items-center justify-center">
