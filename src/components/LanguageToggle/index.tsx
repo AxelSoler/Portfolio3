@@ -23,13 +23,14 @@ const LanguageToggle = () => {
   };
 
   return (
-    <div className="flex items-center w-full md:w-auto">
+    <div className="flex items-center w-full">
       <ReactFlagsSelect
         countries={["AR", "US"]}
         customLabels={{ AR: "ES", US: "EN" }}
         selected={selected}
         onSelect={onSelect}
-        className="text-black w-full md:w-auto"
+        className="text-black w-full"
+        selectButtonClassName="!bg-slate-200 dark:!bg-white"
       />
     </div>
   );

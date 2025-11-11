@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@AxelSoler18", // Reemplaza con tu usuario de Twitter
+    creator: "@AxelSoler18",
     title: "Axel Soler | Software Developer",
     description: "Portfolio of Axel Soler, a passionate software developer.",
     images: ["https://media.licdn.com/dms/image/v2/C4D03AQFiBM2qEQ07GA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654712370919?e=2147483647&v=beta&t=sYiRYzq33CxWZ-wNNHglFs4Z8BUFCJU5VCkS8buIzrk"],
