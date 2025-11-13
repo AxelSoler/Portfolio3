@@ -25,7 +25,7 @@ const Project = ({ project }: { project: projectProps }) => {
 
   return (
     <article className="bg-gray-600/30 dark:bg-black/60 border border-violet-600 dark:border-white/10 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col">
-      <div className="relative h-24 lg:h-96 overflow-hidden">
+      <div className="relative h-36 lg:h-96 overflow-hidden">
         {isLoading && (
           <div className="flex items-center justify-center">
             <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
