@@ -31,23 +31,23 @@ export default function AboutSection() {
           ),
         })}
       </p>
-      <div className="flex justify-center items-center gap-4 mt-8 mb-1">
+      <div className="flex justify-center items-center gap-4 lg:gap-12 mt-6 mb-1">
         <a
           href={t("resumeDownloadLink")}
           download
           className="px-2 md:px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition flex items-center gap-2"
         >
-          {t("downloadCV")}
           <FaDownload />
+          {t("downloadCV")}
         </a>
         <a
-          href="https://drive.google.com/file/d/1Ful06pTzhNJO2ErFBoUAmNYZEsEeN1F2/view?usp=drive_link"
+          href={t("driveResumeLink")}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-2 md:px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition flex items-center gap-2"
+          className="px-2 md:px-4 py-2 text-white rounded transition flex items-center gap-2 border border-blue-600 hover:shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:bg-blue-600"
         >
-          Google Drive
           <FaGoogleDrive />
+          Google Drive
         </a>
       </div>
     </div>
