@@ -2,9 +2,10 @@ import { useTranslations } from "next-intl";
 import AboutSection from "./aboutDescription";
 import Skills from "./skills";
 import Link from "next/link";
-import { FaChevronDown } from "react-icons/fa";
-import "./index.css";
 import ProfileCard from "./profileCard";
+import { LuBriefcaseBusiness } from "react-icons/lu";
+import { CiMail } from "react-icons/ci";
+import "./index.css";
 
 const About = () => {
   const t = useTranslations("About");
@@ -20,22 +21,20 @@ const About = () => {
           <br className="md:hidden" /> {t("makeItReal")}
         </p>
         <p className="md:text-lg lg:text-xl mb-6">{t("description")}</p>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-24 mb-4 md:mb-8 lg:mb-12 md:justify-center w-full font-bold">
+        <div className="flex gap-4 md:gap-8 lg:gap-24 mb-4 md:mb-8 lg:mb-12 md:justify-center w-full font-bold">
           <Link
             href="#professional"
-            className="flex items-center justify-center w-3/4 mx-auto md:mx-0 md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:scale-105"
+            className="flex items-center justify-center w-full md:w-[200px] md:text-xl gap-2 px-4 py-2 rounded-xl backdrop-blur-md border-2 border-blue-500/40 hover:border-blue-400 hover:shadow-[0_0_15px_#6366f1] transition-all duration-300 hover:scale-105"
           >
-            <FaChevronDown className="transition-transform duration-300 mt-1" />
+            <LuBriefcaseBusiness className="text-xl" />
             {t("experienceLink")}
-            <FaChevronDown className="transition-transform duration-300 mt-1" />
           </Link>
           <Link
             href="#contact"
-            className="flex items-center justify-center w-3/4 mx-auto md:mx-0 md:w-[200px] md:text-xl gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl transition-all duration-300 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:scale-105"
+            className="flex items-center justify-center w-full md:w-[200px] md:text-xl gap-2 px-4 py-2 text-white rounded-xl transition-all duration-300 hover:scale-105 border-2 border-violet-500 hover:shadow-[0_0_15px_#8b5cf6]"
           >
-            <FaChevronDown className="transition-transform duration-300 mt-1" />
+            <CiMail className="text-3xl" />
             {t("contactLink")}
-            <FaChevronDown className="transition-transform duration-300 mt-1" />
           </Link>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 text-left text-sm md:text-lg">
