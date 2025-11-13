@@ -8,11 +8,11 @@ import ContactButton from "@/components/buttons/ContactButton";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 md:px-8 pb-8">
+    <div className="min-h-screen px-4 md:px-0 pb-8">
       <Navbar />
       <About />
-      <Professional />
       <Projects />
+      <Professional />
       <Education />
       <ContactForm />
       <ContactButton />
