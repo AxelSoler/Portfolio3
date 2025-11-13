@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import "./globals.css";
 import ClientOnly from "./client";
 import { NextIntlClientProvider } from "next-intl";
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const orbitron = Orbitron({
   subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-orbitron",
 });
 
 export const metadata: Metadata = {
@@ -70,7 +68,7 @@ export default function RootLayout({
       className="scroll-smooth overflow-x-auto"
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-black dark:text-white bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 shadow-md dark:bg-gradient-to-r dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
+        className={`${inter.className} ${orbitron.variable} antialiased text-black dark:text-white bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 shadow-md dark:bg-gradient-to-r dark:from-[#0a0a0a] dark:via-[#004aad] dark:to-[#0a0a0a] transition-colors duration-500 ease-in-out`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <NextIntlClientProvider>

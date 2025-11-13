@@ -88,7 +88,7 @@ const ContactForm = () => {
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline">
             {t("title")}
           </h2>
-          <p className="text-lg md:text-2xl font-bold mt-2 md:mt-4 lg:mt-8">
+          <p className="text-lg md:text-2xl font-bold my-4 lg:my-8">
             {t("subtitle")}
           </p>
           <label className="labelInput" htmlFor="username">

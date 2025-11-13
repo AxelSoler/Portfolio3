@@ -21,7 +21,7 @@ const ProfileCard = () => {
           sizes="100%"
         />
       </div>
-      <div>
+      <div className="space-y-1 lg:space-y-2">
         <h1 className="text-xl md:text-4xl font-bold">AXEL SOLER</h1>
         <h2 className="text-lg md:text-3xl font-bold">{t("developer")}</h2>
         <h2 className="text-lg md:text-3xl">{t("specialist")}</h2>
