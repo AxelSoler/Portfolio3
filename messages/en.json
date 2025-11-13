@@ -13,6 +13,7 @@
   "About": {
     "developer": "Full Stack Developer",
     "specialist": "React Specialist",
+    "description": "I turn ideas into scalable, high-performance web applications. Specialized in crafting exceptional user experiences with clean, efficient code.",
     "title": "About Me",
     "description1": "I’m a Full Stack Developer with a frontend focus, passionate about crafting fast, modern, and responsive web apps. I mainly work with React and Next.js, building clean and scalable user experiences.",
     "description2": "I love working in remote, collaborative environments where I can grow with others and contribute to something meaningful. I’ve been part of agile teams across different time zones and enjoy pairing up, sharing knowledge, and iterating fast.",
@@ -26,7 +27,7 @@
     "showLess": "Show less",
     "haveIdea": "Have an idea?",
     "makeItReal": "I can make it real!",
-    "contactLink": "Contact me",
+    "contactLink": "Contact",
     "experienceLink": "Experience"
   },
   "Professional": {

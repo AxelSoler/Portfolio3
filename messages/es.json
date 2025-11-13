@@ -13,6 +13,7 @@
   "About": {
     "developer": "Desarrollador Full Stack",
     "specialist": "Especialista en React",
+    "description": "Transformo ideas en aplicaciones web escalables y de alto rendimiento. Especializado en crear experiencias de usuario excepcionales con código limpio y eficiente.",
     "title": "Perfil",
     "description1": "Soy un Desarrollador Full Stack con enfoque en frontend, apasionado por crear aplicaciones web rápidas, modernas y responsivas. Principalmente trabajo con React y Next.js, construyendo experiencias de usuario limpias y escalables.",
     "description2": "Me encanta trabajar en entornos remotos y colaborativos donde puedo crecer con otros y contribuir a algo significativo. He sido parte de equipos ágiles en diferentes zonas horarias y disfruto trabajando en equipo.",
@@ -26,7 +27,7 @@
     "showLess": "Ver menos",
     "haveIdea": "¿Tienes una idea?",
     "makeItReal": "¡Yo puedo volverla realidad!",
-    "contactLink": "Contactame",
+    "contactLink": "Contacto",
     "experienceLink": "Experiencia"
   },
   "Professional": {
