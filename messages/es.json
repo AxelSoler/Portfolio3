@@ -40,7 +40,7 @@
     "closeProjects": "Cerrar proyectos"
   },
   "Projects": {
-    "projects": "Proyectos Destacados",
+    "title": "Proyectos Destacados",
     "ghs": {
       "description": "Una aplicación web para que Grapevine High School gestione los perfiles de los jugadores de fútbol y realice un seguimiento de sus ofertas universitarias de una manera organizada y accesible.",
       "longDescription": "Esta aplicación web fue desarrollada para que una escuela gestione y muestre a sus jugadores de fútbol y sus ofertas universitarias. Los entrenadores y el personal pueden agregar, actualizar y ver fácilmente los perfiles de los jugadores, incluida información personal, estadísticas deportivas, videos destacados y logros académicos. La plataforma también realiza un seguimiento de las ofertas universitarias recibidas por cada jugador, proporcionando una vista clara y organizada de su progreso de reclutamiento. Esta herramienta mejora la visibilidad de los estudiantes-atletas y simplifica la comunicación entre la escuela y las universidades interesadas."
