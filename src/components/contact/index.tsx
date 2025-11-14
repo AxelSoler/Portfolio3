@@ -134,7 +134,7 @@ const ContactForm = () => {
             </div>
           </div>
           <form
-            className="w-full flex flex-col items-center p-6 lg:p-12 rounded-2xl bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)]"
+            className="w-full flex flex-col items-center gap-2 p-6 lg:px-12 lg:py-8 rounded-2xl bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)]"
             onSubmit={handleSubmit}
           >
             <label className="labelInput" htmlFor="username">
