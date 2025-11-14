@@ -15,7 +15,8 @@ const orbitron = Orbitron({
 
 export const metadata: Metadata = {
   title: "Axel Soler Portfolio",
-  description: "Axel Soler Portfolio",
+  description:
+    "Portfolio of Axel Soler, a Full-Stack Developer specializing in React, Next.js, and Node.js. Explore my projects, skills, and experience.",
   keywords: [
     "Software Developer",
     "JavaScript",
@@ -52,7 +53,9 @@ export const metadata: Metadata = {
     creator: "@AxelSoler18",
     title: "Axel Soler | Software Developer",
     description: "Portfolio of Axel Soler, a passionate software developer.",
-    images: ["https://media.licdn.com/dms/image/v2/C4D03AQFiBM2qEQ07GA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654712370919?e=2147483647&v=beta&t=sYiRYzq33CxWZ-wNNHglFs4Z8BUFCJU5VCkS8buIzrk"],
+    images: [
+      "https://media.licdn.com/dms/image/v2/C4D03AQFiBM2qEQ07GA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654712370919?e=2147483647&v=beta&t=sYiRYzq33CxWZ-wNNHglFs4Z8BUFCJU5VCkS8buIzrk",
+    ],
   },
 };
 
