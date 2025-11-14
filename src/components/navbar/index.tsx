@@ -121,6 +121,7 @@ const Navbar = () => {
         className={`hamburger ${isOpen ? "active" : ""}`}
         onClick={toggleMobileMenu}
         onKeyDown={toggleMobileMenu}
+        aria-label="Open menu"
       >
         <span className="bar bg-black dark:bg-white" />
         <span className="bar bg-black dark:bg-white" />
