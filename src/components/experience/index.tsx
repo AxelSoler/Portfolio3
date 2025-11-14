@@ -3,6 +3,7 @@ import ExperienceDescription from "./experiencedescription";
 import microverse from "@/img/profile/Microverse_logo.png";
 import eest from "@/img/profile/eest_logo.jpg";
 import unmdp from "@/img/profile/unmdp_logo.jpg";
+import goodsoftwaredev from "@/img/profile/GSD_logo.png";
 
 const Experience = () => {
   const t = useTranslations("Experience");
@@ -13,7 +14,7 @@ const Experience = () => {
           {t("title")}
         </h2>
         <div className="grid lg:grid-cols-2 gap-8 mt-4 lg:mt-8">
-          <ExperienceDescription section="Goodsoftwaredev" image={microverse} />
+          <ExperienceDescription section="Goodsoftwaredev" image={goodsoftwaredev} />
           <ExperienceDescription section="microverse" image={microverse} />
           <ExperienceDescription section="university" image={unmdp} />
           <ExperienceDescription section="highschool" image={eest} />
