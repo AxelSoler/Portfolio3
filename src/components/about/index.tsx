@@ -11,11 +11,11 @@ const About = () => {
   const t = useTranslations("About");
   return (
     <section
-      className="text-center flex flex-col items-center pt-10"
+      className="text-center flex flex-col items-center pt-10 w-full md:w-4/5 "
       id="about"
     >
       <ProfileCard />
-      <div className="flex flex-col items-center md:w-4/5 mt-4 md:mt-8">
+      <div className="flex flex-col items-center mt-4 md:mt-8">
         <p className="text-center text-2xl lg:text-4xl font-bold border-b border-black dark:border-white mb-4">
           {t("haveIdea")}
           <br className="md:hidden" /> {t("makeItReal")}
@@ -31,7 +31,7 @@ const About = () => {
           </Link>
           <Link
             href="#contact"
-            className="flex items-center justify-center w-full md:w-[200px] md:text-xl gap-2 px-4 py-2 text-white rounded-xl transition-all duration-300 hover:scale-105 border-2 border-violet-500 hover:shadow-[0_0_15px_#8b5cf6]"
+            className="flex items-center justify-center w-full md:w-[200px] md:text-xl gap-2 px-4 py-2 rounded-xl transition-all duration-300 hover:scale-105 border-2 border-violet-500 hover:shadow-[0_0_15px_#8b5cf6]"
           >
             <CiMail className="text-3xl" />
             {t("contactLink")}

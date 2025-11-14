@@ -2,6 +2,7 @@
 import { useState } from "react";
 import SocialLinks from "../SocialLinks";
 import { useTranslations } from "next-intl";
+import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
 import "./index.css";
 
 const ContactForm = () => {
@@ -79,113 +80,159 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="pt-6 md:w-4/5 mx-auto" id="contact">
-      <div className="w-full lg:p-12 lg:pb-4 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)] rounded-2xl mx-auto flex flex-col items-center">
-        <form
-          className="w-full lg:w-3/5 flex flex-col items-center p-6"
-          onSubmit={handleSubmit}
-        >
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline">
-            {t("title")}
-          </h2>
-          <p className="text-lg md:text-2xl font-bold my-4 lg:my-8">
-            {t("subtitle")}
-          </p>
-          <label className="labelInput" htmlFor="username">
-            {t("labelName")}
-            <input
-              type="text"
-              className="input"
-              id="username"
-              name="username"
-              value={formValues.username}
-              onChange={handleChange}
-              placeholder={t("placeholderName") || "Your Name"}
-            />
-            {errors.username && (
-              <p className="text-red-600 dark:text-red-500 text-sm">
-                {errors.username}
-              </p>
-            )}
-          </label>
-          <label className="labelInput" htmlFor="email">
-            {t("labelEmail")}
-            <input
-              type="email"
-              className="input"
-              id="email"
-              name="userEmail"
-              value={formValues.userEmail}
-              onChange={handleChange}
-              placeholder={t("placeholderEmail") || "Your Email"}
-            />
-            {errors.userEmail && (
-              <p className="text-red-600 dark:text-red-500 text-sm">
-                {errors.userEmail}
-              </p>
-            )}
-          </label>
-          <label className="labelInput" htmlFor="message">
-            {t("labelMessage")}
-            <textarea
-              name="message"
-              className="input w-full resize-y overflow-x-hidden break-words"
-              id="message"
-              value={formValues.message}
-              onChange={handleChange}
-              placeholder={t("placeholderMessage") || "Your Message"}
-            />
-            {errors.message && (
-              <p className="text-red-600 dark:text-red-500 text-sm">
-                {errors.message}
-              </p>
-            )}
-          </label>
-          {status === "success" && (
-            <p className="dark:text-green-400 text-green-700 font-bold lg:text-xl mt-2">
-              {t("success")}
-            </p>
-          )}
-          {status === "error" && (
-            <p className="text-red-600 dark:text-red-500 font-bold lg:text-xl mt-2">
-              {t("error")}
-            </p>
-          )}
-          <button
-            className="inline-flex items-center gap-2 cursor-pointer mt-8 text-lg px-14 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-full shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:scale-105 transform transition duration-300"
-            type="submit"
-            disabled={status === "loading"}
-          >
-            {status === "loading" ? (
-              <>
-                <svg
-                  className="animate-spin h-5 w-5 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
+    <section className="w-full md:w-4/5" id="contact">
+      <div className="w-full mx-auto flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold underline lg:mb-8">
+          {t("title")}
+        </h2>
+        <div className="flex flex-col lg:flex-row w-full gap-8">
+          <div className="w-full px-2">
+            <h3 className="text-lg md:text-2xl font-bold my-4 lg:my-8">
+              {t("subtitle")}
+            </h3>
+            <p className="md:text-xl">{t("description")}</p>
+            <div className="flex gap-6 items-center mt-4 lg:mt-8">
+              <div className="rounded-xl bg-blue-100 p-2">
+                <CiMail className="text-3xl text-blue-600" />
+              </div>
+              <div>
+                <p>{t("email")}</p>
+                <a
+                  href="mailto:axelss369@gmail.com"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600"
                 >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  />
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                  />
-                </svg>
-                {t("sending")}
-              </>
-            ) : (
-              t("send")
+                  axelss369@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="flex gap-6 items-center mt-4 lg:mt-8">
+              <div className="rounded-xl bg-blue-100 p-2">
+                <CiPhone className="text-3xl text-blue-600" />
+              </div>
+              <div>
+                <p>{t("phone")}</p>
+                <a
+                  href="tel:+5492235930250"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600"
+                >
+                  +5492235930250
+                </a>
+              </div>
+            </div>
+            <div className="flex gap-6 items-center mt-4 lg:mt-8">
+              <div className="rounded-xl bg-blue-100 p-2">
+                <CiLocationOn className="text-3xl text-blue-600" />
+              </div>
+              <div>
+                <p>{t("location")}</p>
+                <p
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600"
+                >
+                  Mar del Plata, Argentina
+                </p>
+              </div>
+            </div>
+          </div>
+          <form
+            className="w-full flex flex-col items-center p-6 lg:p-12 rounded-2xl bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)]"
+            onSubmit={handleSubmit}
+          >
+            <label className="labelInput" htmlFor="username">
+              {t("labelName")}
+              <input
+                type="text"
+                className="input"
+                id="username"
+                name="username"
+                value={formValues.username}
+                onChange={handleChange}
+                placeholder={t("placeholderName") || "Your Name"}
+              />
+              {errors.username && (
+                <p className="text-red-600 dark:text-red-500 text-sm">
+                  {errors.username}
+                </p>
+              )}
+            </label>
+            <label className="labelInput" htmlFor="email">
+              {t("labelEmail")}
+              <input
+                type="email"
+                className="input"
+                id="email"
+                name="userEmail"
+                value={formValues.userEmail}
+                onChange={handleChange}
+                placeholder={t("placeholderEmail") || "Your Email"}
+              />
+              {errors.userEmail && (
+                <p className="text-red-600 dark:text-red-500 text-sm">
+                  {errors.userEmail}
+                </p>
+              )}
+            </label>
+            <label className="labelInput" htmlFor="message">
+              {t("labelMessage")}
+              <textarea
+                name="message"
+                className="input w-full resize-y overflow-x-hidden break-words"
+                id="message"
+                value={formValues.message}
+                onChange={handleChange}
+                placeholder={t("placeholderMessage") || "Your Message"}
+              />
+              {errors.message && (
+                <p className="text-red-600 dark:text-red-500 text-sm">
+                  {errors.message}
+                </p>
+              )}
+            </label>
+            {status === "success" && (
+              <p className="dark:text-green-400 text-green-700 font-bold lg:text-xl mt-2">
+                {t("success")}
+              </p>
             )}
-          </button>
-          <SocialLinks />
-        </form>
+            {status === "error" && (
+              <p className="text-red-600 dark:text-red-500 font-bold lg:text-xl mt-2">
+                {t("error")}
+              </p>
+            )}
+            <button
+              className="inline-flex w-full justify-center items-center gap-2 cursor-pointer mt-8 text-xl px-14 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-xl shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] hover:scale-105 transform transition duration-300"
+              type="submit"
+              disabled={status === "loading"}
+            >
+              {status === "loading" ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                    />
+                  </svg>
+                  {t("sending")}
+                </>
+              ) : (
+                t("send")
+              )}
+            </button>
+          </form>
+        </div>
+        <SocialLinks />
       </div>
     </section>
   );

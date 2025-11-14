@@ -7,7 +7,7 @@ const Projects = () => {
   const t = useTranslations("Projects");
   return (
     <section
-      className="pt-6 md:pt-24 w-full md:w-4/5 mx-auto space-y-2 md:space-y-4"
+      className="w-full md:w-4/5 space-y-2 md:space-y-4"
       id="professional"
     >
       <div className="p-4 md:p-6 lg:p-12 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_rgba(59,130,246,0.25)] rounded-2xl">

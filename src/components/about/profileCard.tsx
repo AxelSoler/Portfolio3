@@ -11,7 +11,7 @@ const ProfileCard = () => {
   const t = useTranslations("About");
   const { theme } = useTheme();
   return (
-    <div className="flex items-center justify-evenly w-full md:w-4/5 text-left rounded-2xl p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_theme(colors.indigo.600/0.25)]">
+    <div className="flex items-center justify-evenly w-full text-left rounded-2xl p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_theme(colors.indigo.600/0.25)]">
       <div className="relative w-28 h-28 md:w-40 md:h-40">
         <Image
           src={theme === "dark" ? lightLogo : darkLogo}

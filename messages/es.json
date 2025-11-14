@@ -99,7 +99,8 @@
   },
   "Contact": {
     "title": "Contacto",
-    "subtitle": "¿Buscas un desarrollador? ¡Envíame un mensaje!",
+    "subtitle": "¿Buscas un desarrollador?",
+    "description": "Estoy siempre interesado en escuchar sobre nuevos proyectos y oportunidades. No dudes en contactarme si quieres colaborar o simplemente charlar sobre tecnología.",
     "labelName": "¿Cuál es tu nombre?",
     "placeholderName": "Tu Nombre",
     "labelEmail": "Dirección de correo",
@@ -108,6 +109,9 @@
     "placeholderMessage": "¿Cómo puedo ayudarte?",
     "send": "Enviar",
     "sending": "Enviando...",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "location": "Remoto desde",
     "success": "¡Mensaje enviado con éxito!",
     "error": "Ocurrió un error. Por favor, inténtalo de nuevo"
   },
