@@ -1,8 +1,8 @@
 {
   "Navbar": {
     "about": "About",
-    "projects": "Experience",
-    "education": "Education",
+    "projects": "Projects",
+    "experience": "Experience",
     "contact": "Contact",
     "developer": "Full Stack Developer"
   },

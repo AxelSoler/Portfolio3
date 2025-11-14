@@ -79,7 +79,7 @@ const Navbar = () => {
             <a
               className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
               id="projectsLink"
-              href="#professional"
+              href="#projects"
               onClick={toggleMobileMenu}
             >
               {t("projects")}
@@ -90,10 +90,10 @@ const Navbar = () => {
             <a
               className="pageLink border border-black dark:border-white rounded-xl bg-gradient-to-l from-slate-400 via-slate-100 shadow-md dark:bg-gradient-to-l dark:from-[#0a0a0a] dark:via-[#004aad] transition-colors duration-500 ease-in-out"
               id="projectsLink"
-              href="#education"
+              href="#experience"
               onClick={toggleMobileMenu}
             >
-              {t("education")}
+              {t("experience")}
               <IoIosArrowForward size="28px" />
             </a>
           </li>

@@ -1,8 +1,7 @@
-import Professional from "@/components/professional";
 import About from "@/components/about";
 import ContactForm from "@/components/contact";
 import Navbar from "@/components/navbar";
-import Education from "@/components/education";
+import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import ContactButton from "@/components/buttons/ContactButton";
 
@@ -12,7 +11,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Projects />
-      <Education />
+      <Experience />
       <ContactForm />
       <ContactButton />
     </div>
