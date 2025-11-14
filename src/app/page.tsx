@@ -12,7 +12,6 @@ export default function Home() {
       <Navbar />
       <About />
       <Projects />
-      <Professional />
       <Education />
       <ContactForm />
       <ContactButton />

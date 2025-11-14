@@ -31,14 +31,6 @@
     "experienceLink": "Experience",
     "driveResumeLink": "https://drive.google.com/file/d/1Ful06pTzhNJO2ErFBoUAmNYZEsEeN1F2/view?usp=drive_link"
   },
-  "Professional": {
-    "title": "Professional Experience",
-    "GoodsoftwaredevRole": "Frontend Developer – GoodSoftwareDev",
-    "GoodsoftwaredevDate": "December 2022 – September 2025",
-    "GoodsoftwaredevDescription": "Since 2022, I’ve been part of the development team at <span>GoodSoftwareDev</span>, working on the design, development, and maintenance of modern, scalable user interfaces using technologies such as <span>JavaScript (ES6+)</span>, <span>TypeScript</span>, <span>React.js</span>, <span>Tailwind CSS</span>, and <span>NodeJS</span>.<br></br><br></br>My work primarily focuses on building interactive dashboards, SEO-optimized landing pages, and highly reusable component libraries that ensure both performance and accessibility. I collaborate closely with UI/UX designers to translate design systems into pixel-perfect, responsive layouts, and with backend engineers to integrate frontend features seamlessly with <span>RESTful</span> APIs.<br></br><br></br>Throughout this experience, I’ve gained strong proficiency in development and collaboration tools such as <span>Git</span>, <span>Figma</span>, <span>Notion</span>, and <span>Postman</span>, while contributing to continuous integration and deployment workflows.<br></br><br></br>Working in a fully remote, agile environment has also strengthened my communication, teamwork, and time management skills. I’ve learned to coordinate effectively with distributed teams across multiple time zones, participate actively in code reviews, and deliver high-quality features within sprint cycles. I always strive to deliver clean, maintainable, and scalable code, with a strong focus on quality, performance, and client satisfaction.<br></br><br></br>This role has not only enhanced my technical skills but also helped me grow professionally in remote work environments. I’ve gained significant experience working asynchronously with international teams, participating in code reviews, and contributing to shared goals across different time zones.",
-    "seeProjects": "See Last Projects",
-    "closeProjects": "Close projects"
-  },
   "Projects": {
     "title": "Featured Projects",
     "ghs": {
@@ -76,8 +68,14 @@
     "code": "Code",
     "live": "Live"
   },
-  "Education": {
-    "title": "Education",
+  "Experience": {
+    "title": "Experience and Certifications",
+    "Goodsoftwaredev": {
+      "degree": "Full Stack Developer – GoodSoftwareDev",
+      "date": "2022 - 2025",
+      "shortDescription": "Developed and maintained modern, scalable user interfaces using JavaScript, TypeScript, React.js, Tailwind CSS, and NodeJS in a fully remote, agile environment.",
+      "fullDescription": "Since 2022, I’ve been part of the development team at <span>GoodSoftwareDev</span>, working on the design, development, and maintenance of modern, scalable user interfaces using technologies such as <span>JavaScript (ES6+)</span>, <span>TypeScript</span>, <span>React.js</span>, <span>Tailwind CSS</span>, and <span>NodeJS</span>.<br></br><br></br>My work primarily focuses on building interactive dashboards, SEO-optimized landing pages, and highly reusable component libraries that ensure both performance and accessibility. I collaborate closely with UI/UX designers to translate design systems into pixel-perfect, responsive layouts, and with backend engineers to integrate frontend features seamlessly with <span>RESTful</span> APIs.<br></br><br></br>Throughout this experience, I’ve gained strong proficiency in development and collaboration tools such as <span>Git</span>, <span>Figma</span>, <span>Notion</span>, and <span>Postman</span>, while contributing to continuous integration and deployment workflows.<br></br><br></br>Working in a fully remote, agile environment has also strengthened my communication, teamwork, and time management skills. I’ve learned to coordinate effectively with distributed teams across multiple time zones, participate actively in code reviews, and deliver high-quality features within sprint cycles. I always strive to deliver clean, maintainable, and scalable code, with a strong focus on quality, performance, and client satisfaction.<br></br><br></br>This role has not only enhanced my technical skills but also helped me grow professionally in remote work environments. I’ve gained significant experience working asynchronously with international teams, participating in code reviews, and contributing to shared goals across different time zones."
+    },
     "microverse": {
       "degree": "Full Stack Developer – Microverse",
       "date": "2022 - 2023",
