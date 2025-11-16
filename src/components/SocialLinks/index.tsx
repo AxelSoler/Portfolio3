@@ -38,7 +38,7 @@ const SocialLinks = () => (
       </li>
       <li className="social">
         <a
-          href="mailto:axelss369@gmail.com"
+          href="mailto:axelsolerdev@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Mail"

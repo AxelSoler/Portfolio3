@@ -98,10 +98,10 @@ const ContactForm = () => {
               <div>
                 <p>{t("email")}</p>
                 <a
-                  href="mailto:axelss369@gmail.com"
+                  href="mailto:axelsolerdev@gmail.com"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600"
                 >
-                  axelss369@gmail.com
+                  axelsolerdev@gmail.com
                 </a>
               </div>
             </div>
