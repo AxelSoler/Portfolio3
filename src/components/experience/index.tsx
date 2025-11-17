@@ -15,7 +15,7 @@ const Experience = () => {
           {t("title")}
         </h2>
         <div className="grid lg:grid-cols-2 gap-8 mt-4 lg:mt-8">
-          <ExperienceDescription section="Goodsoftwaredev" image={goodsoftwaredev} className="col-span-2" />
+          <ExperienceDescription section="Goodsoftwaredev" image={goodsoftwaredev} className="lg:col-span-2" />
           <ExperienceDescription section="alura" image={alura} />
           <ExperienceDescription section="microverse" image={microverse} />
           <ExperienceDescription section="university" image={unmdp} />
