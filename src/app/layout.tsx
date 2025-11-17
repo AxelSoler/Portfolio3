@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "Portfolio of Axel Soler, a Full-Stack Developer specializing in React, Next.js, and Node.js. Explore my projects, skills, and experience.",
   keywords: [
     "Software Developer",
+    "Full-Stack",
     "JavaScript",
     "Full-Stack",
     "React",
