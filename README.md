@@ -2,9 +2,9 @@
 
 This is my personal portfolio website built to showcase my projects, work experience, and skills.
 
-## 🚀 Live Demo
+## 🚀 Live Page
 
-[Link to live demo](https://axel-soler-dev.netlify.app/)
+[Link to live page](https://axelsoler.dev/)
 
 ## ✨ Features
 
@@ -56,7 +56,7 @@ This will start the development server at `http://localhost:3000`.
 
 ## 🚀 Deployment
 
-The website is deployed on [Netlify](https://www.netlify.com/). The deployment settings are configured in the `netlify.toml` file.
+The website is deployed on [](https://www.netlify.com/). The deployment settings are configured in the `netlify.toml` file.
 
 *   **Build command:** `npm run build`
 *   **Publish directory:** `.next`

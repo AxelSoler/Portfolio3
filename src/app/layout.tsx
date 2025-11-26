@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://axel-soler-dev.netlify.app/",
+    url: "https://axelsoler.dev/",
     title: "Axel Soler | Full-Stack Developer",
     description:
       "Explore the projects and skills of Axel Soler, a passionate software developer.",
