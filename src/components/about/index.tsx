@@ -3,7 +3,6 @@ import AboutSection from "./aboutDescription";
 import Skills from "./skills";
 import Link from "next/link";
 import ProfileCard from "./profileCard";
-import { LuBriefcaseBusiness } from "react-icons/lu";
 import { CiMail } from "react-icons/ci";
 import "./index.css";
 

@@ -14,7 +14,7 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Axel Soler Portfolio",
+  title: "Axel Soler | Full-Stack Developer",
   description:
     "Portfolio of Axel Soler, a Full-Stack Developer specializing in React, Next.js, and Node.js. Explore my projects, skills, and experience.",
   keywords: [
