@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Axel Soler | Full-Stack Developer",
     description:
       "Explore the projects and skills of Axel Soler, a passionate software developer.",
-    siteName: "Axel Soler Portfolio",
+    siteName: "Axel Soler",
     images: [
       {
         url: "/profile_image.jpg",
