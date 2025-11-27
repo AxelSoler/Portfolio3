@@ -66,10 +66,10 @@ const ProfileCard = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
-        className="text-3xl md:text-5xl text-white mb-4"
+        className="text-3xl md:text-5xl mb-4"
       >
         {t("haveIdea")} <br className="lg:hidden" />
-        <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-200 bg-clip-text text-transparent underline">
+        <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-cyan-800 dark:from-blue-400 dark:via-cyan-200 dark:to-cyan-200 bg-clip-text text-transparent underline">
           {t("makeItReal")}
         </span>
       </motion.h2>
@@ -78,7 +78,7 @@ const ProfileCard = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto"
+        className="dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto"
       >
         {t("collaborate")}
       </motion.p>
