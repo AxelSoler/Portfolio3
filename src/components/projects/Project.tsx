@@ -24,7 +24,7 @@ const Project = ({ project }: { project: projectProps }) => {
     const t = useTranslations("Projects");
 
   return (
-    <article className="bg-gray-600/30 dark:bg-black/60 border border-violet-600 dark:border-white/10 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col">
+    <article className="bg-gray-600/30 dark:bg-black/60 border-3 border-violet-600 dark:border-white/10 rounded-xl overflow-hidden transition-shadow flex flex-col shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_theme(colors.indigo.600/0.25)]">
       <div className="relative h-36 lg:h-96 overflow-hidden">
         {isLoading && (
           <div className="flex items-center justify-center">
