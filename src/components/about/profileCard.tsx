@@ -19,13 +19,13 @@ const ProfileCard = () => {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6 }}
-      className="group w-full space-y-4 md:space-y-8 rounded-2xl p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_theme(colors.indigo.600/0.25)]"
+      className="group w-full space-y-4 md:space-y-8 rounded-2xl px-2 py-4 md:p-4 lg:p-8 bg-gray-600/30 dark:bg-black/60 shadow-[0_6px_25px_theme(colors.indigo.600/0.8)] dark:shadow-[0_6px_25px_theme(colors.indigo.600/0.25)]"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, type: "spring" }}
-        className="flex items-center justify-evenly text-left"
+        className="flex items-center justify-between md:justify-evenly text-left"
       >
         <div className="relative w-32 h-32 md:w-40 md:h-40">
           <Image
@@ -88,7 +88,7 @@ const ProfileCard = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.6 }}
-        className="flex flex-wrap gap-6 justify-center items-center"
+        className="flex flex-wrap gap-2 md:gap-6 justify-center items-center"
       >
         <Link
           href="#contact"
@@ -98,13 +98,6 @@ const ProfileCard = () => {
           <BiRocket className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
         </Link>
 
-        <Link
-          href="#projects"
-          className="px-8 py-4 bg-slate-800/50 border border-slate-600 text-slate-300 rounded-xl hover:bg-slate-700/50 hover:border-blue-500/50 hover:text-white transition-all duration-300 flex items-center gap-2"
-        >
-          <span>{t("experienceLink")}</span>
-          <BiChevronDown className="w-5 h-5 rotate-[-90deg]" />
-        </Link>
         <a
           href={t("resumeDownloadLink")}
           download
@@ -113,6 +106,14 @@ const ProfileCard = () => {
           {t("downloadCV")}
           <FaDownload />
         </a>
+
+        <Link
+          href="#projects"
+          className="px-8 py-4 bg-slate-800/50 border border-slate-600 text-white rounded-xl hover:bg-slate-700/50 hover:border-blue-500/50 transition-all duration-300 flex items-center gap-2"
+        >
+          <span>{t("experienceLink")}</span>
+          <BiChevronDown className="w-6 h-6 rotate-[-90deg]" />
+        </Link>
       </motion.div>
     </motion.div>
   );
