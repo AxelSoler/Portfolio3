@@ -97,13 +97,56 @@ export default function FlipCard({ image, section }: FlipCardProps) {
           <div
             className={`h-full bg-gradient-to-br from-blue-500/50 to-cyan-500/50 p-[2px] rounded-2xl`}
           >
-            <div ref={backContentRef} className="h-full bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-sm rounded-2xl p-8 flex flex-col overflow-y-auto">
+            <div
+              ref={backContentRef}
+              className="h-full bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-sm rounded-2xl p-8 flex flex-col overflow-y-auto"
+            >
               <h3 className="text-2xl text-white mb-6">{t("degree")}</h3>
 
               <div className="space-y-4 mb-6 flex-grow">
                 {t.rich("fullDescription", {
                   span: (chunks) => <span className="font-bold">{chunks}</span>,
                   br: () => <br />,
+                  linkCloud: (chunks) => (
+                    <a
+                      href="https://www.udemy.com/certificate/UC-f130db4d-3b0a-4ae5-a1db-d8035173bb17/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-500"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                  linkAI: (chunks) => (
+                    <a
+                      href="https://www.udemy.com/certificate/UC-2d0d0a6f-426a-4a44-92ff-e0e9d8169d63/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-500"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                  linkNet: (chunks) => (
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-500"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                  linkShopify: (chunks) => (
+                    <a
+                      href="https://www.udemy.com/certificate/UC-e27db3e1-d013-46ea-aa67-645d7de47456/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-blue-400 underline hover:text-blue-500"
+                    >
+                      {chunks}
+                    </a>
+                  ),
                 })}
               </div>
 
