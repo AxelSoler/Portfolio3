@@ -7,8 +7,9 @@ import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { motion } from "motion/react";
 import Link from "next/link";
-import "./index.css";
+import { FaDownload } from "react-icons/fa";
 import { BiChevronDown, BiRocket } from "react-icons/bi";
+import "./index.css";
 
 const ProfileCard = () => {
   const t = useTranslations("About");
@@ -65,7 +66,7 @@ const ProfileCard = () => {
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
         className="text-3xl md:text-5xl mb-4"
       >
         {t("haveIdea")} <br className="lg:hidden" />
@@ -77,7 +78,7 @@ const ProfileCard = () => {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
+        transition={{ delay: 0.6, duration: 0.6 }}
         className="dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto"
       >
         {t("collaborate")}
@@ -86,8 +87,8 @@ const ProfileCard = () => {
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.6 }}
-        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        transition={{ delay: 0.7, duration: 0.6 }}
+        className="flex flex-wrap gap-6 justify-center items-center"
       >
         <Link
           href="#contact"
@@ -104,6 +105,14 @@ const ProfileCard = () => {
           <span>{t("experienceLink")}</span>
           <BiChevronDown className="w-5 h-5 rotate-[-90deg]" />
         </Link>
+        <a
+          href={t("resumeDownloadLink")}
+          download
+          className="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition flex items-center gap-2"
+        >
+          {t("downloadCV")}
+          <FaDownload />
+        </a>
       </motion.div>
     </motion.div>
   );
