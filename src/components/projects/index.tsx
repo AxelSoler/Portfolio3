@@ -6,19 +6,14 @@ const Projects = () => {
   const projects = useProjects();
   const t = useTranslations("Projects");
   return (
-    <section
-      className="w-full md:w-4/5 space-y-2 md:space-y-4"
-      id="projects"
-    >
-      <div className="">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
-          {t("title")}
-        </h2>
-        <div className="grid md:grid-cols-2 gap-6 mt-8 fade-in-up">
-          {projects.slice(0, 4).map((project) => (
-            <Project project={project} key={project.name} />
-          ))}
-        </div>
+    <section className="w-full md:w-4/5 space-y-2 md:space-y-4">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold underline mb-4 text-center">
+        {t("title")}
+      </h2>
+      <div className="grid md:grid-cols-2 gap-6 mt-8 fade-in-up">
+        {projects.slice(0, 4).map((project) => (
+          <Project project={project} key={project.name} />
+        ))}
       </div>
     </section>
   );
