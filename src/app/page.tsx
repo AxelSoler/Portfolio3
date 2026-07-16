@@ -11,15 +11,15 @@ export default function Home() {
       <Navbar />
       <About />
       <div
-        id="projects"
-        className="w-64 h-1 bg-gradient-to-r from-transparent via-blue-700 dark:via-blue-400 to-transparent mt-6 mb-4 md:mb-8 lg:mb-10 md:mt-12 lg:mt-16 mx-auto"
-      />
-      <Projects />
-      <div
         id="experience"
         className="w-64 h-1 bg-gradient-to-r from-transparent via-blue-700 dark:via-blue-400 to-transparent mt-6 mb-4 md:mb-8 lg:mb-10 md:mt-12 lg:mt-16 mx-auto"
       />
       <Experience />
+      <div
+        id="projects"
+        className="w-64 h-1 bg-gradient-to-r from-transparent via-blue-700 dark:via-blue-400 to-transparent mt-6 mb-4 md:mb-8 lg:mb-10 md:mt-12 lg:mt-16 mx-auto"
+      />
+      <Projects />
       <div
         className="w-64 h-1 bg-gradient-to-r from-transparent via-blue-700 dark:via-blue-400 to-transparent mt-6 mb-4 md:mb-8 lg:mb-10 md:mt-12 lg:mt-16 mx-auto"
       />
