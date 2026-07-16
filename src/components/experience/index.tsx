@@ -6,6 +6,7 @@ import unmdp from "@/img/profile/unmdp_logo.jpg";
 import goodsoftwaredev from "@/img/profile/GSD_logo.png";
 import alura from "@/img/profile/alura_logo.jpg";
 import udemy from "@/img/profile/udemy_logo.png";
+import mindcloud from "@/img/profile/mindcloud_logo.jpg";
 
 const Experience = () => {
   const t = useTranslations("Experience");
@@ -15,6 +16,7 @@ const Experience = () => {
         {t("title")}
       </h2>
       <div className="grid lg:grid-cols-2 gap-8 mt-4 lg:mt-8">
+        <FlipCard section="mindcloud" image={mindcloud} />
         <FlipCard section="Goodsoftwaredev" image={goodsoftwaredev} />
         <FlipCard section="udemy" image={udemy} />
         <FlipCard section="alura" image={alura} />

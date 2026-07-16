@@ -72,6 +72,12 @@
   },
   "Experience": {
     "title": "Experiencia y Certificaciones",
+    "mindcloud": {
+      "degree": "System Operator – MindCloud",
+      "date": "2025 – Actualidad",
+      "shortDescription": "Diseño, implementación y mantenimiento de automatizaciones que conectan distintas aplicaciones y optimizan procesos de negocio.",
+      "fullDescription": "Desde 2025, trabajo como <span>System Operator</span> en <span>MindCloud</span>, creando y manteniendo automatizaciones que permiten integrar diferentes aplicaciones y servicios.<br></br><br></br>Mi trabajo consiste en analizar los flujos de información entre plataformas, configurar las conexiones necesarias y desarrollar procesos automatizados para reducir tareas manuales, mejorar la eficiencia y asegurar que los datos se transfieran correctamente entre los distintos sistemas.<br></br><br></br>También superviso el funcionamiento de estas integraciones, identifico y resuelvo errores y realizo ajustes para que las automatizaciones continúen siendo confiables a medida que evolucionan las necesidades de cada proceso."
+    },
     "Goodsoftwaredev": {
       "degree": "Desarrollador Front-End – GoodSoftwareDev",
       "date": "Diciembre 2022 – Septiembre 2025",

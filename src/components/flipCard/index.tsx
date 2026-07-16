@@ -8,7 +8,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 interface FlipCardProps {
   section: string;
-  image: StaticImageData;
+  image?: StaticImageData;
 }
 
 export default function FlipCard({ image, section }: FlipCardProps) {
@@ -66,13 +66,15 @@ export default function FlipCard({ image, section }: FlipCardProps) {
                     })}
                   </p>
                 </div>
-                <Image
-                  src={image}
-                  alt={`${t("degree")} logo`}
-                  width={104}
-                  height={104}
-                  className="rounded-xl hidden lg:block"
-                />
+                {image && (
+                  <Image
+                    src={image}
+                    alt={`${t("degree")} logo`}
+                    width={104}
+                    height={104}
+                    className="rounded-xl hidden lg:block"
+                  />
+                )}
               </div>
 
               <button
