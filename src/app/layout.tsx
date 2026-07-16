@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import ClientOnly from "./client";
 import { NextIntlClientProvider } from "next-intl";
 import { cookies } from "next/headers";
 import "./globals.css";
@@ -118,7 +117,7 @@ export default async function RootLayout({
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <NextIntlClientProvider>
-            <ClientOnly>{children}</ClientOnly>
+            {children}
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
